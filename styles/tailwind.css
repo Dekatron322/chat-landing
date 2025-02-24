@@ -197,6 +197,14 @@ body {
   color: #7d7d7d;
 }
 
+.paragraph-2 {
+  color: #151e22;
+}
+
+[data-theme="dark"] .paragraph-2 {
+  @apply text-[#05F29A];
+}
+
 [data-theme="dark"] .paragraph-1 {
   color: #ffffff;
 }

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Link from "next/link"
 import React, { useState } from "react"
 import { CgChevronLeft, CgChevronRight } from "react-icons/cg"
 
@@ -6,7 +7,8 @@ const ForGovOfficialsListItem = () => {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div
+    <Link
+      href="/government-officials"
       className="nav-items-card relative flex h-full flex-col overflow-hidden p-8"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -35,7 +37,7 @@ const ForGovOfficialsListItem = () => {
           solutions for distributing aid while ensuring visibility across every stage of the process.
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
 
