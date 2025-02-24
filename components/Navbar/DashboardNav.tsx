@@ -13,6 +13,7 @@ import FieldAgentApp from "./FieldAgentApp"
 import NgoDashboard from "./NgoDashboard"
 import BeneficiaryApp from "./BeneficiaryApp"
 import DonorDashboard from "./DonorDashboard"
+import Link from "next/link"
 
 const DashboardNav = () => {
   const [loading, setLoading] = useState(true)
@@ -93,13 +94,16 @@ const DashboardNav = () => {
                 <DonorDashboard />
               </li>
             </ul>
-            <div className="group relative mt-4 flex h-10 w-full items-center justify-center gap-1 overflow-hidden rounded-lg bg-[#05F29A] text-[#000000] transition-colors duration-300 hover:bg-[#05F29A]/90">
+            <Link
+              href="/solutions"
+              className="group relative mt-4 flex h-10 w-full items-center justify-center gap-1 overflow-hidden rounded-lg bg-[#05F29A] text-[#000000] transition-colors duration-300 hover:bg-[#05F29A]/90"
+            >
               <div className="img-elementx absolute bottom-0 left-10"></div>
               <p className="text-sm">Find the Perfect Solution and Get Onboarded!</p>
               <div className="relative overflow-hidden">
                 <GoArrowRight className="size-5 transform transition-transform duration-200 group-hover:scale-150" />
               </div>
-            </div>
+            </Link>
           </div>
         )
       default:

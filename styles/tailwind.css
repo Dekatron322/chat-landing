@@ -513,6 +513,48 @@ body {
   background-repeat: no-repeat;
 }
 
+.solutionImage {
+  background-image: url("/solutions/Frame 1618874232.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paperImage {
+  background-image: url("/solutions/Frame 1618874234 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paperImage1 {
+  background-image: url("/solutions/Frame 1618874242.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paperImage2 {
+  background-image: url("/solutions/Frame 1618874241.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.paperImage3 {
+  background-image: url("/solutions/Frame 1618874243.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .solutionImage {
+  background-image: url("/solutions/Frame 1618874232 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 [data-theme="dark"] .gridBackground {
   background-image: url("/Grid layers (2).png");
   background-size: cover;
@@ -1041,6 +1083,24 @@ body {
   height: 119.82px;
 }
 
+.img-element-twenty-two {
+  background-image: url("/solutions/Vector (7).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 115px;
+}
+
+.img-element-twenty-three {
+  background-image: url("/solutions/Vector (8).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 115px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;
@@ -1538,4 +1598,30 @@ body {
   font-size: 2rem;
   font-weight: bold;
   animation: blur-text 5.5s infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
 }
