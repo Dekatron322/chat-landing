@@ -12,6 +12,8 @@ import Features from "components/CardComponent/features"
 import Seamless from "components/CardComponent/seamless"
 import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
+import Slider from "components/CardComponent/slider"
+import FeaturesDonors from "components/CardComponent/features-donors"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -55,7 +57,7 @@ export default function Dashboard() {
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
         <div className=" paddings  mt-32 flex  h-auto w-full justify-between">
-          <div className=" flex   w-full    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
+          <div className="  flex  w-full    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
             <div className=" flex w-full flex-col items-start justify-center  gap-4      ">
               <div className="card flex  gap-2 rounded-md   py-2">
                 <p className="text-sm">Our All-in-One Management Solution</p>
@@ -87,12 +89,14 @@ export default function Dashboard() {
                 Signup
               </button>
             </div>
-            <img src="/donors/Graphite.png" alt="" className="w-[722px]" />
+            <div className="donorImage items-cen flex h-[628px] w-full justify-center">
+              <img src="/donors/Graphite.png" alt="" className=" w-[722px]" />
+            </div>
           </div>
         </div>
-        <Seamless />
+        <Slider />
 
-        <section className="primary-500 relative flex h-[191px] w-full items-center">
+        {/* <section className="primary-500 relative flex h-[191px] w-full items-center">
           <div className="img-element-twenty absolute bottom-0 left-10"></div>
 
           <div className="flex h-full w-full items-center justify-between px-64">
@@ -105,8 +109,8 @@ export default function Dashboard() {
 
             <div className="img-element-twenty-one"></div>
           </div>
-        </section>
-        <Features />
+        </section> */}
+        <FeaturesDonors />
 
         <HowItWorks />
         <TestimonialSection />

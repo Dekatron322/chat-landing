@@ -484,6 +484,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.donorImage {
+  background-image: url("/donors/Grid layers - v3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .gridBackground {
   background-image: url("/Grid layers.png");
   background-size: cover;
@@ -600,6 +607,14 @@ body {
 
 .primary-600 {
   @apply border-color-100 border bg-transparent;
+}
+
+.primary-700 {
+  @apply bg-[#f3f3f3];
+}
+
+[data-theme="dark"] .primary-700 {
+  @apply bg-[#151E22];
 }
 
 [data-theme="dark"] .primary-600 {

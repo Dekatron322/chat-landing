@@ -70,7 +70,7 @@ const HowItWorks = () => {
                         alt="Step connector"
                         width={19}
                         height={5}
-                        className={`h-auto w-auto ${index === 1 ? "scale-x-[-1] pl-7" : "pl-4"}`}
+                        className={`h-auto w-auto ${index === 1 ? " scale-x-[-1] pl-7" : "pl-4"}`}
                       />
                     </div>
                   )}
