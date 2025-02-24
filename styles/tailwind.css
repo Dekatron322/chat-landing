@@ -469,6 +469,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.gridBackground {
+  background-image: url("/Grid layers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .gridBackground {
+  background-image: url("/Grid layers (2).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .section-2 {
   @apply bg-[#F8F8F8];
 }
@@ -541,6 +555,22 @@ body {
   @apply bg-[#151E22];
 }
 
+.primary-300 {
+  @apply bg-[#ffffff];
+}
+
+.primary-400 {
+  @apply bg-[#F3F3F3];
+}
+
+[data-theme="dark"] .primary-400 {
+  @apply bg-[#1C2529];
+}
+
+[data-theme="dark"] .primary-300 {
+  @apply bg-[#151E22];
+}
+
 [data-theme="dark"] .primary-200 {
   @apply bg-[#1C2529];
 }
@@ -556,6 +586,73 @@ body {
   background-repeat: no-repeat;
   width: 185.75px;
   height: 100px;
+}
+
+.btn-img-element {
+  background-image: url("/lets-icons_gift-fill.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+[data-theme="dark"] .btn-img-element {
+  background-image: url("/lets-icons_gift-fill (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-img-element-one {
+  background-image: url("/iconoir_hand-card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+[data-theme="dark"] .btn-img-element-one {
+  background-image: url("/iconoir_hand-card (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-img-element {
+  transform: translate(-20px, 20px) scale(0.8); /* Move from bottom-left and scale */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-img-element-one {
+  transform: translate(20px, 20px); /* Move from bottom-right and rotate */
+  transition:
+    opacity 0.3s ease 0.1s,
+    transform 0.3s ease 0.1s;
+}
+
+.slide-button:hover .btn-img-element {
+  transform: translate(0, 0) scale(1); /* Reset transform */
+}
+
+.slide-button:hover .btn-img-element-one {
+  transform: translate(0, 0) rotate(0deg); /* Reset transform */
+}
+
+.img-elementx {
+  background-image: url("/Frame 1618874147 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 115.75px;
+  height: 30px;
 }
 
 [data-theme="dark"] .img-element {
@@ -809,6 +906,51 @@ body {
   height: 120px;
 }
 
+.img-element-fifteen {
+  background-image: url("/Blue copy 4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 410px;
+}
+
+.img-element-sixteen {
+  background-image: url("/Blue copy 5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 400px;
+}
+
+.img-element-seventeen {
+  background-image: url("/iPhone-13-Pro-Front copy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 400px;
+}
+
+.img-element-eighteen {
+  background-image: url("/Celestial-Blue copy 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 420px;
+}
+
+.img-element-nineteen {
+  background-image: url("/Frame 1618874448.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 317.78px;
+  height: 529.46px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;
@@ -852,6 +994,55 @@ body {
 
 [data-theme="dark"] .footer-bg {
   @apply bg-[#1C2529];
+}
+
+.slide-button {
+  @apply relative cursor-pointer overflow-hidden border border-[#cdcdcd] bg-transparent px-10 py-[10px] text-[#151e22] transition-all duration-200 ease-in-out;
+}
+
+[data-theme="dark"] .slide-button {
+  @apply relative cursor-pointer overflow-hidden border border-[#ffffff] bg-transparent px-10 py-[10px] text-[#ffffff] transition-all duration-200 ease-in-out;
+}
+
+.slide-button::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%; /* Extend slightly to cover the tilted area */
+  width: 120%; /* Ensure full coverage */
+  height: 0; /* Start with zero height */
+  color: #ffffff;
+  background-color: #1c2529; /* Background color */
+  z-index: -1;
+  transform: skewY(15deg); /* Apply tilt effect */
+  transition: height 0.2s ease-in-out;
+}
+
+[data-theme="dark"] .slide-button::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%; /* Extend slightly to cover the tilted area */
+  width: 120%; /* Ensure full coverage */
+  height: 0; /* Start with zero height */
+  color: #ffffff;
+  background-color: #05f29a; /* Background color */
+  z-index: -1;
+  transform: skewY(15deg); /* Apply tilt effect */
+  transition: height 0.2s ease-in-out;
+}
+
+.slide-button:hover::before {
+  height: 300%; /* Expand beyond button height */
+  bottom: -100%; /* Moves upwards fully covering the button */
+}
+
+[data-theme="dark"] .slide-button:hover {
+  background-color: #05f29a; /* Background color */
+  @apply border-[#05f29a]  text-[#151E22] transition-all duration-200 ease-in-out;
+}
+.slide-button:hover {
+  @apply bg-[#151E22] text-[#ffffff] transition-all duration-200 ease-in-out;
 }
 
 [data-theme="dark"] .animate-text {
@@ -961,11 +1152,19 @@ body {
 }
 
 [data-theme="dark"] .border-color {
-  @apply text-[#FFFFFF];
+  @apply border-[#FFFFFF] text-[#FFFFFFCC];
 }
 
 .border-color {
-  @apply text-[#CDCDCD];
+  @apply border-[#CDCDCD] text-[#7D7D7D];
+}
+
+[data-theme="dark"] .border-color-active {
+  @apply border-[#05F29A] text-[#05F29A];
+}
+
+.border-color-active {
+  @apply border-[#151E22] text-[#151E22];
 }
 
 [data-theme="dark"] .border-color-100 {

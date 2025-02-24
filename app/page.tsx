@@ -50,7 +50,7 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
-        <div className="backgroundImage mt-16 flex h-svh w-full">
+        <div className="backgroundImage  flex h-auto w-full ">
           <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
             <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
               <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
@@ -76,7 +76,11 @@ export default function Dashboard() {
                 Our platform enhances donor confidence and enables NGOs to deliver impactful, transparent campaign
               </motion.p>
 
-              <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+              <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+                <div className="btn-img-element absolute bottom-0 left-0"></div>
+                <div className="btn-img-element-one absolute bottom-2 right-2"></div>
+                Get Started
+              </button>
 
               <img src="/Component 234 (1).png" alt="" className="w-[722px]" />
             </div>
@@ -104,7 +108,11 @@ export default function Dashboard() {
                 trust, and driving meaningful change in communities worldwide
               </p>
               <div>
-                <button className="border-color flex rounded-full border px-5 py-2 text-sm">Get Started</button>
+                <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+                  <div className="btn-img-element absolute bottom-0 left-0"></div>
+                  <div className="btn-img-element-one absolute bottom-2 right-2"></div>
+                  Get Started
+                </button>
               </div>
             </div>
             <img src="/Frame 1618873303.png" className=" w-1/2" alt="" />

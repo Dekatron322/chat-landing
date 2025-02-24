@@ -48,7 +48,8 @@ const FAQsComponent = () => {
   }
 
   return (
-    <div className="flex w-full">
+    <div className="relative flex w-full">
+      <div className="img-element-nineteen absolute left-[-123.21px] top-[175px]"></div>
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10">
           <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
@@ -102,7 +103,7 @@ const FAQsComponent = () => {
               </div>
             ))}
           </div>
-          <div className="primary-100 backgroundImage  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
+          <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
             <img src="/Frame 1618874069.png" alt="" className="h-[69px] w-[162.76px]" />
             <p className="faq-text-header text-xl">Still have questions?</p>
             <p className="faq-text-paragraph max-w-[598px] text-center">

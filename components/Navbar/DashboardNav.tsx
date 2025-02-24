@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useTheme } from "next-themes"
 import React, { useEffect, useState } from "react"
 import WbSunnyIcon from "@mui/icons-material/WbSunny"
-import { GoMoon } from "react-icons/go"
+import { GoArrowRight, GoMoon } from "react-icons/go"
 import { motion, AnimatePresence } from "framer-motion"
 import { CgChevronDown } from "react-icons/cg"
 import ChatsEcosystemListItems from "./ChatsEcosystemListItems"
@@ -93,8 +93,12 @@ const DashboardNav = () => {
                 <DonorDashboard />
               </li>
             </ul>
-            <div className="ro mt-4 h-10 w-full rounded-lg bg-[#05F29A]">
-              <p>xxxx</p>
+            <div className="group relative mt-4 flex h-10 w-full items-center justify-center gap-1 overflow-hidden rounded-lg bg-[#05F29A] text-[#000000] transition-colors duration-300 hover:bg-[#05F29A]/90">
+              <div className="img-elementx absolute bottom-0 left-10"></div>
+              <p className="text-sm">Find the Perfect Solution and Get Onboarded!</p>
+              <div className="relative overflow-hidden">
+                <GoArrowRight className="size-5 transform transition-transform duration-200 group-hover:scale-150" />
+              </div>
             </div>
           </div>
         )
@@ -216,7 +220,11 @@ const DashboardNav = () => {
               )}
             </div>
           </div>
-          <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+          <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+            <div className="btn-img-element absolute bottom-0 left-0"></div>
+            <div className="btn-img-element-one absolute bottom-2 right-2"></div>
+            Get Started
+          </button>
         </div>
       </div>
     </motion.nav>
