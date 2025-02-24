@@ -16,6 +16,7 @@ import Slider from "components/CardComponent/slider"
 import FeaturesDonors from "components/CardComponent/features-donors"
 import Image from "next/image"
 import AllInOne from "components/CardComponent/all-in-one"
+import WhyChats from "components/CardComponent/why-chats"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -123,25 +124,8 @@ export default function Dashboard() {
         </div>
         <Slider />
         <AllInOne />
-
-        {/* <section className="primary-500 relative flex h-[191px] w-full items-center">
-          <div className="img-element-twenty absolute bottom-0 left-10"></div>
-
-          <div className="flex h-full w-full items-center justify-between px-64">
-            <div>
-              <p className=" text-2xl font-bold">
-                Total Number of <span className="text-[#05F29A]">campaigns</span> managed:
-              </p>
-              <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-
-            <div className="img-element-twenty-one"></div>
-          </div>
-        </section> */}
-        <FeaturesDonors />
-
-        <HowItWorks />
-
+        <WhyChats />
+        <TestimonialSection />
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
@@ -150,15 +134,6 @@ export default function Dashboard() {
             <div className="car-img flex h-[117px] w-full items-center "></div>
           </div>
         </section>
-        {/* <CardComponent />
-        <HowBeneficiariesCanRecieve />
-        <section className="paddings mb-10 flex  w-full">
-          <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
-            <div className=" mt-10  ">
-              <img src="/Frame 1618873988.png" alt="" />
-            </div>
-          </div>
-        </section> */}
 
         <FAQsComponent />
       </div>

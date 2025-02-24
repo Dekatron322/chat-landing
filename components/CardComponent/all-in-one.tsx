@@ -11,7 +11,7 @@ const AllInOne = () => {
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 ">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10 xl:px-20">
           <motion.h2
-            className="h-full max-w-[558px] text-center text-4xl font-medium max-sm:text-3xl md:leading-[55px]"
+            className="h-full text-center text-4xl font-medium max-sm:text-3xl md:leading-[55px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 2 }}

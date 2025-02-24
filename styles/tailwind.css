@@ -485,6 +485,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.patternImage {
+  background-image: url("/gov/Vector (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .ngoImage {
   background-image: url("/Frame 1618874120.png");
   background-size: cover;
