@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Link from "next/link"
 import React, { useState } from "react"
 import { CgChevronRight } from "react-icons/cg"
 
@@ -6,7 +7,8 @@ const ForDonorsListItem = () => {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div
+    <Link
+      href="/donors"
       className="nav-items-card relative flex h-full flex-col overflow-hidden p-8"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -56,7 +58,7 @@ const ForDonorsListItem = () => {
           , our platform ensures your support reaches the right hands efficiently and transparently.
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
 

@@ -181,6 +181,14 @@ body {
   color: #7d7d7d;
 }
 
+.paragraph-sm {
+  @apply text-[#0F1419];
+}
+
+[data-theme="dark"] .paragraph-sm {
+  color: #ffffff;
+}
+
 [data-theme="dark"] .paragraph {
   color: #ffffffcc;
 }
@@ -588,6 +596,14 @@ body {
 
 [data-theme="dark"] .primary-200 {
   @apply bg-[#1C2529];
+}
+
+.primary-600 {
+  @apply border-color-100 border bg-transparent;
+}
+
+[data-theme="dark"] .primary-600 {
+  @apply border-none bg-[#1C2529];
 }
 
 [data-theme="dark"] .grey-400 {

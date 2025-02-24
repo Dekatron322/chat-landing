@@ -8,7 +8,7 @@ const ChatsEcosystemListItems = () => {
 
   return (
     <Link
-      href="/for-ngo"
+      href="/ngos"
       className="nav-items-card relative flex h-full flex-col overflow-hidden p-8"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
