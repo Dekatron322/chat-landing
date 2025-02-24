@@ -469,6 +469,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.ngoImage {
+  background-image: url("/Frame 1618874120.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .gridBackground {
   background-image: url("/Grid layers.png");
   background-size: cover;
@@ -565,6 +572,14 @@ body {
 
 [data-theme="dark"] .primary-400 {
   @apply bg-[#1C2529];
+}
+
+.primary-500 {
+  @apply bg-[#F3F3F3];
+}
+
+[data-theme="dark"] .primary-500 {
+  @apply bg-[#151E22];
 }
 
 [data-theme="dark"] .primary-300 {
@@ -826,6 +841,12 @@ body {
   animation: infinite-scroll 5s linear infinite;
 }
 
+.scroll-containers {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 15s linear infinite;
+}
+
 .elliptic-container {
   display: flex;
   gap: 66px;
@@ -892,10 +913,6 @@ body {
 }
 
 /* Images */
-.scroll-container img {
-  width: 374.5px;
-  height: 540px; /* Adjust height as needed */
-}
 
 .img-element-thirtheen {
   background-image: url("/Change-This.png");
@@ -949,6 +966,33 @@ body {
   background-repeat: no-repeat;
   width: 317.78px;
   height: 529.46px;
+}
+
+.img-element-twenty {
+  background-image: url("/Frame 1618874147 copy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 185.75px;
+  height: 100px;
+}
+
+.img-element-twenty-one {
+  background-image: url("/Component 192.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 432px;
+  height: 119.82px;
+}
+
+[data-theme="dark"] .img-element-twenty-one {
+  background-image: url("/Component 241.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 432px;
+  height: 119.82px;
 }
 
 @keyframes scroll-timeline {
