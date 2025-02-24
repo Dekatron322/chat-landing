@@ -9,14 +9,14 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Ibrahim Muritala",
+  title: "Chats",
   description:
-    "Ibrahim Muritala is a multidisciplinary software engineer (frontend heavy) with 5+ years of experience and a degree in physics.",
+    "CHATS transforms the future of humanitarian efforts with verifiable solutions for cash and voucher aid. Our platform enhances donor confidence and enables NGOs to deliver impactful, transparent campaign",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://ibmuri.vercel.app/",
+    url: "https://chat-landing-theta.vercel.app/",
     images: [
       {
         width: 1200,
