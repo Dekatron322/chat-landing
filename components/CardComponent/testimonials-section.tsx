@@ -2,6 +2,8 @@ import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 import React, { useState } from "react"
 import { CgGlobe } from "react-icons/cg"
+import { FaGlobeAmericas } from "react-icons/fa"
+import { PiDotsThreeOutlineFill, PiShareFatThin } from "react-icons/pi"
 
 const TestimonialSection = () => {
   const [activeTab, setActiveTab] = useState(0)
@@ -17,12 +19,13 @@ const TestimonialSection = () => {
                 <Image src="/testimonials/Profile Picture.png" alt="" width={32} height={32} />
                 <div>
                   <p className="text-xs">Johnson Cole</p>
-                  <div className="flex gap-1">
+                  <div className="flex items-center gap-1">
                     <p className="text-[10px]">16h ·</p>
-                    <CgGlobe />
+                    <FaGlobeAmericas className="size-[11px]" />
                   </div>
                 </div>
               </div>
+              <PiShareFatThin />
             </div>
             <p className="mt-4 text-xs">
               I can’t stop talking about how amazing CHATS has been for our campaigns. It’s so easy to use, and it gives
@@ -48,12 +51,13 @@ const TestimonialSection = () => {
                 <Image src="/testimonials/Profile Picture.png" alt="" width={32} height={32} />
                 <div>
                   <p className="text-xs">Johnson Cole</p>
-                  <div className="flex gap-1">
+                  <div className="flex items-center gap-1">
                     <p className="text-[10px]">16h ·</p>
-                    <CgGlobe />
+                    <FaGlobeAmericas className="size-[11px]" />
                   </div>
                 </div>
               </div>
+              <PiShareFatThin />
             </div>
             <p className="mt-4 text-xs">
               I can’t stop talking about how amazing CHATS has been for our campaigns. It’s so easy to use, and it gives
@@ -79,12 +83,13 @@ const TestimonialSection = () => {
                 <Image src="/testimonials/Profile Picture.png" alt="" width={32} height={32} />
                 <div>
                   <p className="text-xs">Johnson Cole</p>
-                  <div className="flex gap-1">
+                  <div className="flex items-center gap-1">
                     <p className="text-[10px]">16h ·</p>
-                    <CgGlobe />
+                    <FaGlobeAmericas className="size-[11px]" />
                   </div>
                 </div>
               </div>
+              <PiShareFatThin />
             </div>
             <p className="mt-4 text-xs">
               I can’t stop talking about how amazing CHATS has been for our campaigns. It’s so easy to use, and it gives
@@ -122,6 +127,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               Been using CHATS for a few months now, and wow—it’s a lifesaver! Managing campaigns is so much smoother,
@@ -155,6 +161,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               Been using CHATS for a few months now, and wow—it’s a lifesaver! Managing campaigns is so much smoother,
@@ -188,6 +195,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               Been using CHATS for a few months now, and wow—it’s a lifesaver! Managing campaigns is so much smoother,
@@ -228,6 +236,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               As a donor, transparency and impact are everything to me, and CHATS delivers on both. The real-time
@@ -246,6 +255,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               As a donor, transparency and impact are everything to me, and CHATS delivers on both. The real-time
@@ -264,6 +274,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
+              <PiDotsThreeOutlineFill />
             </div>
             <p className="mt-4 text-xs">
               As a donor, transparency and impact are everything to me, and CHATS delivers on both. The real-time
