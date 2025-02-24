@@ -64,7 +64,7 @@ export default function Dashboard() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
               >
-                I'm Ibrahim P. Muritala
+                I&lsquo;m Ibrahim P. Muritala
               </motion.h2>
               <motion.p
                 className="clash mt-4 font-normal md:text-lg"
@@ -72,7 +72,7 @@ export default function Dashboard() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                A multidisciplinary designer with a background in finance. I'm proficient in product, icon,
+                A multidisciplinary designer with a background in finance. I&lsquo;m proficient in product, icon,
                 illustration, and interaction design, as well as Framer development (No-code).{" "}
               </motion.p>{" "}
               <motion.p className="clash mt-4 font-normal md:text-lg">
