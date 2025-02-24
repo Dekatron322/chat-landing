@@ -56,11 +56,12 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
-        <div className=" paddings  mt-32 flex  h-auto w-full justify-between">
+        <div className=" paddings  mt-40 flex  h-auto w-full justify-between">
           <div className="  flex  w-full    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
             <div className=" flex w-full flex-col items-start justify-center  gap-4      ">
-              <div className="card flex  gap-2 rounded-md   py-2">
-                <p className="text-sm">Our All-in-One Management Solution</p>
+              <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
+                <img src="/chats transparent 1.png" alt="" className="w-7" />
+                <p className="text-sm">Donor</p>
               </div>
               <motion.h2
                 className="     text-4xl font-medium max-sm:text-3xl md:leading-[50px]"
@@ -89,9 +90,8 @@ export default function Dashboard() {
                 Signup
               </button>
             </div>
-            <div className="donorImage items-cen flex h-[628px] w-full justify-center">
-              <img src="/donors/Graphite.png" alt="" className=" w-[722px]" />
-            </div>
+            <div className="donorImage absolute right-0 top-36 flex h-[628px] w-2/3 justify-center"></div>
+            <img src="/donors/Graphite.png" alt="" className=" z-10 w-[722px]" />
           </div>
         </div>
         <Slider />
