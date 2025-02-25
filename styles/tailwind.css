@@ -430,6 +430,14 @@ body {
   @apply bg-[#F3F3F3] text-[#7D7D7D];
 }
 
+.hero-container2 {
+  @apply bg-[#FFFFFF] text-[#000000];
+}
+
+[data-theme="dark"] .hero-container2 {
+  @apply bg-[#1C2529] text-[#ffffff];
+}
+
 [data-theme="dark"] .hero-container {
   @apply bg-[#1C2529] text-[#ffffff];
 }
@@ -1108,6 +1116,15 @@ body {
   background-repeat: no-repeat;
   width: 151.33px;
   height: 186.8px;
+}
+
+.img-element-twenty-five {
+  background-image: url("/faqs/Vector (10).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 408px;
 }
 
 @keyframes scroll-timeline {
