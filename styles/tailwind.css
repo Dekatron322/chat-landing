@@ -1101,6 +1101,15 @@ body {
   height: 115px;
 }
 
+.img-element-twenty-four {
+  background-image: url("/policy/Vector (9).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 151.33px;
+  height: 186.8px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;

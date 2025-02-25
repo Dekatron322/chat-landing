@@ -35,20 +35,20 @@ const Footer = () => {
               <p className="font-bold xl:text-xl">Quick Link</p>
               <Link
                 href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]"
+                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
               >
                 Home
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Solutions
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 FAQs
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Glossary
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Contact Us
               </Link>
             </div>
@@ -58,17 +58,17 @@ const Footer = () => {
               <p className="font-bold xl:text-xl">Resources</p>
               <Link
                 href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]"
+                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
               >
                 Insight Report
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Blog
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Media Gallery
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Brand Kit
               </Link>
             </div>
@@ -77,18 +77,18 @@ const Footer = () => {
             <div className="flex flex-col gap-4 max-sm:mb-7">
               <p className="font-bold xl:text-xl">Legal</p>
               <Link
-                href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]"
+                href="/privacy-policy"
+                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
               >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Disclaimer
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Terms of Use
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]">
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Cookie Policy
               </Link>
             </div>
@@ -99,7 +99,7 @@ const Footer = () => {
               <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
               <Link
                 href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#FF3B30]"
+                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
               >
                 +123 456 7890
               </Link>
