@@ -59,7 +59,7 @@ const HowItWorks = () => {
                 transition={{ delay: index * 0.3, duration: 0.6 }}
               >
                 <div className="flex flex-col items-center justify-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FFD817] text-2xl font-bold text-black">
+                  <div className="flex size-12  items-center justify-center rounded-full bg-[#FFD817] text-2xl font-bold text-black">
                     {item.number}
                   </div>
 
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                         alt="Step connector"
                         width={19}
                         height={5}
-                        className={`h-auto w-auto ${index === 1 ? " scale-x-[-1] pl-7" : "pl-4"}`}
+                        className={`size-auto  ${index === 1 ? " -scale-x-100 pl-7" : "pl-4"}`}
                       />
                     </div>
                   )}

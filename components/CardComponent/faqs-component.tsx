@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 import React, { useState } from "react"
-import { CgChevronDown, CgChevronRight } from "react-icons/cg"
+import { CgChevronDown } from "react-icons/cg"
 
 const FAQsComponent = () => {
   const [activeIndex, setActiveIndex] = useState(null)
@@ -53,7 +54,7 @@ const FAQsComponent = () => {
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10">
           <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
-            <img src="/chats transparent 1.png" alt="" className="w-7" />
+            <Image width={28} height={28} src="/chats transparent 1.png" alt="" />
             <p className="text-sm"> FAQs</p>
           </div>
           <motion.h2
@@ -104,7 +105,7 @@ const FAQsComponent = () => {
             ))}
           </div>
           <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
-            <img src="/Frame 1618874069.png" alt="" className="h-[69px] w-[162.76px]" />
+            <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
             <p className="faq-text-header text-xl">Still have questions?</p>
             <p className="faq-text-paragraph max-w-[598px] text-center">
               Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions

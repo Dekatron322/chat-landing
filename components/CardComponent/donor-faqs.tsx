@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import React, { useState } from "react"
-import { CgChevronDown, CgChevronRight } from "react-icons/cg"
+import { CgChevronDown } from "react-icons/cg"
 
 const DonorFaqs = () => {
   const [activeIndex, setActiveIndex] = useState(null)
