@@ -690,6 +690,14 @@ body {
   @apply bg-[#151E22] text-[#FFFFFF];
 }
 
+.primary-800 {
+  @apply text-[#151E22];
+}
+
+[data-theme="dark"] .primary-800 {
+  @apply text-[#FFFFFF];
+}
+
 .img-element {
   background-image: url("/Frame 1618874147.png");
   background-size: cover;
@@ -1125,6 +1133,33 @@ body {
   background-repeat: no-repeat;
   width: 350px;
   height: 408px;
+}
+
+.img-element-twenty-six {
+  background-image: url("/brand-kits/Frame 1618874419.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 316px;
+}
+
+[data-theme="dark"] .img-element-twenty-seven {
+  background-image: url("/brand-kits/Vector (12).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 300px;
+}
+
+.img-element-twenty-seven {
+  background-image: url("/brand-kits/Vector (13).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 300px;
 }
 
 @keyframes scroll-timeline {

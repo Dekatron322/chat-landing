@@ -68,7 +68,7 @@ const Footer = () => {
               <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Media Gallery
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+              <Link href="/brand-kits" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Brand Kit
               </Link>
             </div>
