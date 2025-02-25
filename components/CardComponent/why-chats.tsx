@@ -49,9 +49,9 @@ const WhyChats = () => {
 
         <div className="flex h-full w-full items-center justify-center p-6">
           <p className=" max-w-[961px] text-center text-[32px] font-medium text-[#000000]">
-            “The greatest good is often achieved through the simplest means." - This quote emphasises the importance of
-            finding efficient and streamlined solutions in humanitarian work, which is precisely what CHATS aims to
-            provide
+            &quot;The greatest good is often achieved through the simplest means.&quot; - This quote emphasises the
+            importance of finding efficient and streamlined solutions in humanitarian work, which is precisely what
+            CHATS aims to provide
           </p>
         </div>
       </section>
