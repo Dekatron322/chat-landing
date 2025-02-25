@@ -62,8 +62,8 @@ export default function Dashboard() {
                 </div>
                 <p className="text-start text-[45px] font-bold text-[#FFFFFF]">Frequently Asked Question</p>
                 <p className="text-[#FFFFFF]">
-                  We've got answers! Our FAQ section is designed to address common inquiries about CHATS, from platform
-                  features and dashboards to disbursement options and account setup.
+                  We&apos;ve got answers! Our FAQ section is designed to address common inquiries about CHATS, from
+                  platform features and dashboards to disbursement options and account setup.
                 </p>
               </div>
             </div>
