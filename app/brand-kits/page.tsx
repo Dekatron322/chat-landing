@@ -66,7 +66,7 @@ export default function Dashboard() {
                   <span className="primary-800 font-medium">
                     official logos, color palette, typography, and guidelines
                   </span>{" "}
-                  for their use across various media. Whether you're creating presentations, social media posts, or
+                  for their use across various media. Whether you&apos;re creating presentations, social media posts, or
                   marketing materials, the Brand Kit ensures every touchpoint reflects the CHATS identity with clarity
                   and impact.
                 </p>
