@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 
 const Glossary = () => {
   const [selectedLetter, setSelectedLetter] = useState("All")
