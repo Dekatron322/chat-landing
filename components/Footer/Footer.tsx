@@ -33,10 +33,7 @@ const Footer = () => {
             {/* Column 2 */}
             <div className="flex flex-col gap-4 max-sm:mb-7">
               <p className="font-bold xl:text-xl">Quick Link</p>
-              <Link
-                href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
-              >
+              <Link href="/" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Home
               </Link>
               <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
@@ -48,7 +45,7 @@ const Footer = () => {
               <Link href="/glossary" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Glossary
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+              <Link href="/contact-us" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Contact Us
               </Link>
             </div>
@@ -56,10 +53,7 @@ const Footer = () => {
             {/* Column 3 */}
             <div className="flex flex-col gap-4 max-sm:mb-7">
               <p className="font-bold xl:text-xl">Resources</p>
-              <Link
-                href="mailto:contact@smarthavensystems.com"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
-              >
+              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Insight Report
               </Link>
               <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
@@ -98,7 +92,7 @@ const Footer = () => {
               <p className="font-bold">Contact Us</p>
               <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
               <Link
-                href="mailto:contact@smarthavensystems.com"
+                href="tel:+123 456 7890"
                 className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
               >
                 +123 456 7890

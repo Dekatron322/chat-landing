@@ -1,10 +1,18 @@
+import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
 const GetInTouch = () => {
   return (
-    <div className="paddings flex w-full flex-col items-center justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+      whileHover={{ scale: 1.05 }}
+      className="paddings flex w-full flex-col items-center justify-center"
+    >
       <h2 className="mb-[15px] text-5xl">Get in touch with our team</h2>
       <p className="paragraph text-xl">Lets know how we can help you</p>
 
@@ -38,7 +46,7 @@ const GetInTouch = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

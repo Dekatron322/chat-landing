@@ -120,44 +120,52 @@ const DashboardNav = () => {
     >
       <div className="hero-container z-50 flex w-full items-center justify-between rounded-full p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:px-3">
         <div className="flex items-center gap-10">
-          <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
+          <Link href="/">
+            <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
+          </Link>
           <ul className=" flex gap-10">
             {["Chats Ecosystem", "Solutions", "Resource", "Contact Us"].map((item) => (
               <li
                 key={item}
-                className="link-items relative flex items-center gap-2"
+                className="link-items relative flex cursor-pointer items-center gap-2"
                 onMouseEnter={() => handlePopover(item)}
                 onMouseLeave={() => handlePopover(null)}
               >
-                {item}
-                {/* Only show chevron for items with dropdowns */}
-                {(item === "Chats Ecosystem" || item === "Solutions") && (
-                  <motion.div
-                    animate={{
-                      rotate: openPopover === item ? -180 : 0,
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <CgChevronDown />
-                  </motion.div>
-                )}
-
-                {/* Only render dropdown for items with content */}
-                {(item === "Chats Ecosystem" || item === "Solutions") && (
-                  <AnimatePresence>
-                    {openPopover === item && (
+                {item === "Contact Us" ? (
+                  <Link href="/contact-us">{item}</Link>
+                ) : (
+                  <>
+                    {item}
+                    {/* Only show chevron for items with dropdowns */}
+                    {(item === "Chats Ecosystem" || item === "Solutions") && (
                       <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
+                        animate={{
+                          rotate: openPopover === item ? -180 : 0,
+                        }}
                         transition={{ duration: 0.3 }}
-                        className="nav-list-item fixed left-0 right-0 top-full mt-5 shadow-lg dark:bg-gray-800"
-                        style={{ width: "100%" }}
                       >
-                        <div className="container mx-auto p-4">{renderPopoverContent(item)}</div>
+                        <CgChevronDown />
                       </motion.div>
                     )}
-                  </AnimatePresence>
+
+                    {/* Only render dropdown for items with content */}
+                    {(item === "Chats Ecosystem" || item === "Solutions") && (
+                      <AnimatePresence>
+                        {openPopover === item && (
+                          <motion.div
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            className="nav-list-item fixed left-0 right-0 top-full mt-5 cursor-pointer shadow-lg dark:bg-gray-800"
+                            style={{ width: "100%" }}
+                          >
+                            <div className="container mx-auto p-4">{renderPopoverContent(item)}</div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    )}
+                  </>
                 )}
               </li>
             ))}
