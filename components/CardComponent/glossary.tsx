@@ -73,7 +73,7 @@ const Glossary = () => {
       <div className="paragraph border-color-100 mt-20 flex w-full justify-between border-b pb-2">
         <motion.div
           className={`flex w-[40px] cursor-pointer items-center justify-center rounded-md ${
-            selectedLetter === "All" ? "bg-[#151E22] text-[#05F29A]" : "bg-gray-200"
+            selectedLetter === "All" ? "bg-[#151E22] text-[#05F29A]" : "primary-400"
           }`}
           onClick={() => {
             setSelectedLetter("All")

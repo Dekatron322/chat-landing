@@ -1188,6 +1188,15 @@ body {
   height: 148.01px;
 }
 
+.img-element-thirty {
+  background-image: url("/glossary/Vector (15).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 408px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;

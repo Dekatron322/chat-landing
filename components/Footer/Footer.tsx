@@ -45,7 +45,7 @@ const Footer = () => {
               <Link href="/faqs" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 FAQs
               </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+              <Link href="/glossary" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                 Glossary
               </Link>
               <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">

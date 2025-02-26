@@ -57,7 +57,7 @@ export default function Dashboard() {
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
         <div className=" paddings  mt-40 flex  h-auto w-full justify-between">
-          <div className="  flex  w-full    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
+          <div className="  flex w-full items-start    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
             <div className=" flex w-full flex-col items-start justify-center  gap-4      ">
               <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
                 <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -96,20 +96,6 @@ export default function Dashboard() {
         </div>
         <Slider />
 
-        {/* <section className="primary-500 relative flex h-[191px] w-full items-center">
-          <div className="img-element-twenty absolute bottom-0 left-10"></div>
-
-          <div className="flex h-full w-full items-center justify-between px-64">
-            <div>
-              <p className=" text-2xl font-bold">
-                Total Number of <span className="text-[#05F29A]">campaigns</span> managed:
-              </p>
-              <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-
-            <div className="img-element-twenty-one"></div>
-          </div>
-        </section> */}
         <FeaturesDonors />
 
         <HowItWorks />
@@ -123,15 +109,6 @@ export default function Dashboard() {
             <div className="car-img flex h-[117px] w-full items-center "></div>
           </div>
         </section>
-        {/* <CardComponent />
-        <HowBeneficiariesCanRecieve />
-        <section className="paddings mb-10 flex  w-full">
-          <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
-            <div className=" mt-10  ">
-              <img src="/Frame 1618873988.png" alt="" />
-            </div>
-          </div>
-        </section> */}
 
         <FAQsComponent />
       </div>
