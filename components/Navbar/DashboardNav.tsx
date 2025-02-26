@@ -19,17 +19,14 @@ const DashboardNav = () => {
   const [loading, setLoading] = useState(true)
   const [currentTime, setCurrentTime] = useState(new Date())
   const { theme, setTheme, systemTheme } = useTheme()
-  const [mounted, setMounted] = useState(false) // Track if the component has mounted
+  const [mounted, setMounted] = useState(false)
   const isDarkMode = theme === "dark"
   const [openPopover, setOpenPopover] = useState(null)
 
-  // Initialize theme based on system preference
-  // Ensure the component has mounted before rendering
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  // Initialize theme based on system preference
   useEffect(() => {
     if (systemTheme && !mounted) {
       setTheme(systemTheme)

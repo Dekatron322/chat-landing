@@ -221,6 +221,16 @@ const BlogDetails = () => {
             ))}
           </motion.div>
         </div>
+
+        <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
+          <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
+          <p className="faq-text-header text-xl">Still have questions?</p>
+          <p className="faq-text-paragraph max-w-[598px] text-center">
+            Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
+            or concerns, and we&lsquo;ll get back to you promptly
+          </p>
+          <button className="faq-border rounded-md border px-5 py-2 text-sm">Get in touch</button>
+        </div>
       </div>
 
       <Footer />

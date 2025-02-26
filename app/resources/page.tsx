@@ -1,7 +1,7 @@
 "use client"
-
+import { useTheme } from "next-themes"
 import DashboardNav from "components/Navbar/DashboardNav"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion" // Import framer-motion
 import Link from "next/link"
 import Footer from "components/Footer/Footer"
@@ -13,6 +13,7 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Blog"],
+    url: "/resources/blog-detail",
   },
   {
     img: "/resources/Frame 1618874266 (1).png",
@@ -20,6 +21,7 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Insight Reports"],
+    url: "/resources/dive",
   },
   {
     img: "/resources/Frame 1618874266 (2).png",
@@ -27,6 +29,7 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Media Gallery"],
+    url: "/media-gallery",
   },
   {
     img: "/resources/Frame 1618874266 (3).png",
@@ -34,22 +37,39 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Brand Kit"],
+    url: "/",
   },
 ]
 
 export default function Dashboard() {
-  const [activeTab, setActiveTab] = useState("All") // Set "Blog" as the default tab
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme, systemTheme } = useTheme()
+  const isDarkMode = theme === "dark"
+  const [activeTab, setActiveTab] = useState("All")
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (systemTheme && !mounted) {
+      setTheme(systemTheme)
+    }
+  }, [systemTheme, setTheme, mounted])
+
+  const toggleTheme = () => {
+    setTheme(isDarkMode ? "light" : "dark")
+  }
 
   const filteredEntries =
     activeTab === "All" ? blogEntries : blogEntries.filter((entry) => entry.tags.includes(activeTab))
 
-  // Animation variants for the grid container
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, // Delay between children animations
+        staggerChildren: 0.1,
       },
     },
   }
@@ -162,7 +182,8 @@ export default function Dashboard() {
             animate="visible"
           >
             {filteredEntries.map((entry, index) => (
-              <motion.div
+              <motion.a
+                href={entry.url}
                 key={index}
                 className="primary-900 mb-6 overflow-hidden rounded-[10px]"
                 variants={itemVariants}
@@ -178,7 +199,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </motion.div>
         </div>
