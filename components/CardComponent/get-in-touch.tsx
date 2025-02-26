@@ -10,7 +10,6 @@ const GetInTouch = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
-      whileHover={{ scale: 1.05 }}
       className="paddings flex w-full flex-col items-center justify-center"
     >
       <h2 className="mb-[15px] text-5xl">Get in touch with our team</h2>

@@ -51,12 +51,12 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
-        <div className="paddings mt-32 flex h-auto w-full">
-          <div className="primary-200  relative   flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
+        <div className="paddings flex h-auto w-full md:mt-32">
+          <div className="primary-200  relative   w-full overflow-hidden rounded-[15px] p-6 md:flex md:h-[408px]">
             <div className="img-element-twenty-four absolute right-40 top-32"></div>
 
             <div className="flex w-full items-center justify-between">
-              <div className="flex max-w-[831px] flex-col gap-2 pl-20">
+              <div className="flex max-w-[831px] flex-col gap-2 md:pl-20">
                 <p className="text-start text-[45px] font-bold text-[#FFFFFF]">Privacy Policy</p>
                 <p className="text-[#FFFFFF]">
                   Our privacy policy outlines how we collect, use, and safeguard your data, ensuring compliance with
@@ -68,7 +68,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <section className="mb-16 flex flex-col justify-center px-64 pt-20">
+        <section className="mb-16 flex flex-col justify-center pt-20 md:px-64">
           <p className="paragraph pl-8">
             Updated November 28, 2024
             <b className="paragraph-2"> 15 min read</b>

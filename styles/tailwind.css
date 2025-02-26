@@ -706,6 +706,14 @@ body {
   @apply bg-[#1C2529];
 }
 
+.primary-text-900 {
+  @apply text-[#151E22];
+}
+
+[data-theme="dark"] .primary-text-900 {
+  @apply text-[#05F29A];
+}
+
 .img-element {
   background-image: url("/Frame 1618874147.png");
   background-size: cover;
@@ -1197,6 +1205,15 @@ body {
   height: 408px;
 }
 
+.img-element-thirty-one {
+  background-image: url("/resources/Frame 1618874260.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 576px;
+  height: 408px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;
@@ -1469,7 +1486,7 @@ body {
 }
 
 .paddings {
-  @apply px-20 py-6 max-sm:py-2 lg:px-20 xl:px-40 3xl:px-24;
+  @apply px-20 py-6 max-sm:px-3 max-sm:py-2 lg:px-20 xl:px-40 3xl:px-24;
 }
 
 .navbar {
