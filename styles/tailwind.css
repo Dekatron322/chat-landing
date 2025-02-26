@@ -698,6 +698,14 @@ body {
   @apply text-[#FFFFFF];
 }
 
+.primary-900 {
+  @apply bg-[#F8F8F8];
+}
+
+[data-theme="dark"] .primary-900 {
+  @apply bg-[#1C2529];
+}
+
 .img-element {
   background-image: url("/Frame 1618874147.png");
   background-size: cover;
@@ -1160,6 +1168,24 @@ body {
   background-repeat: no-repeat;
   width: 320px;
   height: 300px;
+}
+
+.img-element-twenty-eight {
+  background-image: url("/contact-us/Frame 1618874342.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 576px;
+  height: 408px;
+}
+
+.img-element-twenty-nine {
+  background-image: url("/contact-us/Vector (14).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 295px;
+  height: 148.01px;
 }
 
 @keyframes scroll-timeline {
