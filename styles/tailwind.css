@@ -1214,6 +1214,15 @@ body {
   height: 408px;
 }
 
+.img-element-thirty-two {
+  background-image: url("/resources/Vector (16).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 295px;
+  height: 148.01px;
+}
+
 @keyframes scroll-timeline {
   0% {
     background-position: 100% 0;
@@ -1263,11 +1272,29 @@ body {
   @apply relative cursor-pointer overflow-hidden border border-[#cdcdcd] bg-transparent px-10 py-[10px] text-[#151e22] transition-all duration-200 ease-in-out;
 }
 
+.slide-button2 {
+  @apply relative cursor-pointer overflow-hidden border  bg-[#151e22] px-10 py-[10px] text-[#ffffff] transition-all duration-200 ease-in-out;
+}
+
 [data-theme="dark"] .slide-button {
   @apply relative cursor-pointer overflow-hidden border border-[#ffffff] bg-transparent px-10 py-[10px] text-[#ffffff] transition-all duration-200 ease-in-out;
 }
 
 .slide-button::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%; /* Extend slightly to cover the tilted area */
+  width: 120%; /* Ensure full coverage */
+  height: 0; /* Start with zero height */
+  color: #ffffff;
+  background-color: #1c2529; /* Background color */
+  z-index: -1;
+  transform: skewY(15deg); /* Apply tilt effect */
+  transition: height 0.2s ease-in-out;
+}
+
+.slide-button2::before {
   content: "";
   position: absolute;
   bottom: -50%;
@@ -1300,12 +1327,21 @@ body {
   bottom: -100%; /* Moves upwards fully covering the button */
 }
 
+.slide-button2:hover::before {
+  height: 300%; /* Expand beyond button height */
+  bottom: -100%; /* Moves upwards fully covering the button */
+}
+
 [data-theme="dark"] .slide-button:hover {
   background-color: #05f29a; /* Background color */
   @apply border-[#05f29a]  text-[#151E22] transition-all duration-200 ease-in-out;
 }
 .slide-button:hover {
   @apply bg-[#151E22] text-[#ffffff] transition-all duration-200 ease-in-out;
+}
+
+.slide-button2:hover {
+  @apply bg-[#1c2529] text-[#ffffff] transition-all duration-200 ease-in-out;
 }
 
 [data-theme="dark"] .animate-text {
@@ -1737,4 +1773,76 @@ body {
 
 .delay-300 {
   animation-delay: 0.3s;
+}
+
+.blog-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.meta-info {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.cta-section h2 {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-scrollbar {
+  direction: rtl; /* Move scrollbar to the left */
+}
+
+.custom-scrollbar > * {
+  direction: ltr; /* Reset text direction for content */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff; /* Color of the track */
+  border-radius: 4px;
+}
+
+[data-theme="dark"] .custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff40; /* Color of the track */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #05f29a; /* Color of the scrollbar */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #05f29a; /* Color of the scrollbar on hover */
 }

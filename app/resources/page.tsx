@@ -3,6 +3,8 @@
 import DashboardNav from "components/Navbar/DashboardNav"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion" // Import framer-motion
+import Link from "next/link"
+import Footer from "components/Footer/Footer"
 
 const blogEntries = [
   {
@@ -36,7 +38,7 @@ const blogEntries = [
 ]
 
 export default function Dashboard() {
-  const [activeTab, setActiveTab] = useState("Blog") // Set "Blog" as the default tab
+  const [activeTab, setActiveTab] = useState("All") // Set "Blog" as the default tab
 
   const filteredEntries =
     activeTab === "All" ? blogEntries : blogEntries.filter((entry) => entry.tags.includes(activeTab))
@@ -85,11 +87,14 @@ export default function Dashboard() {
                   voucher aid distribution........
                 </p>
 
-                <button className="slide-button relative mt-2 flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+                <Link
+                  href="/resources/blog-detail"
+                  className="slide-button relative mt-2 flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+                >
                   <div className="btn-img-element absolute bottom-0 left-0"></div>
                   <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                   Continue Reading
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -116,7 +121,7 @@ export default function Dashboard() {
               All
             </div>
             <div
-              className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+              className={`cursor-pointer rounded-full px-5 py-2 ${
                 activeTab === "Blog" ? "bg-[#05F29A] text-[#151E22]" : "border-color border"
               }`}
               onClick={() => setActiveTab("Blog")}
@@ -124,7 +129,7 @@ export default function Dashboard() {
               Blog
             </div>
             <div
-              className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+              className={`cursor-pointer rounded-full px-5 py-2 ${
                 activeTab === "Insight Reports" ? "bg-[#05F29A] text-[#151E22]" : "border-color border"
               }`}
               onClick={() => setActiveTab("Insight Reports")}
@@ -132,7 +137,7 @@ export default function Dashboard() {
               Insight Reports
             </div>
             <div
-              className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+              className={`cursor-pointer rounded-full px-5 py-2 ${
                 activeTab === "Media Gallery" ? "bg-[#05F29A] text-[#151E22]" : "border-color border"
               }`}
               onClick={() => setActiveTab("Media Gallery")}
@@ -140,7 +145,7 @@ export default function Dashboard() {
               Media Gallery
             </div>
             <div
-              className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+              className={`cursor-pointer rounded-full px-5 py-2 ${
                 activeTab === "Brand Kit" ? "bg-[#05F29A] text-[#151E22]" : "border-color border"
               }`}
               onClick={() => setActiveTab("Brand Kit")}
@@ -178,6 +183,7 @@ export default function Dashboard() {
           </motion.div>
         </div>
       </div>
+      <Footer />
     </section>
   )
 }

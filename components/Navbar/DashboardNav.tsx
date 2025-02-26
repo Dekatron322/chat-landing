@@ -133,6 +133,8 @@ const DashboardNav = () => {
               >
                 {item === "Contact Us" ? (
                   <Link href="/contact-us">{item}</Link>
+                ) : item === "Resource" ? (
+                  <Link href="/resources">{item}</Link>
                 ) : (
                   <>
                     {item}
