@@ -29,7 +29,7 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Media Gallery"],
-    url: "/media-gallery",
+    url: "/resources/media-gallery",
   },
   {
     img: "/resources/Frame 1618874266 (3).png",
@@ -37,7 +37,7 @@ const blogEntries = [
     date: "December 27, 2024",
     readTime: "21 mins read",
     tags: ["Brand Kit"],
-    url: "/",
+    url: "/brand-kits",
   },
 ]
 
