@@ -79,9 +79,9 @@ const BlogDetails = () => {
   return (
     <div>
       <DashboardNav />
-      <div className="paddings mt-32">
+      <div className="paddings xl:mt-32">
         <div className="flex w-full justify-center gap-10">
-          <div className="flex w-1/3 flex-col gap-12">
+          <div className="flex w-1/3 flex-col gap-12 max-sm:hidden">
             <div className="primary-900  h-[302px] w-full overflow-hidden rounded-[10px] p-4">
               <h5 className="text-xl font-bold">QUICK LINK</h5>
               <div className="custom-scrollbar mt-6 flex h-[198px] w-full flex-col justify-center gap-7 overflow-y-auto pl-10">
@@ -218,7 +218,7 @@ const BlogDetails = () => {
         <div className="">
           {/* Animated Grid */}
           <motion.div
-            className="mt-16 grid w-full grid-cols-3 gap-11"
+            className="mt-16 grid w-full xl:grid-cols-3 xl:gap-11"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -249,7 +249,7 @@ const BlogDetails = () => {
           <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
 
           <p className="faq-text-header text-xl">Still have questions?</p>
-          <p className="faq-text-paragraph max-w-[598px] text-center">
+          <p className="faq-text-paragraph max-w-[598px] px-4 text-center">
             Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
             or concerns, and we&lsquo;ll get back to you promptly
           </p>

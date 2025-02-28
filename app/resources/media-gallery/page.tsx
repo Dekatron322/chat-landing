@@ -81,8 +81,8 @@ const MediaGallery = () => {
   return (
     <div>
       <DashboardNav />
-      <div className="paddings mt-32">
-        <div className="px-40">
+      <div className="paddings xl:mt-32">
+        <div className="xl:px-40">
           {/* Animated Grid */}
           <div className="w-full">
             <ul className="mb-[23px] flex gap-2">
@@ -92,7 +92,7 @@ const MediaGallery = () => {
                 <span className="primary-text-900">15 min read</span>
               </li>
             </ul>
-            <h2 className="mb-5 w-[476px] text-3xl">Explore Our Visual Stories and Moments</h2>
+            <h2 className="mb-5 text-3xl xl:w-[476px]">Explore Our Visual Stories and Moments</h2>
 
             <div className="content-section">
               <p className="paragraph">
@@ -165,7 +165,7 @@ const MediaGallery = () => {
           <h2 className="mb-10 text-4xl">Read More</h2>
           {/* Animated Grid */}
           <motion.div
-            className="mt-16 grid w-full grid-cols-3 gap-11"
+            className="grid w-full xl:mt-16 xl:grid-cols-3 xl:gap-11"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -196,7 +196,7 @@ const MediaGallery = () => {
           <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
 
           <p className="faq-text-header text-xl">Still have questions?</p>
-          <p className="faq-text-paragraph max-w-[598px] text-center">
+          <p className="faq-text-paragraph max-w-[598px] px-4 text-center">
             Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
             or concerns, and we&lsquo;ll get back to you promptly
           </p>
