@@ -82,23 +82,24 @@ export default function Dashboard() {
 
   return (
     <section className="h-full w-full">
-      <div className="max-sm:w-full max-sm:p-4">
+      <div className="max-sm:w-full ">
         <DashboardNav />
-        <div className="paddings mt-32 flex h-auto w-full">
-          <div className="primary-400 relative flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
-            <div className="img-element-thirty-one absolute left-0 top-0"></div>
+        <div className="paddings relative h-auto w-full max-sm:rounded-xl xl:mt-32 xl:flex">
+          <img src="/resources/Frame 1618874260 (2).png" alt="" className="rounded-t-lg xl:hidden" />
+          <div className="primary-400 relative flex w-full overflow-hidden p-4 max-sm:rounded-b-lg xl:h-[408px] xl:rounded-[15px] xl:p-6">
+            <div className="img-element-thirty-one absolute left-0 top-0 max-sm:hidden"></div>
 
             <div className="flex w-full py-10">
-              <div className="w-[40%]"></div>
-              <div className="flex max-w-[704px] flex-col items-start gap-2 pl-20">
-                <ul className="flex gap-2">
+              <div className="xl:w-[40%]"></div>
+              <div className="flex flex-col items-start gap-2 xl:max-w-[704px] xl:pl-20">
+                <ul className="flex gap-2 max-sm:text-xs">
                   <li>Blog</li>
                   <li className="list-inside list-disc">Published November 28, 2024</li>
                   <li className="list-inside list-disc">
                     <span className="primary-text-900">15 min read</span>
                   </li>
                 </ul>
-                <h2 className="text-start text-[32px] font-medium">
+                <h2 className="text-start text-[32px] font-medium max-sm:text-2xl">
                   How CHATS is Revolutionizing Aid Distribution for Greater Impact
                 </h2>
                 <p className="paragraph">
@@ -129,9 +130,9 @@ export default function Dashboard() {
         </section>
 
         <div className="paddings">
-          <h2 className="text-4xl">Recent Articles</h2>
+          <h2 className="mt-5 text-4xl max-sm:text-2xl">Recent Articles</h2>
 
-          <div className="mt-6 flex gap-2">
+          <div className="mt-6 flex flex-wrap gap-2">
             <div
               className={`cursor-pointer rounded-full px-5 py-2 ${
                 activeTab === "All" ? "bg-[#05F29A] text-[#151E22]" : "border-color border"
@@ -176,7 +177,7 @@ export default function Dashboard() {
 
           {/* Animated Grid */}
           <motion.div
-            className="mt-16 grid w-full grid-cols-3 gap-11"
+            className="mt-16 grid w-full max-sm:gap-2 xl:grid-cols-3 xl:gap-11"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

@@ -8,6 +8,8 @@ import Footer from "components/Footer/Footer"
 import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
 import AboutComponent from "components/CardComponent/about-component"
+import GlobeAnimation from "components/globeAnimation"
+import Flow from "components/flow"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -76,13 +78,13 @@ export default function Dashboard() {
                 Our platform enhances donor confidence and enables NGOs to deliver impactful, transparent campaign
               </motion.p>
 
-              <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+              <button className="slide-button relative my-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm">
                 <div className="btn-img-element absolute bottom-0 left-0"></div>
                 <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                 Get Started
               </button>
 
-              <img src="/Component 234 (1).png" alt="" className="w-[722px]" />
+              <GlobeAnimation />
             </div>
           </div>
         </div>
@@ -220,8 +222,7 @@ export default function Dashboard() {
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
           <div className="flex items-center px-96">
-            <p className="animate-text text-[32px] font-medium">Driving Aid with Innovation and Transparency</p>
-            <div className="car-img flex h-[117px] w-full items-center "></div>
+            <Flow />
           </div>
         </section>
         <CardComponent />

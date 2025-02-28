@@ -51,9 +51,10 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
-        <div className="paddings flex h-auto w-full md:mt-32">
-          <div className="primary-200  relative   w-full overflow-hidden rounded-[15px] p-6 md:flex md:h-[408px]">
-            <div className="img-element-twenty-four absolute right-40 top-32"></div>
+        <div className="paddings flex h-auto w-full  md:mt-32">
+          <div className="primary-200  relative   w-full overflow-hidden rounded-[15px] p-6 max-sm:pb-32 md:flex md:h-[408px]">
+            <div className="img-element-twenty-four absolute right-40 top-32 max-sm:hidden"></div>
+            <div className="img-element-twenty-four absolute bottom-[-80px] left-[-20px] md:hidden"></div>
 
             <div className="flex w-full items-center justify-between">
               <div className="flex max-w-[831px] flex-col gap-2 md:pl-20">

@@ -5,8 +5,8 @@ import React from "react"
 const Footer = () => {
   return (
     <>
-      <section id="contact" className="paddings footer-bg w-full max-sm:px-3 ">
-        <div className="border-color-100 flex w-full border-b py-10">
+      <section id="contact" className="paddings footer-bg w-full ">
+        <div className="border-color-100 flex w-full border-b py-10  max-sm:px-4">
           <div className=" flex w-full justify-between max-sm:grid">
             {/* Column 1 */}
             <div className="flex flex-col gap-3 max-sm:mb-7  xl:max-w-[361px]">

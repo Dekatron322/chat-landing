@@ -51,12 +51,12 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
-        <div className="paddings mt-32 flex h-auto w-full">
+        <div className="paddings flex h-auto w-full xl:mt-32">
           <div className="primary-400  relative   flex h-[423px] w-full overflow-hidden rounded-[15px] p-6">
-            <div className="img-element-twenty-six absolute bottom-10 left-0"></div>
-            <div className="img-element-twenty-seven absolute bottom-10 right-0"></div>
+            <div className="img-element-twenty-six absolute bottom-10 left-0 max-sm:hidden"></div>
+            <div className="img-element-twenty-seven absolute bottom-10 right-0 max-sm:hidden"></div>
 
-            <div className="flex w-full items-center justify-between pl-80">
+            <div className="flex w-full items-center justify-between xl:pl-80">
               <div className=" flex max-w-[834px] flex-col">
                 <p className="text-start text-[32px] font-bold ">CHATS Brand Kit</p>
                 <p className="paragraph">Published November 28, 2024</p>
@@ -77,8 +77,8 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <section className="paddings my-16 flex flex-col justify-center ">
-          <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
+        <section className="paddings flex flex-col justify-center xl:my-16 ">
+          <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px] px-4">
             <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
             <p className="faq-text-header text-xl">Still have questions?</p>
             <p className="faq-text-paragraph max-w-[598px] text-center">
