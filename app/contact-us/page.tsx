@@ -50,21 +50,45 @@ export default function Dashboard() {
 
   return (
     <section className="h-full w-full">
-      <div className="max-sm:w-full max-sm:p-4">
+      <div className="max-sm:w-full ">
         <DashboardNav />
-        <div className="paddings mt-32 flex h-auto w-full">
-          <div className="primary-200 relative flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
-            <div className="img-element-twenty-eight absolute right-0 top-0"></div>
-            <div className="img-element-twenty-nine absolute left-0 top-10"></div>
 
-            <div className="flex w-full flex-col justify-between py-10">
-              <div className="flex max-w-[831px] flex-col gap-2 pl-20">
-                <p className="text-start text-[45px] font-bold text-[#FFFFFF]">How can we help ?</p>
+        <div className="paddings h-auto w-full xl:mt-32 xl:flex">
+          <img src="/contact-us/Frame 1618874342 (1).png" alt="" className=" max-sm:rounded-t-xl xl:hidden" />
+          <div className="primary-200 relative flex w-full overflow-hidden p-6 max-sm:rounded-b-xl xl:h-[408px] xl:rounded-[15px]">
+            <div className="img-element-twenty-eight absolute right-0 top-0 max-sm:hidden"></div>
+            <div className="img-element-twenty-nine absolute left-0 max-sm:bottom-0 xl:top-10"></div>
+
+            <div className="flex w-full flex-col justify-between py-10 xl:pl-20">
+              <div className="flex max-w-[831px] flex-col gap-2 ">
+                <p className="text-start text-[45px] font-bold text-[#FFFFFF] max-sm:text-4xl">How can we help ?</p>
                 <p className="text-[#FFFFFF]">Lets know how we can help you</p>
               </div>
-              <div className="flex gap-2 pl-20">
+              <div className="relative mt-4  max-w-[459px] bg-[#2D3539] ">
+                <input
+                  type="text"
+                  placeholder="Search FAQs..."
+                  className="w-full max-w-[459px] rounded-lg border border-[#CDCDCD4D] bg-transparent py-2 pl-10 pr-4 text-white focus:border-[#4A6B6A] focus:outline-none xl:pl-20"
+                />
+
+                <svg
+                  className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-[#FFFFFF]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+              <div className="flex gap-2 max-sm:mt-6 ">
                 <div
-                  className={`cursor-pointer rounded-full  px-5 py-2 ${
+                  className={`cursor-pointer rounded-full px-5  py-2 max-sm:text-sm ${
                     activeTab === "FAQ" ? "bg-[#05F29A] text-[#151E22]" : "border border-[#FFFFFF80] text-[#FFFFFF]"
                   }`}
                   onClick={() => setActiveTab("FAQ")}
@@ -72,7 +96,7 @@ export default function Dashboard() {
                   FAQ
                 </div>
                 <div
-                  className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+                  className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 max-sm:text-sm ${
                     activeTab === "GLOSSARY"
                       ? "bg-[#05F29A] text-[#151E22]"
                       : "border border-[#FFFFFF80] text-[#FFFFFF]"
@@ -82,7 +106,7 @@ export default function Dashboard() {
                   GLOSSARY
                 </div>
                 <div
-                  className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 ${
+                  className={`cursor-pointer rounded-full border border-[#FFFFFF80] px-5 py-2 max-sm:text-sm ${
                     activeTab === "GET IN TOUCH"
                       ? "bg-[#05F29A] text-[#151E22]"
                       : "border border-[#FFFFFF80] text-[#FFFFFF]"

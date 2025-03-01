@@ -12,10 +12,10 @@ const GetInTouch = () => {
       transition={{ duration: 0.3 }}
       className="paddings flex w-full flex-col items-center justify-center"
     >
-      <h2 className="mb-[15px] text-5xl">Get in touch with our team</h2>
+      <h2 className="mb-[15px] text-5xl max-sm:text-3xl">Get in touch with our team</h2>
       <p className="paragraph text-xl">Lets know how we can help you</p>
 
-      <div className="my-10 grid w-full grid-cols-3 gap-5">
+      <div className="my-10 grid w-full gap-5 max-sm:px-6 xl:grid-cols-3">
         <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-20 py-10">
           <Image src="/contact-us/Frame 1618873473.png" alt="" height={61} width={61} />
           <div>

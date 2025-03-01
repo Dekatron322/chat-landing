@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <section id="contact" className="paddings footer-bg w-full ">
         <div className="border-color-100 flex w-full border-b py-10  ">
-          <div className=" flex w-full justify-between max-sm:grid">
+          <div className=" flex w-full justify-between gap-10 max-sm:grid max-sm:w-full">
             {/* Column 1 */}
             <div className="flex flex-col gap-3 max-sm:mb-7  xl:max-w-[361px]">
               <img src="/chats transparent 1 (1).png" alt="" className="h-[55px] w-[179.08px]" />
@@ -16,7 +16,7 @@ const Footer = () => {
                 distribution.
               </p>
               <p className="paragraph text-sm">Sign up to receive updates, stories, and news</p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 ">
                 <input
                   type="text"
                   id="placement"
@@ -30,84 +30,94 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Column 2 */}
-            <div className="flex flex-col gap-4 max-sm:mb-7">
-              <p className="font-bold xl:text-xl">Quick Link</p>
-              <Link href="/" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Home
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Solutions
-              </Link>
-              <Link href="/faqs" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                FAQs
-              </Link>
-              <Link href="/glossary" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Glossary
-              </Link>
-              <Link href="/contact-us" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Contact Us
-              </Link>
-            </div>
+            <div className="flex w-full justify-between max-sm:grid max-sm:grid-cols-2">
+              {/* Column 2 */}
+              <div className="flex flex-col gap-4 max-sm:mb-7 ">
+                <p className="font-bold xl:text-xl">Quick Link</p>
+                <Link href="/" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Home
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Solutions
+                </Link>
+                <Link href="/faqs" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  FAQs
+                </Link>
+                <Link href="/glossary" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Glossary
+                </Link>
+                <Link
+                  href="/contact-us"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
+                  Contact Us
+                </Link>
+              </div>
 
-            {/* Column 3 */}
-            <div className="flex flex-col gap-4 max-sm:mb-7">
-              <p className="font-bold xl:text-xl">Resources</p>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Insight Report
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Blog
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Media Gallery
-              </Link>
-              <Link href="/brand-kits" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Brand Kit
-              </Link>
-            </div>
+              {/* Column 3 */}
+              <div className="flex flex-col gap-4 max-sm:mb-7">
+                <p className="font-bold xl:text-xl">Resources</p>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Insight Report
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Blog
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Media Gallery
+                </Link>
+                <Link
+                  href="/brand-kits"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
+                  Brand Kit
+                </Link>
+              </div>
 
-            {/* Column 4 */}
-            <div className="flex flex-col gap-4 max-sm:mb-7">
-              <p className="font-bold xl:text-xl">Legal</p>
-              <Link
-                href="/privacy-policy"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
-              >
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Disclaimer
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Terms of Use
-              </Link>
-              <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
-                Cookie Policy
-              </Link>
-            </div>
+              {/* Column 4 */}
+              <div className="flex flex-col gap-4 max-sm:mb-7">
+                <p className="font-bold xl:text-xl">Legal</p>
+                <Link
+                  href="/privacy-policy"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
+                  Privacy Policy
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Disclaimer
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Terms of Use
+                </Link>
+                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                  Cookie Policy
+                </Link>
+              </div>
 
-            {/* Column 5 */}
-            <div className="flex w-[207px] flex-col gap-4 max-sm:mb-7">
-              <p className="font-bold">Contact Us</p>
-              <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
-              <Link
-                href="tel:+123 456 7890"
-                className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
-              >
-                +123 456 7890
-              </Link>
-              <div className="flex w-full gap-[15px]">
-                <img src="/skill-icons_instagram.png" className="h-[23.53px] w-[23.53px]" />
-                <img src="/devicon_linkedin.png" className="h-[23.53px] w-[23.53px]" />
-                <img src="/Frame 1618874081 (1).png" className="h-[23.53px] w-[23.53px]" />
-                <img src="/prime_twitter.png" className="h-[23.53px] w-[23.53px]" />
+              {/* Column 5 */}
+              <div className="flex w-[207px] flex-col gap-4 max-sm:mb-7">
+                <p className="font-bold">Contact Us</p>
+                <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
+                <Link
+                  href="tel:+123 456 7890"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
+                  +123 456 7890
+                </Link>
+                <div className="flex w-full gap-[15px]">
+                  <img src="/skill-icons_instagram.png" className="h-[23.53px] w-[23.53px]" />
+                  <img src="/devicon_linkedin.png" className="h-[23.53px] w-[23.53px]" />
+                  <img src="/Frame 1618874081 (1).png" className="h-[23.53px] w-[23.53px]" />
+                  <img src="/prime_twitter.png" className="h-[23.53px] w-[23.53px]" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex w-full items-center justify-center py-10">
-          <p className="paragraph">© 2024 CHATS Platform. All rights reserved. Privacy Policy | Terms of Service</p>
+        <div className="flex w-full items-center justify-center py-10 ">
+          <p className="paragraph max-sm:text-center">
+            © 2024 CHATS Platform. All rights reserved. Privacy Policy | Terms of Service
+          </p>
         </div>
       </section>
     </>

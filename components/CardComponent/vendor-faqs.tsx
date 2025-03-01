@@ -50,7 +50,7 @@ const VendorFaqs = () => {
   return (
     <div className=" relative flex w-full ">
       <div className=" w-full gap-6 max-md:flex-col max-md:px-0 ">
-        <div className=" flex w-full  items-center justify-between gap-6 max-sm:mt-10">
+        <div className=" flex w-full  items-center justify-between gap-6  max-sm:flex-col">
           <div className="flex flex-col items-start gap-5">
             <motion.h2
               className="h-full max-w-[558px]  text-[32px] font-medium max-sm:text-3xl md:leading-[32.4px]"

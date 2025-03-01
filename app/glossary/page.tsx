@@ -49,14 +49,15 @@ export default function Dashboard() {
 
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full">
         <DashboardNav />
-        <div className="paddings mt-32 flex h-auto w-full">
+        <div className="paddings flex h-auto w-full xl:mt-32">
           <div className="primary-200  relative   flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
-            <div className="img-element-thirty absolute right-0 top-0"></div>
+            <div className="img-element-thirty-four absolute  right-0 top-0 xl:hidden"></div>
+            <div className="img-element-thirty absolute  right-0 top-0 max-sm:hidden"></div>
 
             <div className="flex w-full items-center justify-between">
-              <div className="flex max-w-[831px] flex-col gap-2 pl-20">
+              <div className="flex max-w-[831px] flex-col gap-2 xl:pl-20">
                 <div className="flex max-w-[133px] items-center gap-2 rounded-full bg-[#304342] px-[20px] py-2">
                   <img src="/chats transparent 1.png" alt="" className="w-7" />
                   <p className="text-sm text-white">Glossary</p>
@@ -65,6 +66,28 @@ export default function Dashboard() {
                 <p className="text-[#FFFFFF]">
                   Explore our glossary for clear definitions of key terms and concepts used across the CHATS platform
                 </p>
+                <div className="relative mt-4 max-w-[261.7px] bg-[#2D3539]">
+                  <input
+                    type="text"
+                    placeholder="Search FAQs..."
+                    className="w-full max-w-[400px] rounded-lg border border-[#CDCDCD4D] bg-transparent py-2 pl-10 pr-4 text-white focus:border-[#4A6B6A] focus:outline-none"
+                  />
+
+                  <svg
+                    className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-[#FFFFFF]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>

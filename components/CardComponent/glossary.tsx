@@ -70,7 +70,7 @@ const Glossary = () => {
         </p>
       </div>
 
-      <div className="paragraph border-color-100 mt-20 flex w-full justify-between border-b pb-2">
+      <div className="paragraph border-color-100 mt-20 flex w-full justify-between border-b pb-2 max-sm:mt-10">
         <motion.div
           className={`flex w-[40px] cursor-pointer items-center justify-center rounded-md ${
             selectedLetter === "All" ? "bg-[#151E22] text-[#05F29A]" : "primary-400"
@@ -128,7 +128,7 @@ const Glossary = () => {
         ))}
       </div>
 
-      <div className="terms mt-20 grid w-full grid-cols-3 gap-10">
+      <div className="terms mt-10 grid w-full gap-10 max-sm:gap-4 xl:mt-20 xl:grid-cols-3">
         <AnimatePresence>
           {paginatedItems.map((item) => (
             <motion.div
@@ -138,7 +138,7 @@ const Glossary = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
               whileHover={{ scale: 1.05 }}
-              className="border-color-100 flex h-[216px] flex-col gap-6 rounded-[10px] border p-6"
+              className="border-color-100 flex flex-col gap-6 rounded-[10px] border p-6 xl:h-[216px]"
             >
               <h3 className="text-lg font-medium">{item.title}</h3>
               <p className="paragraph">{item.description}</p>
