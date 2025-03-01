@@ -2,62 +2,20 @@
 import DashboardNav from "components/Navbar/DashboardNav"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import CardComponent from "components/CardComponent/card-component"
-import HowBeneficiariesCanRecieve from "components/CardComponent/how-beneficiaries-can-recieve"
 import Footer from "components/Footer/Footer"
-import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
-import AboutComponent from "components/CardComponent/about-component"
-import Features from "components/CardComponent/features"
-import Seamless from "components/CardComponent/seamless"
 import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import Slider from "components/CardComponent/slider"
 import FeaturesDonors from "components/CardComponent/features-donors"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
-
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between children
-      },
-    },
-  }
-
-  // Child item animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
-
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full">
         <DashboardNav />
-        <div className=" paddings  mt-40 flex  h-auto w-full justify-between">
-          <div className="  flex w-full items-start    gap-24  max-md:flex-col max-md:px-0 md:mb-16">
+        <div className=" paddings  mt-32 flex  h-auto w-full justify-between">
+          <div className="  flex w-full items-start  gap-4  max-md:flex-col  max-md:px-0 xl:gap-24 ">
             <div className=" flex w-full flex-col items-start justify-center  gap-4      ">
               <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
                 <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -90,7 +48,7 @@ export default function Dashboard() {
                 Signup
               </button>
             </div>
-            <div className="donorImage absolute right-0 top-36 flex h-[628px] w-2/3 justify-center"></div>
+            <div className="donorImage absolute right-0 top-36 flex h-[628px] w-2/3 justify-center max-sm:hidden"></div>
             <img src="/donors/Graphite.png" alt="" className=" z-10 w-[722px]" />
           </div>
         </div>
@@ -104,8 +62,10 @@ export default function Dashboard() {
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center px-96">
-            <p className="animate-text text-[32px] font-medium">Driving Aid with Innovation and Transparency</p>
+          <div className="flex h-full items-center xl:px-96">
+            <p className="animate-text text-[32px] font-medium max-sm:hidden">
+              Driving Aid with Innovation and Transparency
+            </p>
             <div className="car-img flex h-[117px] w-full items-center "></div>
           </div>
         </section>

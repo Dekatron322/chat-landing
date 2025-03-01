@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import WbSunnyIcon from "@mui/icons-material/WbSunny"
 import { GoArrowRight, GoMoon } from "react-icons/go"
 import { AnimatePresence, motion } from "framer-motion"
-import { CgChevronDown } from "react-icons/cg"
+import { CgChevronDown, CgMenu } from "react-icons/cg"
 import ChatsEcosystemListItems from "./ChatsEcosystemListItems"
 import ForDonorsListItem from "./ForDonorListItem"
 import ForGovOfficialsListItem from "./ForGovOfficialsListItem"
@@ -22,6 +22,7 @@ const DashboardNav = () => {
   const [mounted, setMounted] = useState(false)
   const isDarkMode = theme === "dark"
   const [openPopover, setOpenPopover] = useState(null)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     setMounted(true)
@@ -35,6 +36,10 @@ const DashboardNav = () => {
 
   const toggleTheme = () => {
     setTheme(isDarkMode ? "light" : "dark")
+  }
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
   if (!mounted) {
@@ -59,7 +64,7 @@ const DashboardNav = () => {
     switch (item) {
       case "Chats Ecosystem":
         return (
-          <ul className="grid grid-cols-4 gap-4">
+          <ul className="grid gap-4 xl:grid-cols-4">
             <li className="py-1">
               <ChatsEcosystemListItems />
             </li>
@@ -77,7 +82,7 @@ const DashboardNav = () => {
       case "Solutions":
         return (
           <div className="flex w-full flex-col">
-            <ul className="grid grid-cols-4 gap-4">
+            <ul className="grid gap-4 xl:grid-cols-4">
               <li className="py-1">
                 <FieldAgentApp />
               </li>
@@ -113,14 +118,24 @@ const DashboardNav = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      className="z-150 paddings fixed left-0 right-0 top-0 z-20 flex justify-center pt-7 backdrop-blur max-sm:hidden"
+      className="z-150 paddings fixed left-0 right-0 top-0 z-20 flex justify-center pt-7 backdrop-blur"
     >
-      <div className="hero-container z-50 flex w-full items-center justify-between rounded-full p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:px-3">
-        <div className="flex items-center gap-10">
+      <div className="hero-container z-50 flex w-full items-center justify-between p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:rounded-xl max-sm:px-3 xl:rounded-full">
+        <div className="flex items-center gap-10 max-sm:w-full max-sm:justify-between">
           <Link href="/">
             <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
           </Link>
-          <ul className=" flex gap-10">
+          <button className="sm:hidden" onClick={toggleMobileMenu}>
+            <CgMenu className="h-6 w-6" />
+          </button>
+        </div>
+
+        <div
+          className={`flex items-center gap-10 max-sm:w-full max-sm:flex-col max-sm:items-start ${
+            isMobileMenuOpen ? "max-sm:flex" : "max-sm:hidden"
+          }`}
+        >
+          <ul className="flex gap-10 max-sm:flex-col max-sm:gap-4">
             {["Chats Ecosystem", "Solutions", "Resource", "Contact Us"].map((item) => (
               <li
                 key={item}
@@ -135,7 +150,6 @@ const DashboardNav = () => {
                 ) : (
                   <>
                     {item}
-                    {/* Only show chevron for items with dropdowns */}
                     {(item === "Chats Ecosystem" || item === "Solutions") && (
                       <motion.div
                         animate={{
@@ -147,7 +161,6 @@ const DashboardNav = () => {
                       </motion.div>
                     )}
 
-                    {/* Only render dropdown for items with content */}
                     {(item === "Chats Ecosystem" || item === "Solutions") && (
                       <AnimatePresence>
                         {openPopover === item && (
@@ -169,73 +182,70 @@ const DashboardNav = () => {
               </li>
             ))}
           </ul>
-        </div>
 
-        <div className="flex items-center gap-5 max-sm:w-full max-sm:justify-between">
-          <div
-            className="containerbg flex w-full cursor-pointer items-center justify-between gap-2 rounded-full p-1 transition duration-300"
-            onClick={toggleTheme}
-            style={{
-              position: "relative",
-              width: "80px",
-              height: "35.43px",
-              borderRadius: "25px",
-              backgroundColor: isDarkMode ? "#151E22" : "#ffffff", // Optional: Add background color for better visibility
-            }}
-          >
-            {/* Light Mode Icon (Sun) */}
+          <div className="flex items-center gap-5 max-sm:w-full max-sm:justify-between">
             <div
+              className="containerbg flex w-full cursor-pointer items-center justify-between gap-2 rounded-full p-1 transition duration-300"
+              onClick={toggleTheme}
               style={{
-                position: "absolute",
-                left: "8px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                position: "relative",
+                width: "80px",
+                height: "35.43px",
+                borderRadius: "25px",
+                backgroundColor: isDarkMode ? "#151E22" : "#ffffff",
               }}
             >
-              <img src="/Frame 45114.png" alt="Light Mode" style={{ width: "30px", height: "30px" }} />
-            </div>
+              <div
+                style={{
+                  position: "absolute",
+                  left: "8px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src="/Frame 45114.png" alt="Light Mode" style={{ width: "30px", height: "30px" }} />
+              </div>
 
-            {/* Dark Mode Icon (Moon) */}
-            <div
-              style={{
-                position: "absolute",
-                right: "8px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img src="/Frame 45113 (1).png" alt="Dark Mode" style={{ width: "30px", height: "30px" }} />
-            </div>
+              <div
+                style={{
+                  position: "absolute",
+                  right: "8px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src="/Frame 45113 (1).png" alt="Dark Mode" style={{ width: "30px", height: "30px" }} />
+              </div>
 
-            {/* Toggle Thumb */}
-            <div
-              style={{
-                position: "absolute",
-                left: isDarkMode ? "calc(100% - 35px)" : "2px",
-                width: "30px",
-                height: "30px",
-                borderRadius: "50%",
-                backgroundColor: isDarkMode ? "#000" : "#ffffff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                transition: "left 0.5s ease",
-              }}
-            >
-              {isDarkMode ? (
-                <img src="/Frame 45113.png" alt="" style={{ color: "#000", fontSize: "24px" }} />
-              ) : (
-                <img src="/Frame 45112.png" style={{ color: "#fff", fontSize: "24px" }} alt="" />
-              )}
+              <div
+                style={{
+                  position: "absolute",
+                  left: isDarkMode ? "calc(100% - 35px)" : "2px",
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: isDarkMode ? "#000" : "#ffffff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "left 0.5s ease",
+                }}
+              >
+                {isDarkMode ? (
+                  <img src="/Frame 45113.png" alt="" style={{ color: "#000", fontSize: "24px" }} />
+                ) : (
+                  <img src="/Frame 45112.png" style={{ color: "#fff", fontSize: "24px" }} alt="" />
+                )}
+              </div>
             </div>
+            <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+              <div className="btn-img-element absolute bottom-0 left-0"></div>
+              <div className="btn-img-element-one absolute bottom-2 right-2"></div>
+              Get Started
+            </button>
           </div>
-          <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
-            <div className="btn-img-element absolute bottom-0 left-0"></div>
-            <div className="btn-img-element-one absolute bottom-2 right-2"></div>
-            Get Started
-          </button>
         </div>
       </div>
     </motion.nav>

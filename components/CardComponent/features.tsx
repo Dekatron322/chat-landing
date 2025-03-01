@@ -18,20 +18,22 @@ const Features = () => {
           Everything You’re Looking For to Manage Campaigns, Track Progress, and Drive Real Impact
         </motion.h2>
 
-        <div className="grid w-full grid-cols-2 gap-10">
+        <div className="grid w-full gap-10 xl:grid-cols-2">
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px]">
-              <img src="/Frame 1618874149.png" alt="" className="max-h-[306px] max-w-[560px]" />
+            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+              <img src="/Frame 1618874149.png" alt="" className="max-h-[306px] max-sm:hidden xl:max-w-[560px]" />
+              <img src="/Frame 1618874149 (7).png" className="max-w-[340.39px] xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Campaign Management Dashboard</h2>
-            <p className="paragraph max-w-[529px]">
+            <p className="paragraph xl:max-w-[529px]">
               Effortlessly plan, organize, and oversee your campaigns from start to finish. CHATS gives you full control
               and visibility into every aspect of your humanitarian initiatives
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px]">
-              <img src="/Frame 1618874149 (1).png" alt="" className="max-h-[306px] max-w-[560px]" />
+            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+              <img src="/Frame 1618874149 (1).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
+              <img src="/Frame 1618874149 (8).png" className="max-w-[340.39px] xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Beneficiary Verification</h2>
             <p className="paragraph max-w-[529px]">
@@ -41,8 +43,9 @@ const Features = () => {
           </div>
 
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px]">
-              <img src="/Frame 1618874149 (2).png" alt="" className="max-h-[306px] max-w-[560px]" />
+            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+              <img src="/Frame 1618874149 (2).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
+              <img src="/Frame 1618874149 (9).png" className="max-w-[340.39px] xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Vendor Transactions Overview</h2>
             <p className="paragraph max-w-[629px]">
@@ -51,8 +54,9 @@ const Features = () => {
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px]">
-              <img src="/Frame 1618874149 (3).png" alt="" className="max-h-[306px] max-w-[560px]" />
+            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+              <img src="/Frame 1618874149 (3).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
+              <img src="/Frame 1618874149 (10).png" className="max-w-[340.39px] xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Donor Reporting</h2>
             <p className="paragraph max-w-[529px]">

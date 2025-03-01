@@ -49,7 +49,7 @@ const FAQsComponent = () => {
   }
 
   return (
-    <div className="relative flex w-full">
+    <div className="relative flex w-full max-sm:px-4">
       <div className="img-element-nineteen absolute left-[-123.21px] top-[175px]"></div>
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10">
@@ -65,7 +65,7 @@ const FAQsComponent = () => {
           >
             Frequently Asked Questions
           </motion.h2>
-          <p className="paragraph max-w-[662px]">
+          <p className="paragraph max-w-[662px] max-sm:text-center">
             Have questions about CHATS? We’ve got you covered. Browse our frequently asked questions to find quick,
             clear answers about our platform, processes, and how you can get involved.
           </p>
@@ -107,7 +107,7 @@ const FAQsComponent = () => {
           <div className="primary-100 gridBackground  flex h-[371px] w-full flex-col items-center justify-center gap-4 rounded-[20px]">
             <Image src="/Frame 1618874069.png" alt=" " width={162.76} height={69} />
             <p className="faq-text-header text-xl">Still have questions?</p>
-            <p className="faq-text-paragraph max-w-[598px] text-center">
+            <p className="faq-text-paragraph max-w-[598px] text-center max-sm:px-4">
               Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
               or concerns, and we&lsquo;ll get back to you promptly
             </p>

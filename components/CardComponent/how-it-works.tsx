@@ -31,8 +31,8 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-2">
-          <Image src="/how-it-works/Frame 1618874171.png" alt="" width={618} height={829} />
+        <div className="mt-20 grid xl:grid-cols-2">
+          <Image src="/how-it-works/Frame 1618874171.png" alt="" width={618} height={829} className="max-sm:hidden" />
           <div className="relative flex flex-col gap-10">
             {[
               {
@@ -64,7 +64,7 @@ const HowItWorks = () => {
                   </div>
 
                   {index !== arr.length - 1 && (
-                    <div className="-mb-7 mt-2">
+                    <div className="-mb-7 mt-2 ">
                       <Image
                         src={theme === "dark" ? "/how-it-works/Vector 456 (1).png" : "/how-it-works/Vector 456.png"}
                         alt="Step connector"

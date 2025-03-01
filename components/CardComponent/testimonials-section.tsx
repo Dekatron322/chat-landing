@@ -12,7 +12,7 @@ const TestimonialSection = () => {
     {
       title: "Facebook Users",
       content: (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid gap-4 xl:grid-cols-3">
           <div className="primary-600 relative flex w-full flex-col rounded-[5px] p-4">
             <div className="flex w-full items-center justify-between">
               <div className="flex items-center gap-2">
@@ -115,7 +115,7 @@ const TestimonialSection = () => {
     {
       title: "X Users",
       content: (
-        <div className="paragraph-sm grid grid-cols-3 gap-4">
+        <div className="paragraph-sm grid grid-cols-3 gap-4 ">
           <div className="primary-600 relative flex w-full flex-col rounded-[5px] p-4">
             <div className="flex w-full items-center justify-between">
               <div className="flex items-center gap-2">
@@ -288,7 +288,7 @@ const TestimonialSection = () => {
   ]
 
   return (
-    <div className="flex w-full">
+    <div className="flex w-full px-4">
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 ">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10 xl:px-20">
           <motion.h2
@@ -307,7 +307,7 @@ const TestimonialSection = () => {
             {tabs.map((tab, index) => (
               <button
                 key={index}
-                className={`border-color rounded-full border px-5 py-2 text-sm ${
+                className={`border-color rounded-full border px-3 py-2 text-sm xl:px-5 ${
                   activeTab === index ? "border-color-active" : ""
                 }`}
                 onClick={() => setActiveTab(index)}
@@ -317,12 +317,12 @@ const TestimonialSection = () => {
             ))}
           </div>
 
-          <div className="relative mt-6 w-full" style={{ height: "350px" }}>
+          <div className="relative mt-6  w-full">
             <AnimatePresence>
               {tabs.map((tab, index) => (
                 <motion.div
                   key={index}
-                  className={`absolute left-0 top-0 w-full ${index === activeTab ? "z-10" : "z-0"}`}
+                  className={` w-full ${index === activeTab ? "z-10" : "z-0"}`}
                   initial={{ y: index === activeTab ? 0 : 20, opacity: index === activeTab ? 1 : 0 }}
                   animate={{ y: index === activeTab ? 0 : 20, opacity: index === activeTab ? 1 : 0 }}
                   exit={{ y: -20, opacity: 0 }}

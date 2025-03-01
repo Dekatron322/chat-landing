@@ -1,38 +1,30 @@
 "use client"
 import DashboardNav from "components/Navbar/DashboardNav"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import CardComponent from "components/CardComponent/card-component"
-import HowBeneficiariesCanRecieve from "components/CardComponent/how-beneficiaries-can-recieve"
 import Footer from "components/Footer/Footer"
-import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
-import AboutComponent from "components/CardComponent/about-component"
 import Features from "components/CardComponent/features"
 import Seamless from "components/CardComponent/seamless"
 import HowItWorks from "components/CardComponent/how-it-works"
+
 import TestimonialSection from "components/CardComponent/testimonials-section"
+import { useTheme } from "next-themes"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
+  const { theme, setTheme, systemTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const isDarkMode = theme === "dark"
 
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
+  useEffect(() => {
+    if (systemTheme && !mounted) {
+      setTheme(systemTheme)
+    }
+  }, [systemTheme, setTheme, mounted])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -52,7 +44,7 @@ export default function Dashboard() {
 
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full">
         <DashboardNav />
         <div className=" paddings mt-16  flex h-auto w-full">
           <div className="   ngoImage w-full  gap-6  rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
@@ -90,18 +82,24 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <section className="primary-500 relative flex h-[191px] w-full items-center">
-          <div className="img-element-twenty absolute bottom-0 left-10"></div>
+        <section className="primary-500 relative flex w-full items-center xl:h-[191px]">
+          <div className="img-element-twenty absolute bottom-0 left-10 max-sm:hidden"></div>
 
-          <div className="flex h-full w-full items-center justify-between px-64">
+          <div className="flex h-full w-full items-center justify-between max-sm:flex-col max-sm:p-4 xl:px-64">
             <div>
-              <p className=" text-2xl font-bold">
+              <p className=" text-2xl font-bold max-sm:text-lg">
                 Total Number of <span className="text-[#05F29A]">campaigns</span> managed:
               </p>
               <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
 
-            <div className="img-element-twenty-one"></div>
+            {isDarkMode ? (
+              <img src="/Component 241.png" alt="" className="mt-4 xl:hidden" />
+            ) : (
+              <img src="/Component 192.png" alt="" className="mt-4 xl:hidden" />
+            )}
+
+            <div className="img-element-twenty-one max-sm:hidden"></div>
           </div>
         </section>
         <Features />
@@ -112,8 +110,10 @@ export default function Dashboard() {
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center px-96">
-            <p className="animate-text text-[32px] font-medium">Driving Aid with Innovation and Transparency</p>
+          <div className="xl;px-96 flex h-full items-center">
+            <p className="animate-text text-[32px] font-medium max-sm:hidden">
+              Driving Aid with Innovation and Transparency
+            </p>
             <div className="car-img flex h-[117px] w-full items-center "></div>
           </div>
         </section>
