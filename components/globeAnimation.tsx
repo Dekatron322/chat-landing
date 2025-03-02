@@ -1,6 +1,8 @@
-import React from "react"
-import Lottie from "lottie-react"
 import dynamic from "next/dynamic"
+import React from "react"
+
+// Dynamically import the Lottie component with SSR disabled
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false })
 
 const GlobeAnimation = () => {
   const animationData = require("../public/Globe (1).json")
