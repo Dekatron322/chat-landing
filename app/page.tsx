@@ -47,7 +47,7 @@ export default function Dashboard() {
                 Get Started
               </button>
 
-              <GlobeAnimation />
+              {/* <GlobeAnimation /> */}
             </div>
           </div>
         </div>
