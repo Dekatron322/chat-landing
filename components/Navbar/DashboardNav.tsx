@@ -38,22 +38,8 @@ const DashboardNav = () => {
     setTheme(isDarkMode ? "light" : "dark")
   }
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
-
   if (!mounted) {
     return null
-  }
-
-  const formatTime = (date: Date) => {
-    return date.toLocaleTimeString("en-NG", {
-      timeZone: "Africa/Lagos",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-    })
   }
 
   const handlePopover = (item: any) => {
@@ -122,10 +108,10 @@ const DashboardNav = () => {
     >
       <div className="hero-container z-50 flex w-full items-center justify-between p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:rounded-xl max-sm:px-3 xl:rounded-full">
         <div className="flex items-center gap-10 max-sm:w-full max-sm:justify-between">
-          <Link href="/">
+          <Link href="#">
             <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
           </Link>
-          <button className="sm:hidden" onClick={toggleMobileMenu}>
+          <button className="sm:hidden">
             <CgMenu className="h-6 w-6" />
           </button>
         </div>
