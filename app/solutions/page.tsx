@@ -174,7 +174,7 @@ export default function Dashboard() {
               </div>
               <div className="primary-300 relative h-full w-full overflow-auto rounded-[10px] max-sm:h-[507px] max-sm:bg-[#05F29A]">
                 <div className="img-element-seventeen absolute bottom-0 left-10 max-sm:hidden"></div>
-                <div className="img-element-seventeen-sm absolute bottom-0 left-20 xl:hidden"></div>
+                <div className="img-element-seventeen-sm absolute bottom-0 left-20 max-sm:hidden xl:hidden"></div>
                 <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                   <div className="max-sm:hidden"></div>
                   <div className="flex  flex-col gap-4 max-sm:w-full ">
@@ -197,7 +197,7 @@ export default function Dashboard() {
           </div>
           <div className="primary-400 relative mt-10 flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
             <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
-            <div className="img-element-fifteen-sm absolute bottom-0 left-20"></div>
+            <div className="img-element-fifteen-sm absolute bottom-0 left-20 xl:hidden"></div>
             <div className="img-element-twenty-two absolute bottom-0 left-0"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
             <div className="flex w-full justify-between xl:items-center">
