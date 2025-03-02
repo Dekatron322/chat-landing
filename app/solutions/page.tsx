@@ -4,12 +4,14 @@ import { motion } from "framer-motion"
 import Footer from "components/Footer/Footer"
 import FAQsComponent from "components/CardComponent/faqs-component"
 import Image from "next/image"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full ">
         <DashboardNav />
+        <MobileNav />
         <div className="paddings mt-32 flex h-auto w-full">
           <div className="solutionImage relative h-[590px] w-full gap-6 rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
             {/* Floating Buttons */}

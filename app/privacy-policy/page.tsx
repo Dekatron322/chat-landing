@@ -9,6 +9,7 @@ import Seamless from "components/CardComponent/seamless"
 import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import Image from "next/image"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -51,6 +52,7 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
         <DashboardNav />
+        <MobileNav />
         <div className="paddings flex h-auto w-full  md:mt-32">
           <div className="primary-200  relative   w-full overflow-hidden rounded-[15px] p-6 max-sm:pb-32 md:flex md:h-[408px]">
             <div className="img-element-twenty-four absolute right-40 top-32 max-sm:hidden"></div>

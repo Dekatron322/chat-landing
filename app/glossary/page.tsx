@@ -9,6 +9,7 @@ import DonorFaqs from "components/CardComponent/donor-faqs"
 import VendorFaqs from "components/CardComponent/vendor-faqs"
 import BeneficiaryFaqs from "components/CardComponent/beneficiary-faqs"
 import Glossary from "components/CardComponent/glossary"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -51,6 +52,7 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full">
         <DashboardNav />
+        <MobileNav />
         <div className="paddings flex h-auto w-full xl:mt-32">
           <div className="primary-200  relative   flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
             <div className="img-element-thirty-four absolute  right-0 top-0 xl:hidden"></div>

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion" // Import framer-motion
 import Link from "next/link"
 import Footer from "components/Footer/Footer"
+import MobileNav from "components/Navbar/MobileNav"
 
 const blogEntries = [
   {
@@ -84,6 +85,7 @@ export default function Dashboard() {
     <section className="h-full w-full">
       <div className="max-sm:w-full ">
         <DashboardNav />
+        <MobileNav />
         <div className="paddings relative h-auto w-full max-sm:rounded-xl xl:mt-32 xl:flex">
           <img src="/resources/Frame 1618874260 (2).png" alt="" className="rounded-t-lg xl:hidden" />
           <div className="primary-400 relative flex w-full overflow-hidden p-4 max-sm:rounded-b-lg xl:h-[408px] xl:rounded-[15px] xl:p-6">

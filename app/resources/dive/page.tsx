@@ -5,6 +5,7 @@ import DashboardNav from "components/Navbar/DashboardNav"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
+import MobileNav from "components/Navbar/MobileNav"
 
 const blogEntries = [
   {
@@ -79,6 +80,7 @@ const BlogDetails = () => {
   return (
     <div>
       <DashboardNav />
+      <MobileNav />
       <div className="paddings xl:mt-32">
         <div className="flex w-full justify-center gap-10">
           <div className="flex w-1/3 flex-col gap-12 max-sm:hidden">
