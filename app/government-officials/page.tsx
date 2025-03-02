@@ -1,63 +1,20 @@
 "use client"
 import DashboardNav from "components/Navbar/DashboardNav"
-import { useState } from "react"
 import { motion } from "framer-motion"
-import CardComponent from "components/CardComponent/card-component"
-import HowBeneficiariesCanRecieve from "components/CardComponent/how-beneficiaries-can-recieve"
 import Footer from "components/Footer/Footer"
-import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
-import AboutComponent from "components/CardComponent/about-component"
-import Features from "components/CardComponent/features"
-import Seamless from "components/CardComponent/seamless"
-import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import Slider from "components/CardComponent/slider"
-import FeaturesDonors from "components/CardComponent/features-donors"
 import Image from "next/image"
 import AllInOne from "components/CardComponent/all-in-one"
 import WhyChats from "components/CardComponent/why-chats"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
-
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between children
-      },
-    },
-  }
-
-  // Child item animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
-
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full ">
+        <MobileNav />
         <DashboardNav />
         <div className="paddings mt-24 flex h-auto w-full justify-between max-sm:mb-10 xl:mt-32">
           <div className="flex w-full max-md:flex-col max-md:px-0 max-sm:gap-4 md:mb-16 xl:gap-24">

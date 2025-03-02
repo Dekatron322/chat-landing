@@ -15,7 +15,7 @@ import BeneficiaryApp from "./BeneficiaryApp"
 import DonorDashboard from "./DonorDashboard"
 import Link from "next/link"
 
-const DashboardNav = () => {
+const MobileNav = () => {
   const [loading, setLoading] = useState(true)
   const [currentTime, setCurrentTime] = useState(new Date())
   const { theme, setTheme, systemTheme } = useTheme()
@@ -44,16 +44,6 @@ const DashboardNav = () => {
 
   if (!mounted) {
     return null
-  }
-
-  const formatTime = (date: Date) => {
-    return date.toLocaleTimeString("en-NG", {
-      timeZone: "Africa/Lagos",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-    })
   }
 
   const handlePopover = (item: any) => {
@@ -118,10 +108,10 @@ const DashboardNav = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      className="z-150 paddings fixed left-0 right-0 top-0 z-20 flex justify-center pt-7 backdrop-blur max-sm:hidden"
+      className="z-150 paddings fixed left-0 right-0 top-0 z-20 flex justify-center pt-7 backdrop-blur md:hidden"
     >
       <div className="hero-container z-50 flex w-full items-center justify-between p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:rounded-xl max-sm:px-3 xl:rounded-full">
-        <div className="flex items-center gap-10 max-sm:w-full max-sm:justify-between">
+        <div className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between bg-white p-4 dark:bg-gray-800">
           <Link href="/">
             <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
           </Link>
@@ -131,59 +121,61 @@ const DashboardNav = () => {
         </div>
 
         <div
-          className={`flex items-center gap-10 max-sm:w-full max-sm:flex-col max-sm:items-start ${
-            isMobileMenuOpen ? "max-sm:flex" : "max-sm:hidden"
+          className={`fixed left-0 right-0 top-16 z-40 bg-white transition-transform duration-300 dark:bg-gray-800 ${
+            isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
-          <ul className="flex gap-10 max-sm:flex-col max-sm:gap-4">
+          <ul className="flex flex-col gap-4 p-4">
             {["Chats Ecosystem", "Solutions", "Resource", "Contact Us"].map((item) => (
               <li
                 key={item}
-                className="link-items relative flex cursor-pointer items-center gap-2"
-                onMouseEnter={() => handlePopover(item)}
-                onMouseLeave={() => handlePopover(null)}
+                className="link-items relative flex cursor-pointer flex-col items-start gap-2"
+                onClick={() => handlePopover(item)}
               >
-                {item === "Contact Us" ? (
-                  <Link href="/contact-us">{item}</Link>
-                ) : item === "Resource" ? (
-                  <Link href="/resources">{item}</Link>
-                ) : (
-                  <>
-                    {item}
-                    {(item === "Chats Ecosystem" || item === "Solutions") && (
+                <div className="flex w-full items-center justify-between">
+                  {item === "Contact Us" ? (
+                    <Link href="/contact-us">{item}</Link>
+                  ) : item === "Resource" ? (
+                    <Link href="/resources">{item}</Link>
+                  ) : (
+                    <span>{item}</span>
+                  )}
+                  {(item === "Chats Ecosystem" || item === "Solutions") && (
+                    <motion.div
+                      animate={{
+                        rotate: openPopover === item ? -180 : 0,
+                      }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <CgChevronDown />
+                    </motion.div>
+                  )}
+                </div>
+
+                {(item === "Chats Ecosystem" || item === "Solutions") && (
+                  <AnimatePresence>
+                    {openPopover === item && (
                       <motion.div
-                        animate={{
-                          rotate: openPopover === item ? -180 : 0,
-                        }}
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
+                        className="w-full overflow-hidden"
                       >
-                        <CgChevronDown />
+                        <div
+                          className="mt-2 max-h-[300px] overflow-y-auto" // Fixed height and scroll
+                        >
+                          {renderPopoverContent(item)}
+                        </div>
                       </motion.div>
                     )}
-
-                    {(item === "Chats Ecosystem" || item === "Solutions") && (
-                      <AnimatePresence>
-                        {openPopover === item && (
-                          <motion.div
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -20 }}
-                            transition={{ duration: 0.3 }}
-                            className="nav-list-item fixed left-0 right-0 top-full mt-5 cursor-pointer shadow-lg dark:bg-gray-800"
-                            style={{ width: "100%" }}
-                          >
-                            <div className="container mx-auto p-4">{renderPopoverContent(item)}</div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    )}
-                  </>
+                  </AnimatePresence>
                 )}
               </li>
             ))}
           </ul>
 
-          <div className="flex items-center gap-5 max-sm:w-full max-sm:justify-between">
+          <div className="flex items-center gap-5 p-4">
             <div
               className="containerbg flex w-full cursor-pointer items-center justify-between gap-2 rounded-full p-1 transition duration-300"
               onClick={toggleTheme}
@@ -252,4 +244,4 @@ const DashboardNav = () => {
   )
 }
 
-export default DashboardNav
+export default MobileNav

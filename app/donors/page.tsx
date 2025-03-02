@@ -8,12 +8,14 @@ import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import Slider from "components/CardComponent/slider"
 import FeaturesDonors from "components/CardComponent/features-donors"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full">
         <DashboardNav />
+        <MobileNav />
         <div className=" paddings  mt-32 flex  h-auto w-full justify-between">
           <div className="  flex w-full items-start  gap-4  max-md:flex-col  max-md:px-0 xl:gap-24 ">
             <div className=" flex w-full flex-col items-start justify-center  gap-4      ">

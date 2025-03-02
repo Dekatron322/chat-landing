@@ -9,12 +9,15 @@ import FAQsComponent from "components/CardComponent/faqs-component"
 import AboutComponent from "components/CardComponent/about-component"
 import GlobeAnimation from "components/globeAnimation"
 import Flow from "components/flow"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   return (
     <section className="h-full w-full">
       <div className="max-sm:w-full">
         <DashboardNav />
+        <MobileNav />
+
         <div className="backgroundImage mt-16  flex h-auto w-full ">
           <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
             <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
@@ -32,7 +35,7 @@ export default function Dashboard() {
               </motion.h2>
 
               <motion.p
-                className="paragraph mt-2 max-w-[592px] text-center text-base font-normal"
+                className="paragraph mt-2 text-center text-base font-normal xl:max-w-[592px]"
                 transition={{ ease: "easeIn", duration: 2 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}

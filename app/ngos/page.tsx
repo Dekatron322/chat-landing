@@ -10,6 +10,7 @@ import HowItWorks from "components/CardComponent/how-it-works"
 
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import { useTheme } from "next-themes"
+import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
   const { theme, setTheme, systemTheme } = useTheme()
@@ -46,6 +47,7 @@ export default function Dashboard() {
     <section className="   h-full w-full">
       <div className="   max-sm:w-full">
         <DashboardNav />
+        <MobileNav />
         <div className=" paddings mt-16  flex h-auto w-full">
           <div className="   ngoImage w-full  gap-6  rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
             <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
