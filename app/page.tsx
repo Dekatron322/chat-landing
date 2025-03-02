@@ -7,7 +7,7 @@ import Footer from "components/Footer/Footer"
 import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
 import AboutComponent from "components/CardComponent/about-component"
-import GlobeAnimation from "components/globeAnimation"
+
 import Flow from "components/flow"
 
 export default function Dashboard() {
@@ -47,7 +47,7 @@ export default function Dashboard() {
                 Get Started
               </button>
 
-              <GlobeAnimation />
+              {/* <GlobeAnimation /> */}
             </div>
           </div>
         </div>
