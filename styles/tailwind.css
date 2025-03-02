@@ -826,6 +826,15 @@ body {
   height: 355px;
 }
 
+.img-element-three-sm {
+  background-image: url("/Celestial-Blue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 124px;
+}
+
 .img-element-four {
   background-image: url("/Vector 168.png");
   background-size: cover;
@@ -1052,6 +1061,15 @@ body {
   height: 410px;
 }
 
+.img-element-fifteen-sm {
+  background-image: url("/solutions/Blue copy 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 190px;
+}
+
 .img-element-sixteen {
   background-image: url("/Blue copy 5.png");
   background-size: cover;
@@ -1059,6 +1077,24 @@ body {
   background-repeat: no-repeat;
   width: 280px;
   height: 400px;
+}
+
+.img-element-sixteen-sm {
+  background-image: url("/solutions/Blue copy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 200px;
+}
+
+.img-element-seventeen-sm {
+  background-image: url("/solutions/Blue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 180px;
 }
 
 .img-element-seventeen {
@@ -1077,6 +1113,15 @@ body {
   background-repeat: no-repeat;
   width: 900px;
   height: 420px;
+}
+
+.img-element-eighteen-sm {
+  background-image: url("/Celestial-Blue copy 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 124px;
 }
 
 .img-element-nineteen {

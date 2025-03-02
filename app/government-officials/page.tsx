@@ -57,10 +57,10 @@ export default function Dashboard() {
 
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full ">
         <DashboardNav />
-        <div className="paddings mt-40 flex h-auto w-full justify-between">
-          <div className="flex w-full gap-24 max-md:flex-col max-md:px-0 md:mb-16">
+        <div className="paddings mt-24 flex h-auto w-full justify-between max-sm:mb-10 xl:mt-32">
+          <div className="flex w-full max-md:flex-col max-md:px-0 max-sm:gap-4 md:mb-16 xl:gap-24">
             <div className="flex w-full flex-col items-start justify-center gap-4">
               <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
                 <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -97,7 +97,7 @@ export default function Dashboard() {
             {/* Wrapper for the image and overlay */}
             <div className="relative">
               {/* Overlay Image */}
-              <div className="absolute right-52 top-[50%] z-10 h-[50%] w-full">
+              <div className="absolute right-52 top-[50%] z-10 h-[50%] w-full max-sm:hidden">
                 <Image
                   src="/gov/image 47.png" // Replace with your overlay image path
                   alt="Overlay"
@@ -107,7 +107,18 @@ export default function Dashboard() {
                 />
               </div>
 
-              <div className="absolute right-14 top-[10%] z-10 h-[50%] w-full">
+              {/* Overlay Image - Positioned at the bottom on mobile */}
+              <div className="absolute bottom-[-60px] left-10 z-10 w-[80%] max-md:right-auto max-md:top-auto max-md:h-[30%] xl:hidden">
+                <Image
+                  src="/gov/image 47.png" // Replace with your overlay image path
+                  alt="Overlay"
+                  height={221} // 50% of the original image height
+                  width={445} // Same as the original image width
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="absolute right-14 top-0 z-10 h-[50%] w-full xl:top-[10%]">
                 <Image
                   src="/gov/Vector.png" // Replace with your overlay image path
                   alt="Overlay"
@@ -129,8 +140,10 @@ export default function Dashboard() {
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center px-96">
-            <p className="animate-text text-[32px] font-medium">Driving Aid with Innovation and Transparency</p>
+          <div className="flex h-full items-center xl:px-96">
+            <p className="animate-text text-[32px] font-medium max-sm:hidden">
+              Driving Aid with Innovation and Transparency
+            </p>
             <div className="car-img flex h-[117px] w-full items-center "></div>
           </div>
         </section>

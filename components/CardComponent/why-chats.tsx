@@ -19,7 +19,7 @@ const WhyChats = () => {
             Why CHATS?
           </motion.h2>
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid gap-10 xl:grid-cols-3">
           <div className="flex w-full flex-col items-center justify-center">
             <Image src="/gov/Frame 1618874215.png" alt="" width={285} height={139} className="mb-6" />
             <h5 className="mb-2 font-medium">Centralized Campaign Oversight</h5>
@@ -48,7 +48,7 @@ const WhyChats = () => {
         <div className="img-element absolute bottom-0 left-10"></div>
 
         <div className="flex h-full w-full items-center justify-center p-6">
-          <p className=" max-w-[961px] text-center text-[32px] font-medium text-[#000000]">
+          <p className=" max-w-[961px] text-center text-[32px] font-medium text-[#000000] max-sm:text-lg">
             &quot;The greatest good is often achieved through the simplest means.&quot; - This quote emphasises the
             importance of finding efficient and streamlined solutions in humanitarian work, which is precisely what
             CHATS aims to provide
