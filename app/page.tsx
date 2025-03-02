@@ -85,7 +85,7 @@ export default function Dashboard() {
         </section>
 
         <div className="section-img  h-[664px]"></div>
-        <AboutComponent />
+        {/* <AboutComponent /> */}
         <section className="section-1  flex  w-full">
           <div className="mt-6   w-full gap-4 max-md:flex-col max-md:px-0 md:mb-16">
             <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
@@ -184,12 +184,10 @@ export default function Dashboard() {
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex items-center px-96">
-            <Flow />
-          </div>
+          <div className="flex items-center px-96">{/* <Flow /> */}</div>
         </section>
-        <CardComponent />
-        <HowBeneficiariesCanRecieve />
+        {/* <CardComponent /> */}
+        {/* <HowBeneficiariesCanRecieve /> */}
         <section className="paddings mb-10 flex  w-full">
           <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
             <div className=" mt-10  ">
@@ -197,8 +195,8 @@ export default function Dashboard() {
             </div>
           </div>
         </section>
-        <OurStory />
-        <FAQsComponent />
+        {/* <OurStory /> */}
+        {/* <FAQsComponent /> */}
       </div>
       <Footer />
     </section>
