@@ -298,6 +298,14 @@ body {
   background: #0505050f;
 }
 
+.mobilebg {
+  @apply bg-[#f3f3f3];
+}
+
+[data-theme="dark"] .mobilebg {
+  @apply bg-[#1c2529];
+}
+
 [data-theme="dark"] .containerbg {
   background: #fafafa0f;
 }

@@ -183,7 +183,7 @@ const DashboardNav = () => {
             ))}
           </ul>
 
-          <div className="flex items-center gap-5 max-sm:w-full max-sm:justify-between">
+          <div className=" flex items-center gap-5 max-sm:w-full max-sm:justify-between">
             <div
               className="containerbg flex w-full cursor-pointer items-center justify-between gap-2 rounded-full p-1 transition duration-300"
               onClick={toggleTheme}
