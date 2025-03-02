@@ -186,8 +186,8 @@ export default function Dashboard() {
           <div className="img-element-two absolute bottom-0 right-10"></div>
           <div className="flex items-center px-96">{/* <Flow /> */}</div>
         </section>
-        {/* <CardComponent /> */}
-        {/* <HowBeneficiariesCanRecieve /> */}
+        <CardComponent />
+        <HowBeneficiariesCanRecieve />
         <section className="paddings mb-10 flex  w-full">
           <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
             <div className=" mt-10  ">
