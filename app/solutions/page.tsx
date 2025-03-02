@@ -1,52 +1,11 @@
 "use client"
 import DashboardNav from "components/Navbar/DashboardNav"
-import { useState } from "react"
 import { motion } from "framer-motion"
 import Footer from "components/Footer/Footer"
 import FAQsComponent from "components/CardComponent/faqs-component"
-import Features from "components/CardComponent/features"
-import Seamless from "components/CardComponent/seamless"
-import HowItWorks from "components/CardComponent/how-it-works"
-import TestimonialSection from "components/CardComponent/testimonials-section"
 import Image from "next/image"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
-
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between children
-      },
-    },
-  }
-
-  // Child item animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
-
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full ">
@@ -149,7 +108,7 @@ export default function Dashboard() {
           </div>
 
           <div className="relative mt-10 flex w-full  overflow-hidden rounded-[15px] xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
-            <div className="revers grid w-full gap-10 xl:grid-cols-2">
+            <div className=" grid w-full gap-10 xl:grid-cols-2">
               <div className="relative h-full w-full overflow-auto rounded-[10px] bg-[#151E22] max-sm:h-[507px]">
                 <div className="img-element-sixteen absolute bottom-0 left-10 max-sm:hidden"></div>
                 <div className="img-element-sixteen-sm absolute bottom-0 left-20 xl:hidden"></div>

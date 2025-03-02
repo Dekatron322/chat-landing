@@ -989,10 +989,7 @@ body {
 
 /* Container for the elliptical scroll */
 .elliptic-scroll-container {
-  position: relative;
-  width: 100%;
-  height: 540px; /* Adjust height as needed */
-  overflow: hidden;
+  @apply relative h-[540px] w-full overflow-hidden max-sm:h-[307px];
 }
 
 /* Elliptical mask at the top */
@@ -1027,6 +1024,19 @@ body {
   background: #f8f8f8; /* Match the background color */
   clip-path: ellipse(50% 20% at 50% 100%); /* Ellipse at the bottom */
   z-index: 2;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  .elliptic-scroll-container::after {
+    clip-path: ellipse(60% 15% at 50% 100%); /* Adjust ellipse for mobile */
+  }
+
+  /* Adjust the breakpoint as needed */
+  .elliptic-scroll-container::before {
+    clip-path: ellipse(60% 15% at 50% 0%); /* Adjust ellipse for mobile */
+  }
 }
 
 /* Scroll container */

@@ -8,7 +8,7 @@ const GlobeAnimation = () => {
   const animationData = require("../public/Globe (1).json")
 
   return (
-    <div className="w-[722px]">
+    <div className="max-w-[722px]">
       <Lottie animationData={animationData} loop={true} autoplay={true} />
     </div>
   )

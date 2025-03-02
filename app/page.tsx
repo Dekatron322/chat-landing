@@ -12,8 +12,8 @@ import Flow from "components/flow"
 
 export default function Dashboard() {
   return (
-    <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+    <section className="h-full w-full">
+      <div className="max-sm:w-full">
         <DashboardNav />
         <div className="backgroundImage mt-16  flex h-auto w-full ">
           <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
@@ -51,10 +51,10 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <section className="section-1 ">
-          <div className="my-6 flex w-full  justify-between gap-7 ">
-            <div className="card-lg flex w-1/2 flex-col gap-7 p-7 ">
-              <div className="flex w-full justify-between gap-3">
+        <section className="section-1 px-4">
+          <div className="my-6 flex w-full  justify-between  gap-7 max-sm:flex-col ">
+            <div className="card-lg  flex flex-col gap-7 p-7 xl:w-1/2 ">
+              <div className="flex w-full items-start justify-between gap-3 max-sm:flex-col">
                 <div className="dark-green-bg flex items-center gap-2 rounded-full  px-4  py-2">
                   <img src="/chats transparent 1.png" alt="" className="w-7" />
                   <p className="text-sm">About Us</p>
@@ -80,7 +80,7 @@ export default function Dashboard() {
                 </button>
               </div>
             </div>
-            <img src="/Frame 1618873303.png" className=" w-1/2" alt="" />
+            <img src="/Frame 1618873303.png" className=" xl:w-1/2" alt="" />
           </div>
         </section>
 
@@ -107,8 +107,8 @@ export default function Dashboard() {
                 A quick overview of the measurable outcomes CHATS has achieved.
               </motion.p>
 
-              <div className="mt-6 grid w-full grid-cols-2 gap-7">
-                <div className="card-lg flex h-[328px] flex-col justify-between p-7">
+              <div className="mt-6 grid w-full gap-7 xl:grid-cols-2">
+                <div className="card-lg flex flex-col justify-between p-7 xl:h-[328px]">
                   <div className="flex w-full justify-between gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
                       <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -124,7 +124,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="card-lg card-bg relative flex h-[328px] flex-col justify-between p-7">
+                <div className="card-lg card-bg relative flex flex-col justify-between p-7 xl:h-[328px]">
                   {/* Top Section */}
                   <div className="flex w-full justify-between gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -134,14 +134,14 @@ export default function Dashboard() {
                   </div>
 
                   {/* Images at Different Positions */}
-                  <div className="absolute right-32 top-20">
-                    <img src="/Frame 1618873317.png" alt="" className="h-[34px]" />
+                  <div className="absolute right-32 top-20 max-sm:right-6">
+                    <img src="/Frame 1618873317.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
-                  <div className="absolute left-32 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-                    <img src="/Frame 1618873318.png" alt="" className="h-[34px]" />
+                  <div className="absolute bottom-4 left-14 -translate-x-1/2 -translate-y-1/2 transform xl:left-32 xl:top-1/2">
+                    <img src="/Frame 1618873318.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
-                  <div className="absolute bottom-20 right-1/3">
-                    <img src="/Frame 1618873316.png" alt="" className="h-[34px]" />
+                  <div className="absolute bottom-10   right-1/3 xl:bottom-20">
+                    <img src="/Frame 1618873316.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
 
                   {/* Bottom Section */}
@@ -152,7 +152,7 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="card-lg mt-7  flex h-[397px] w-full items-center justify-between     p-7">
+              <div className="card-lg mt-7  w-full items-center justify-between p-7 xl:flex     xl:h-[397px]">
                 <div>
                   <div className="flex w-full  gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -168,7 +168,8 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="image-container w-full"></div>
+                <div className="image-container w-full max-sm:hidden"></div>
+                <img src="/solutions/Frame 1618873977.png" alt="" />
               </div>
             </div>
           </div>

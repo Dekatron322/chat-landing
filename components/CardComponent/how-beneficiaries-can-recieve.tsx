@@ -20,8 +20,8 @@ const HowBeneficiariesCanRecieve = () => {
           </motion.h2>
 
           <div className=" paddings flex  w-full flex-col items-center justify-center gap-10">
-            <div className="border-color-100 flex max-w-[1104px] gap-[66px] border-b pb-10">
-              <img src="/Frame 1618874007.png" alt="" className="h-[181px] w-[306px]" />
+            <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
+              <img src="/Frame 1618874007.png" alt="" className="xl:h-[181px] xl:w-[306px]" />
               <div className="flex flex-col items-start gap-5">
                 <h2 className="text-3xl font-medium max-sm:text-3xl">Paper payment voucher</h2>
                 <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
@@ -32,8 +32,8 @@ const HowBeneficiariesCanRecieve = () => {
                 </button>
               </div>
             </div>
-            <div className="border-color-100 flex max-w-[1104px] gap-[66px] border-b pb-10">
-              <img src="/Frame 1618874007 (1).png" alt="" className="h-[181px] w-[306px]" />
+            <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
+              <img src="/Frame 1618874007 (1).png" alt="" className="xl:h-[181px] xl:w-[306px]" />
               <div className="flex flex-col items-start gap-5">
                 <h2 className="text-3xl font-medium max-sm:text-3xl">NFC TAP to Pay</h2>
                 <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
@@ -44,8 +44,8 @@ const HowBeneficiariesCanRecieve = () => {
                 </button>
               </div>
             </div>
-            <div className="border-color-100 flex max-w-[1104px] gap-[66px] border-b pb-10">
-              <img src="/Frame 1618874007 (1).png" alt="" className="h-[181px] w-[306px]" />
+            <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
+              <img src="/Frame 1618874007 (1).png" alt="" className="xl:h-[181px] xl:w-[306px]" />
               <div className="flex flex-col items-start gap-5">
                 <h2 className="text-3xl font-medium max-sm:text-3xl">Android Application</h2>
                 <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
@@ -56,8 +56,8 @@ const HowBeneficiariesCanRecieve = () => {
                 </button>
               </div>
             </div>
-            <div className="flex max-w-[1104px] gap-[66px] pb-10">
-              <img src="/Frame 1618874007.png" alt="" className="h-[181px] w-[306px]" />
+            <div className="max-w-[1104px] gap-[66px] pb-10 xl:flex">
+              <img src="/Frame 1618874007.png" alt="" className="xl:h-[181px] xl:w-[306px]" />
               <div className="flex flex-col items-start gap-5">
                 <h2 className="text-3xl font-medium max-sm:text-3xl">SMS/USSD (For Feature Phone)</h2>
                 <p className="paragraph max-w-[669px]  text-[20px]  font-normal">

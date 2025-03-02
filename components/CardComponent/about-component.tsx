@@ -4,7 +4,7 @@ import React from "react"
 
 const AboutComponent = () => {
   return (
-    <div className="paddings my-10 grid w-full grid-cols-3 justify-between gap-10">
+    <div className="paddings my-10 grid w-full justify-between gap-10 xl:grid-cols-3">
       <motion.div
         className="our-mission-img group relative flex h-[529px] w-full flex-col items-center justify-between rounded-[20px] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: 'url("/001.jpeg")' }}
