@@ -51,7 +51,7 @@ export default function Dashboard() {
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full max-sm:p-4">
-        <DashboardNav />
+        {/* <DashboardNav /> */}
         <div className="backgroundImage mt-16  flex h-auto w-full ">
           <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
             <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
@@ -84,7 +84,7 @@ export default function Dashboard() {
                 Get Started
               </button>
 
-              <GlobeAnimation />
+              {/* <GlobeAnimation /> */}
             </div>
           </div>
         </div>
