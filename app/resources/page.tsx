@@ -2,7 +2,7 @@
 import { useTheme } from "next-themes"
 import DashboardNav from "components/Navbar/DashboardNav"
 import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion" // Import framer-motion
+import { motion } from "framer-motion" // Import framer-motion
 import Link from "next/link"
 import Footer from "components/Footer/Footer"
 
