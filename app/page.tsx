@@ -18,7 +18,7 @@ export default function Dashboard() {
         <div className="backgroundImage mt-16  flex h-auto w-full ">
           <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
             <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
-              <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
+              <div className="card flex items-center gap-2 rounded-full px-2 py-2 xl:px-[20px]">
                 <img src="/chats transparent 1.png" alt="" className="w-7" />
                 <p className="text-sm">Convexity Humanitarian Aid Transfer Solution</p>
               </div>
@@ -53,7 +53,7 @@ export default function Dashboard() {
         </div>
         <section className="section-1 px-4">
           <div className="my-6 flex w-full  justify-between  gap-7 max-sm:flex-col ">
-            <div className="card-lg  flex flex-col gap-7 p-7 xl:w-1/2 ">
+            <div className="card-lg  flex flex-col gap-7 p-4 xl:w-1/2  xl:p-7">
               <div className="flex w-full items-start justify-between gap-3 max-sm:flex-col">
                 <div className="dark-green-bg flex items-center gap-2 rounded-full  px-4  py-2">
                   <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -64,7 +64,7 @@ export default function Dashboard() {
                   <p className="text-sm">Transforming Aid Distribution with Trust and Innovation</p>
                 </div>
               </div>
-              <p className="paragraph-1 text-base leading-[35px]">
+              <p className="paragraph-1 text-base xl:leading-[35px]">
                 CHATS is a purpose-driven platform designed to simplify and enhance aid distribution for humanitarian
                 organizations, donors, and beneficiaries. By combining cutting-edge technology with a commitment to
                 transparency, we ensure that every donation is impactful and verifiable. Our ecosystem offers flexible
@@ -169,7 +169,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <div className="image-container w-full max-sm:hidden"></div>
-                <img src="/solutions/Frame 1618873977.png" alt="" />
+                <img src="/solutions/Frame 1618873977.png" alt="" className="xl:hidden" />
               </div>
             </div>
           </div>

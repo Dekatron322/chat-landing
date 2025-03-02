@@ -4,7 +4,7 @@ import React from "react"
 const OurStory = () => {
   return (
     <section className="section-2 flex w-full">
-      <div className="my-10 w-full gap-4 max-md:flex-col max-md:px-0">
+      <div className="w-full gap-4 max-md:flex-col max-md:px-0 xl:my-10">
         <div className="flex w-full flex-col items-center justify-center gap-4 max-sm:mt-10">
           <div className="card-sm flex items-center gap-2 rounded-full px-3 py-2">
             <img src="/chats transparent 1.png" alt="" className="w-7" />

@@ -150,7 +150,7 @@ const CardComponent = () => {
             <p className="text-sm">Platform Breakdown</p>
           </div>
           <motion.h2
-            className="h-full max-w-[558px] text-center text-[24px] font-medium max-sm:text-3xl md:leading-[32.4px]"
+            className="h-full text-[24px] font-medium max-sm:text-3xl max-sm:text-[23px] md:leading-[32.4px] xl:max-w-[558px] xl:text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 2 }}

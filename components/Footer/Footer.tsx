@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
 
               {/* Column 5 */}
-              <div className="flex w-[207px] flex-col gap-4 max-sm:mb-7">
+              <div className="flex flex-col gap-4 max-sm:mb-7 xl:w-[207px]">
                 <p className="font-bold">Contact Us</p>
                 <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
                 <Link
