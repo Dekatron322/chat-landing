@@ -8,10 +8,10 @@ const CardComponent = () => {
     {
       title: "Donor Dashboard",
       content: (
-        <div className="primary-200 relative  mt-10 flex  w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:h-[508px]">
+        <div className="primary-200 relative  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[508px]">
           <div className="img-element-three absolute bottom-0 left-10 max-sm:hidden"></div>
           <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
-          <div className="img-element-three-sm absolute bottom-0 left-16 xl:hidden"></div>
+          <div className="img-element-three-sm absolute bottom-0 left-6 xl:hidden"></div>
           <div className="flex w-full justify-between xl:items-center">
             <div className="xl:w-1/2"></div>
             <div className="flex flex-col gap-2 xl:w-1/2 xl:pl-20">
@@ -37,7 +37,7 @@ const CardComponent = () => {
       content: (
         <div className="primary-300 relative flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
           <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
-          <div className="img-element-fifteen-sm absolute bottom-0 left-20 z-20 xl:hidden"></div>
+          <div className="img-element-fifteen-sm absolute bottom-0 left-6 z-20 xl:hidden"></div>
           <div className="img-element-twenty-two absolute bottom-0 left-0"></div>
           <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
           <div className="flex w-full justify-between xl:items-center">
@@ -63,11 +63,11 @@ const CardComponent = () => {
     {
       title: "Field Agent/Vendor App",
       content: (
-        <div className="relative mt-10 flex h-full w-full overflow-hidden rounded-[15px] xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
+        <div className="relative flex h-full w-full overflow-hidden rounded-[15px] xl:mt-10 xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
           <div className=" grid w-full gap-10 xl:grid-cols-2">
             <div className="relative h-full w-full overflow-auto rounded-[10px] bg-[#151E22] max-sm:h-[507px]">
               <div className="img-element-sixteen absolute bottom-0 left-10 max-sm:hidden"></div>
-              <div className="img-element-sixteen-sm absolute bottom-0 left-20 xl:hidden"></div>
+              <div className="img-element-sixteen-sm absolute bottom-0 left-6 xl:hidden"></div>
 
               <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                 <div className="max-sm:hidden"></div>
@@ -89,7 +89,7 @@ const CardComponent = () => {
             </div>
             <div className="primary-300 relative h-full w-full overflow-auto rounded-[10px] max-sm:h-[507px] max-sm:bg-[#05F29A]">
               <div className="img-element-seventeen absolute bottom-0 left-10 max-sm:hidden"></div>
-              <div className="img-element-seventeen-sm absolute bottom-0 left-20  xl:hidden"></div>
+              <div className="img-element-seventeen-sm absolute bottom-0 left-6  xl:hidden"></div>
               <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                 <div className="max-sm:hidden"></div>
                 <div className="flex  flex-col gap-4 max-sm:w-full ">
@@ -115,9 +115,9 @@ const CardComponent = () => {
     {
       title: "NGO Dashboard",
       content: (
-        <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:h-[508px]">
+        <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[508px]">
           <div className="img-element-eighteen absolute bottom-0 left-10 max-sm:hidden"></div>
-          <div className="img-element-eighteen-sm absolute bottom-0 left-16 xl:hidden"></div>
+          <div className="img-element-eighteen-sm absolute bottom-0 left-6 xl:hidden"></div>
           <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
           <div className="flex w-full xl:items-center xl:justify-between">
             <div className="w-1/2 max-sm:hidden"></div>
@@ -143,8 +143,8 @@ const CardComponent = () => {
 
   return (
     <div className="flex w-full">
-      <div className="paddings w-full gap-6 max-md:flex-col  md:mb-16">
-        <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10">
+      <div className="paddings mxl:mb-16 w-full gap-6  max-md:flex-col">
+        <div className="flex w-full flex-col items-center justify-center gap-6  xl:mt-14">
           <div className="card flex items-center gap-2 rounded-full px-[20px] py-2">
             <img src="/chats transparent 1.png" alt="" className="w-7" />
             <p className="text-sm">Platform Breakdown</p>
@@ -171,7 +171,7 @@ const CardComponent = () => {
             ))}
           </div>
 
-          <div className=" mt-6 h-full w-full">
+          <div className=" xlmt-6 h-full w-full">
             <AnimatePresence>
               {tabs.map((tab, index) => (
                 <motion.div
