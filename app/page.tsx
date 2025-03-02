@@ -195,7 +195,7 @@ export default function Dashboard() {
             </div>
           </div>
         </section>
-        {/* <OurStory /> */}
+        <OurStory />
         <FAQsComponent />
       </div>
       <Footer />
