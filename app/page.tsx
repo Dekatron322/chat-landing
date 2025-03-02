@@ -184,7 +184,9 @@ export default function Dashboard() {
         <section className="primary-100 relative h-[117px]">
           <div className="img-element absolute bottom-0 left-10"></div>
           <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex items-center px-96">{/* <Flow /> */}</div>
+          <div className="flex items-center px-96">
+            <Flow />
+          </div>
         </section>
         <CardComponent />
         <HowBeneficiariesCanRecieve />
