@@ -50,10 +50,10 @@ export default function Dashboard() {
 
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full ">
         <DashboardNav />
         <MobileNav />
-        <div className="paddings flex h-auto w-full  xl:mt-32">
+        <div className="paddings flex h-auto w-full  max-sm:pt-24 xl:mt-32">
           <div className="primary-400  relative   flex w-full overflow-hidden  rounded-[15px] p-6 max-sm:pb-20 xl:h-[423px]">
             <div className="img-element-twenty-six absolute bottom-10 left-0 max-sm:hidden"></div>
             <div className="img-element-twenty-seven absolute bottom-10 right-0 max-sm:hidden"></div>

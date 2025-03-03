@@ -20,11 +20,11 @@ const FeaturesDonors = () => {
 
         <div className="grid w-full gap-10 xl:grid-cols-2">
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px] ">
               <img
                 src="/donors/Frame 1618874149 (4).png"
                 alt=""
-                className="w-[340.39px] xl:max-h-[306px] xl:max-w-[560px]"
+                className="max-sm:px-4 max-sm:pt-10 xl:max-h-[306px] xl:max-w-[560px]"
               />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Campaign Selection and Contributions</h2>
@@ -34,11 +34,11 @@ const FeaturesDonors = () => {
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px]">
               <img
                 src="/donors/Frame 1618874149 (5).png"
                 alt=""
-                className="w-[340.39px] xl:max-h-[306px] xl:max-w-[560px]"
+                className="max-sm:px-4 max-sm:pt-10 xl:max-h-[306px] xl:max-w-[560px]"
               />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Flexible Payment Options</h2>
@@ -49,8 +49,12 @@ const FeaturesDonors = () => {
           </div>
 
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
-              <img src="/donors/image 46.png" alt="" className="w-[340.39px] xl:max-h-[306px] xl:max-w-[560px]" />
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px] ">
+              <img
+                src="/donors/image 46.png"
+                alt=""
+                className="max-sm:px-4 max-sm:pt-10 xl:max-h-[306px] xl:max-w-[560px]"
+              />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Vendor Transactions Overview</h2>
             <p className="paragraph max-w-[629px]">
@@ -59,11 +63,11 @@ const FeaturesDonors = () => {
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px] ">
               <img
                 src="/donors/Frame 1618874149 (6).png"
                 alt=""
-                className="w-[340.39px] xl:max-h-[306px] xl:max-w-[560px]"
+                className="max-sm:px-4 max-sm:pt-10 xl:max-h-[306px] xl:max-w-[560px]"
               />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Anonymous Giving</h2>

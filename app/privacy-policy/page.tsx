@@ -50,17 +50,17 @@ export default function Dashboard() {
 
   return (
     <section className="   h-full w-full">
-      <div className="   max-sm:w-full max-sm:p-4">
+      <div className="   max-sm:w-full">
         <DashboardNav />
         <MobileNav />
-        <div className="paddings flex h-auto w-full  md:mt-32">
+        <div className="paddings flex h-auto w-full max-sm:mt-20  md:mt-32">
           <div className="primary-200  relative   w-full overflow-hidden rounded-[15px] p-6 max-sm:pb-32 md:flex md:h-[408px]">
             <div className="img-element-twenty-four absolute right-40 top-32 max-sm:hidden"></div>
             <div className="img-element-twenty-four absolute bottom-[-80px] left-[-20px] md:hidden"></div>
 
             <div className="flex w-full items-center justify-between">
               <div className="flex max-w-[831px] flex-col gap-2 md:pl-20">
-                <p className="text-start text-[45px] font-bold text-[#FFFFFF]">Privacy Policy</p>
+                <p className="text-start text-[45px] font-bold text-[#FFFFFF] max-sm:text-4xl">Privacy Policy</p>
                 <p className="text-[#FFFFFF]">
                   Our privacy policy outlines how we collect, use, and safeguard your data, ensuring compliance with
                   global data protection regulations. Whether you&#39;re a donor, NGO, or beneficiary, your trust is
@@ -71,7 +71,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <section className="mb-16 flex flex-col justify-center pt-20 md:px-64">
+        <section className="mb-16 flex flex-col justify-center max-sm:px-4 max-sm:pt-4 xl:px-64 xl:pt-20">
           <p className="paragraph pl-8">
             Updated November 28, 2024
             <b className="paragraph-2"> 15 min read</b>

@@ -6,6 +6,7 @@ import { motion } from "framer-motion" // Import framer-motion
 import Link from "next/link"
 import Footer from "components/Footer/Footer"
 import MobileNav from "components/Navbar/MobileNav"
+import CarAnimation from "components/CardComponent/carAnimation"
 
 const blogEntries = [
   {
@@ -86,17 +87,17 @@ export default function Dashboard() {
       <div className="max-sm:w-full ">
         <DashboardNav />
         <MobileNav />
-        <div className="paddings relative h-auto w-full max-sm:rounded-xl xl:mt-32 xl:flex">
+        <div className="paddings relative h-auto w-full max-sm:mt-20 max-sm:rounded-xl xl:mt-32  xl:flex">
           <img src="/resources/Frame 1618874260 (2).png" alt="" className="rounded-t-lg xl:hidden" />
           <div className="primary-400 relative flex w-full overflow-hidden p-4 max-sm:rounded-b-lg xl:h-[408px] xl:rounded-[15px] xl:p-6">
             <div className="img-element-thirty-one absolute left-0 top-0 max-sm:hidden"></div>
 
-            <div className="flex w-full py-10">
+            <div className="flex w-full xl:py-10">
               <div className="xl:w-[40%]"></div>
               <div className="flex flex-col items-start gap-2 xl:max-w-[704px] xl:pl-20">
                 <ul className="flex gap-2 max-sm:text-xs">
                   <li>Blog</li>
-                  <li className="list-inside list-disc">Published November 28, 2024</li>
+                  <li className="list-inside list-disc">Published Nov 28, 2024</li>
                   <li className="list-inside list-disc">
                     <span className="primary-text-900">15 min read</span>
                   </li>
@@ -122,14 +123,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <section className="primary-100 relative mt-10 h-[117px]">
-          <div className="img-element absolute bottom-0 left-10"></div>
-          <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center px-96">
-            <p className="animate-text text-[32px] font-medium">Driving Aid with Innovation and Transparency</p>
-            <div className="car-img flex h-[117px] w-full items-center"></div>
-          </div>
-        </section>
+        <CarAnimation />
 
         <div className="paddings">
           <h2 className="mt-5 text-4xl max-sm:text-2xl">Recent Articles</h2>

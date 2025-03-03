@@ -54,7 +54,7 @@ export default function Dashboard() {
       <div className="max-sm:w-full ">
         <DashboardNav />
         <MobileNav />
-        <div className="paddings h-auto w-full xl:mt-32 xl:flex">
+        <div className="paddings h-auto w-full max-sm:mt-20 xl:mt-32 xl:flex">
           <img src="/contact-us/Frame 1618874342 (1).png" alt="" className=" max-sm:rounded-t-xl xl:hidden" />
           <div className="primary-200 relative flex w-full overflow-hidden p-6 max-sm:rounded-b-xl xl:h-[408px] xl:rounded-[15px]">
             <div className="img-element-twenty-eight absolute right-0 top-0 max-sm:hidden"></div>
@@ -87,7 +87,7 @@ export default function Dashboard() {
                   />
                 </svg>
               </div>
-              <div className="flex gap-2 max-sm:mt-6 ">
+              <div className="z-20 flex flex-wrap gap-2 max-sm:mt-6">
                 <div
                   className={`cursor-pointer rounded-full px-5  py-2 max-sm:text-sm ${
                     activeTab === "FAQ" ? "bg-[#05F29A] text-[#151E22]" : "border border-[#FFFFFF80] text-[#FFFFFF]"

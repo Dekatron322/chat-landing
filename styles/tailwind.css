@@ -654,6 +654,14 @@ body {
   @apply bg-[#ffffff];
 }
 
+.primary-3000 {
+  @apply bg-[#ffffff] max-sm:bg-[#05f29a];
+}
+
+[data-theme="dark"] .primary-3000 {
+  @apply bg-[#151E22] max-sm:bg-[#05f29a];
+}
+
 .primary-400 {
   @apply bg-[#F3F3F3];
 }

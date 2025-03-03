@@ -53,8 +53,8 @@ export default function Dashboard() {
       <div className="   max-sm:w-full">
         <DashboardNav />
         <MobileNav />
-        <div className="paddings flex h-auto w-full xl:mt-32">
-          <div className="primary-200  relative   flex h-[408px] w-full overflow-hidden rounded-[15px] p-6">
+        <div className="paddings flex h-auto w-full max-sm:pt-24 xl:mt-32">
+          <div className="primary-200  relative  flex  w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[454px] xl:h-[408px]">
             <div className="img-element-thirty-four absolute  right-0 top-0 xl:hidden"></div>
             <div className="img-element-thirty absolute  right-0 top-0 max-sm:hidden"></div>
 

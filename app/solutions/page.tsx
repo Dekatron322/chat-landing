@@ -5,6 +5,7 @@ import Footer from "components/Footer/Footer"
 import FAQsComponent from "components/CardComponent/faqs-component"
 import Image from "next/image"
 import MobileNav from "components/Navbar/MobileNav"
+import CarAnimation from "components/CardComponent/carAnimation"
 
 export default function Dashboard() {
   return (
@@ -64,9 +65,9 @@ export default function Dashboard() {
           </div>
         </div>
         <section className="paddings">
-          <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:h-[508px]">
+          <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[508px]">
             <div className="img-element-eighteen absolute bottom-0 left-10 max-sm:hidden"></div>
-            <div className="img-element-eighteen-sm absolute bottom-0 left-16 xl:hidden"></div>
+            <div className="img-element-eighteen-sm absolute bottom-0 left-6 xl:hidden"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
             <div className="flex w-full xl:items-center xl:justify-between">
               <div className="w-1/2 max-sm:hidden"></div>
@@ -86,12 +87,12 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="primary-200 relative  mt-10 flex  w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:h-[508px]">
+          <div className="primary-200 relative mt-10  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[508px]">
             <div className="img-element-three absolute bottom-0 left-10 max-sm:hidden"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
-            <div className="img-element-three-sm absolute bottom-0 left-16 xl:hidden"></div>
+            <div className="img-element-three-sm absolute bottom-0 left-6 xl:hidden"></div>
             <div className="flex w-full justify-between xl:items-center">
-              <div className="w-1/2 max-sm:hidden"></div>
+              <div className="xl:w-1/2"></div>
               <div className="flex flex-col gap-2 xl:w-1/2 xl:pl-20">
                 <p className="text-start text-[24px] font-bold text-[#FFFFFF]">Donor Dashboard</p>
                 <p className="text-[#FFFFFF]">
@@ -109,11 +110,11 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="relative mt-10 flex w-full  overflow-hidden rounded-[15px] xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
+          <div className="relative mt-10 flex h-full w-full overflow-hidden rounded-[15px] xl:mt-10 xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
             <div className=" grid w-full gap-10 xl:grid-cols-2">
               <div className="relative h-full w-full overflow-auto rounded-[10px] bg-[#151E22] max-sm:h-[507px]">
                 <div className="img-element-sixteen absolute bottom-0 left-10 max-sm:hidden"></div>
-                <div className="img-element-sixteen-sm absolute bottom-0 left-20 xl:hidden"></div>
+                <div className="img-element-sixteen-sm absolute bottom-0 left-6 xl:hidden"></div>
 
                 <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                   <div className="max-sm:hidden"></div>
@@ -133,9 +134,9 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="primary-300 relative h-full w-full overflow-auto rounded-[10px] max-sm:h-[507px] max-sm:bg-[#05F29A]">
+              <div className="primary-3000 relative h-full w-full overflow-auto rounded-[10px] max-sm:h-[507px] max-sm:bg-[#05F29A]">
                 <div className="img-element-seventeen absolute bottom-0 left-10 max-sm:hidden"></div>
-                <div className="img-element-seventeen-sm absolute bottom-0 left-20 max-sm:hidden xl:hidden"></div>
+                <div className="img-element-seventeen-sm absolute bottom-0 left-6  xl:hidden"></div>
                 <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                   <div className="max-sm:hidden"></div>
                   <div className="flex  flex-col gap-4 max-sm:w-full ">
@@ -158,7 +159,7 @@ export default function Dashboard() {
           </div>
           <div className="primary-400 relative mt-10 flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
             <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
-            <div className="img-element-fifteen-sm absolute bottom-0 left-20 xl:hidden"></div>
+            <div className="img-element-fifteen-sm absolute bottom-0 left-14 z-50 xl:hidden"></div>
             <div className="img-element-twenty-two absolute bottom-0 left-0"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
             <div className="flex w-full justify-between xl:items-center">
@@ -180,8 +181,8 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="primary-400 relative mt-10 flex  w-full overflow-hidden rounded-[15px] p-6">
-            <div className="img-element-twenty-three absolute  top-0 xl:right-10"></div>
+          <div className="primary-400 relative mt-10 flex  w-full overflow-hidden rounded-[15px] p-4 xl:p-6">
+            <div className="img-element-twenty-three absolute top-0  max-sm:hidden xl:right-10"></div>
             <div className="img-element-four absolute bottom-0 right-0"></div>
             <div className="flex w-full items-center justify-between">
               <div className="flex w-full flex-col items-center justify-center gap-2 xl:pl-20">
@@ -193,27 +194,27 @@ export default function Dashboard() {
                 </p>
 
                 <div className="my-10 grid gap-5 xl:grid-cols-2 ">
-                  <div className="paperImage flex h-[146px] flex-col justify-center  rounded-[10px] p-6 xl:w-[393px]">
-                    <h5 className="text-xl text-white">Paper payment voucher</h5>
-                    <p className="text-[#FFFFFFCC]">
+                  <div className="paperImage flex flex-col justify-center rounded-[10px]  p-4 xl:h-[146px] xl:w-[393px] xl:p-6">
+                    <h5 className="text-white xl:text-xl">Paper payment voucher</h5>
+                    <p className="text-[#FFFFFFCC] max-sm:text-sm">
                       Beneficiaries can get unique payment vouches that would be scannedby the vendor for the payment
                     </p>
                   </div>
-                  <div className="paperImage1 flex h-[146px] flex-col justify-center  rounded-[10px] p-6 xl:w-[393px]">
-                    <h5 className="text-xl text-white">NFC TAP to Pay</h5>
-                    <p className="text-[#FFFFFFCC]">
+                  <div className="paperImage1 flex flex-col justify-center rounded-[10px]  p-4 xl:h-[146px] xl:w-[393px] xl:p-6">
+                    <h5 className="text-white xl:text-xl">NFC TAP to Pay</h5>
+                    <p className="text-[#FFFFFFCC] max-sm:text-sm">
                       Physical card enable transactions offline via NFC Embedded devices, ideal for those without phones
                     </p>
                   </div>
-                  <div className="paperImage2 flex h-[146px] flex-col justify-center  rounded-[10px] p-6 xl:w-[393px]">
-                    <h5 className="text-xl text-white">Android Application</h5>
-                    <p className="text-[#FFFFFFCC]">
+                  <div className="paperImage2 flex flex-col justify-center rounded-[10px]  p-4 xl:h-[146px] xl:w-[393px] xl:p-6">
+                    <h5 className="text-white xl:text-xl">Android Application</h5>
+                    <p className="text-[#FFFFFFCC] max-sm:text-sm">
                       Funds are credited directly to beneficiaries , cHATS linked wallet, accessible to all
                     </p>
                   </div>
-                  <div className="paperImage3 flex h-[146px] flex-col justify-center  rounded-[10px] p-6 xl:w-[393px]">
-                    <h5 className="text-xl text-white">SMS/USSD (For Feature Phone)</h5>
-                    <p className="text-[#FFFFFFCC]">
+                  <div className="paperImage2 flex flex-col justify-center rounded-[10px]  p-4 xl:h-[146px] xl:w-[393px] xl:p-6">
+                    <h5 className="text-white xl:text-xl">SMS/USSD (For Feature Phone)</h5>
+                    <p className="text-[#FFFFFFCC] max-sm:text-sm">
                       Text based codes allow easy fund redemption for beneficiaries without smartphone
                     </p>
                   </div>
@@ -223,16 +224,7 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="primary-100 relative h-[117px]">
-          <div className="img-element absolute bottom-0 left-10"></div>
-          <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center xl:px-96">
-            <p className="animate-text text-[32px] font-medium max-sm:hidden">
-              Driving Aid with Innovation and Transparency
-            </p>
-            <div className="car-img flex h-[117px] w-full items-center "></div>
-          </div>
-        </section>
+        <CarAnimation />
         {/* <CardComponent />
         <HowBeneficiariesCanRecieve />
         <section className="paddings mb-10 flex  w-full">

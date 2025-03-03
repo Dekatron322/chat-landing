@@ -11,6 +11,7 @@ import GlobeAnimation from "components/globeAnimation"
 import MobileNav from "components/Navbar/MobileNav"
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
+import CarAnimation from "components/CardComponent/carAnimation"
 
 export default function Dashboard() {
   const [mounted, setMounted] = useState(false)
@@ -207,13 +208,7 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="primary-100 relative h-[117px]">
-          <div className="img-element absolute bottom-0 left-10 max-sm:hidden"></div>
-          <div className="img-element-two-sm absolute bottom-0 left-0 md:hidden"></div>
-          <div className="img-element-sm absolute bottom-0 right-0 md:hidden"></div>
-          <div className="img-element-two absolute bottom-0 right-10 max-sm:hidden"></div>
-          <div className="flex items-center px-96"></div>
-        </section>
+        <CarAnimation />
         <CardComponent />
         <HowBeneficiariesCanRecieve />
         <section className="paddings mb-10 flex  w-full">

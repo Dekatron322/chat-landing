@@ -16,7 +16,7 @@ const GetInTouch = () => {
       <p className="paragraph text-xl">Lets know how we can help you</p>
 
       <div className="my-10 grid w-full gap-5 max-sm:px-6 xl:grid-cols-3">
-        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-20 py-10">
+        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-5 py-10 xl:px-20">
           <Image src="/contact-us/Frame 1618873473.png" alt="" height={61} width={61} />
           <div>
             <h2 className="text-2xl font-bold">Chat to support</h2>
@@ -24,7 +24,7 @@ const GetInTouch = () => {
           </div>
           <div className="underline">Send a message</div>
         </div>
-        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-20 py-10">
+        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-5 py-10 xl:px-20">
           <Image src="/contact-us/Frame 1618873473 (1).png" alt="" height={61} width={61} />
           <div>
             <h2 className="text-2xl font-bold">Visit Us</h2>
@@ -34,7 +34,7 @@ const GetInTouch = () => {
             view on google map
           </Link>
         </div>
-        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-20 py-10">
+        <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-5 py-10 xl:px-20">
           <Image src="/contact-us/Frame 1618873473 (2).png" alt="" height={61} width={61} />
           <div>
             <h2 className="text-2xl font-bold">Call us</h2>
