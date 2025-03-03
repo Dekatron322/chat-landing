@@ -8,10 +8,28 @@ import OurStory from "components/CardComponent/our-story"
 import FAQsComponent from "components/CardComponent/faqs-component"
 import AboutComponent from "components/CardComponent/about-component"
 import GlobeAnimation from "components/globeAnimation"
-import Flow from "components/flow"
 import MobileNav from "components/Navbar/MobileNav"
+import { useEffect, useState } from "react"
+import { useTheme } from "next-themes"
 
 export default function Dashboard() {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme, systemTheme } = useTheme()
+  const isDarkMode = theme === "dark"
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (systemTheme && !mounted) {
+      setTheme(systemTheme)
+    }
+  }, [systemTheme, setTheme, mounted])
+
+  const toggleTheme = () => {
+    setTheme(isDarkMode ? "light" : "dark")
+  }
   return (
     <section className="h-full w-full">
       <div className="max-sm:w-full">
@@ -35,7 +53,7 @@ export default function Dashboard() {
               </motion.h2>
 
               <motion.p
-                className="paragraph mt-2 text-center text-base font-normal xl:max-w-[592px]"
+                className="paragraph mt-2 text-center text-base font-normal max-sm:px-4 xl:max-w-[592px]"
                 transition={{ ease: "easeIn", duration: 2 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -155,7 +173,7 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="card-lg mt-7  w-full items-center justify-between p-7 xl:flex     xl:h-[397px]">
+              <div className="card-lg mt-7  w-full items-center justify-between max-sm:p-4 xl:flex  xl:h-[397px]    xl:p-7">
                 <div>
                   <div className="flex w-full  gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -165,14 +183,18 @@ export default function Dashboard() {
                   </div>
 
                   {/* Add margin-top to create space */}
-                  <div className="mt-4">
-                    <p className="paragraph-1  text-2xl leading-[35px]">
+                  <div className="max-sm:my-2 xl:mt-4">
+                    <p className="paragraph-1 text-2xl leading-[35px] max-sm:text-xl">
                       Ensuring every dollar makes a measurable impact
                     </p>
                   </div>
                 </div>
                 <div className="image-container w-full max-sm:hidden"></div>
-                <img src="/solutions/Frame 1618873977.png" alt="" className="xl:hidden" />
+                {isDarkMode ? (
+                  <img src="/Frame 1618873977 (2).png" alt="" className="xl:hidden" />
+                ) : (
+                  <img src="/solutions/Frame 1618873977.png" alt="" className="xl:hidden" />
+                )}
               </div>
             </div>
           </div>
