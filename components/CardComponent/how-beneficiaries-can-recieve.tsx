@@ -11,7 +11,7 @@ const HowBeneficiariesCanRecieve = () => {
             <p className="text-sm">How Beneficiaries can recieve</p>
           </div>
           <motion.h2
-            className="h-full max-w-[555px] text-center text-5xl font-medium leading-[64.8px] max-sm:text-3xl "
+            className="h-full max-w-[555px] text-center text-5xl font-medium max-sm:text-2xl  xl:leading-[64.8px] "
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 2 }}
@@ -19,12 +19,12 @@ const HowBeneficiariesCanRecieve = () => {
             <span className="text-[#05F29A]">CHATS</span> Offers Seamless Disbursement Options
           </motion.h2>
 
-          <div className=" paddings flex  w-full flex-col items-center justify-center gap-10">
+          <div className="  flex  w-full flex-col items-center justify-center gap-10">
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
               <img src="/Frame 1618874007.png" alt="" className="xl:h-[181px] xl:w-[306px]" />
-              <div className="flex flex-col items-start gap-5">
+              <div className="flex flex-col items-start gap-2 xl:gap-5">
                 <h2 className="text-3xl font-medium max-sm:mt-3 max-sm:text-2xl">Paper payment voucher</h2>
-                <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
+                <p className="paragraph font-normal  xl:max-w-[669px]  xl:text-[20px]">
                   Beneficiaries can get unique payment vouches that would be scannedby the vendor for the payment
                 </p>
                 <button className="primary-text-100 flex items-center gap-2 underline">
@@ -34,9 +34,9 @@ const HowBeneficiariesCanRecieve = () => {
             </div>
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
               <img src="/Frame 1618874007 (1).png" alt="" className="xl:h-[181px] xl:w-[306px]" />
-              <div className="flex flex-col items-start gap-5">
+              <div className="flex flex-col items-start gap-2 xl:gap-5">
                 <h2 className="text-3xl font-medium max-sm:mt-3 max-sm:text-2xl">NFC TAP to Pay</h2>
-                <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
+                <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Physical card enable transactions offline via NFC Embedded devices, ideal for those without phones
                 </p>
                 <button className="primary-text-100 flex items-center gap-2 underline">
@@ -46,9 +46,9 @@ const HowBeneficiariesCanRecieve = () => {
             </div>
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
               <img src="/Frame 1618874007 (1).png" alt="" className="xl:h-[181px] xl:w-[306px]" />
-              <div className="flex flex-col items-start gap-5">
+              <div className="flex flex-col items-start gap-2 xl:gap-5">
                 <h2 className="text-3xl font-medium max-sm:mt-3 max-sm:text-2xl">Android Application</h2>
-                <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
+                <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Funds are credited directly to beneficiaries , cHATS linked wallet, accessible to all
                 </p>
                 <button className="primary-text-100 flex items-center gap-2 underline">
@@ -58,9 +58,9 @@ const HowBeneficiariesCanRecieve = () => {
             </div>
             <div className="max-w-[1104px] gap-[66px] pb-10 xl:flex">
               <img src="/Frame 1618874007.png" alt="" className="xl:h-[181px] xl:w-[306px]" />
-              <div className="flex flex-col items-start gap-5">
+              <div className="flex flex-col items-start gap-2 xl:gap-5">
                 <h2 className="text-3xl font-medium max-sm:mt-3 max-sm:text-2xl">SMS/USSD (For Feature Phone)</h2>
-                <p className="paragraph max-w-[669px]  text-[20px]  font-normal">
+                <p className="paragraph txl:ext-[20px]  max-w-[669px]  font-normal">
                   Text based codes allow easy fund redemption for beneficiaries without smartphone
                 </p>
                 <button className="primary-text-100 flex items-center gap-2 underline">

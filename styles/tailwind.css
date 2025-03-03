@@ -740,6 +740,24 @@ body {
   height: 24px;
 }
 
+.img-element-sm {
+  background-image: url("/media/peep-sitting-15.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 50px;
+}
+
+.img-element-two-sm {
+  background-image: url("/media/Frame 1618874147 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85.7px;
+  height: 30px;
+}
+
 [data-theme="dark"] .btn-img-element {
   background-image: url("/lets-icons_gift-fill (1).png");
   background-size: cover;
