@@ -4,8 +4,8 @@ import React from "react"
 const Seamless = () => {
   return (
     <section className="flex w-full">
-      <div className="my-10 w-full gap-4 max-md:flex-col max-md:px-0">
-        <div className="flex w-full flex-col items-center justify-center gap-4 max-sm:mt-10">
+      <div className="w-full gap-4 max-md:flex-col max-md:px-0 xl:my-10">
+        <div className="flex w-full flex-col items-center justify-center gap-4 ">
           <motion.h2
             className="paragraph mb-7 h-full max-w-[754px] text-center text-2xl font-medium max-sm:text-xl"
             initial={{ opacity: 0, y: -20 }}

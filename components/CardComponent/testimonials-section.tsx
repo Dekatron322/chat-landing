@@ -115,8 +115,8 @@ const TestimonialSection = () => {
     {
       title: "X Users",
       content: (
-        <div className="paragraph-sm grid grid-cols-3 gap-4 ">
-          <div className="primary-600 relative flex w-full flex-col rounded-[5px] p-4">
+        <div className="paragraph-sm grid gap-4 xl:grid-cols-3 ">
+          <div className="primary-600  flex w-full flex-col rounded-[5px] p-4">
             <div className="flex w-full items-center justify-between">
               <div className="flex items-center gap-2">
                 <Image src="/testimonials/Profile Picture copy.png" alt="" width={42} height={42} />
@@ -224,7 +224,7 @@ const TestimonialSection = () => {
     {
       title: "Stakeholders Reviews",
       content: (
-        <div className="paragraph-sm grid grid-cols-3 gap-4">
+        <div className="paragraph-sm grid gap-4 xl:grid-cols-3">
           <div className="primary-600 relative flex w-full flex-col rounded-[5px] p-4">
             <div className="flex w-full items-center justify-between">
               <div className="flex items-center gap-2">
@@ -303,7 +303,7 @@ const TestimonialSection = () => {
             Discover how CHATS is transforming aid distribution through the words of those who trust our platform. From
             NGOs to donors, our users share their experiences and the impact we’re making together.
           </p>
-          <div className="flex gap-2 ">
+          <div className="flex flex-wrap gap-2 ">
             {tabs.map((tab, index) => (
               <button
                 key={index}
@@ -317,7 +317,7 @@ const TestimonialSection = () => {
             ))}
           </div>
 
-          <div className="relative mt-6  w-full">
+          <div className="relative w-full  xl:mt-6">
             <AnimatePresence>
               {tabs.map((tab, index) => (
                 <motion.div
@@ -327,11 +327,6 @@ const TestimonialSection = () => {
                   animate={{ y: index === activeTab ? 0 : 20, opacity: index === activeTab ? 1 : 0 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ ease: "easeOut", duration: 0.5 }}
-                  style={{
-                    height: index === activeTab ? "100%" : "20px", // Show a small portion of the previous tab's background
-                    overflow: "hidden",
-                    backgroundColor: index < activeTab ? "transparent" : "inherit", // Only show background for active tab
-                  }}
                 >
                   {index === activeTab && tab.content}
                 </motion.div>

@@ -64,7 +64,7 @@ export default function Dashboard() {
               </motion.h2>
 
               <motion.p
-                className="paragraph mt-2 max-w-[685px] text-center text-base font-normal"
+                className="paragraph mt-2 max-w-[685px] px-4 text-center text-base font-normal"
                 transition={{ ease: "easeIn", duration: 2 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -110,14 +110,11 @@ export default function Dashboard() {
         <TestimonialSection />
 
         <section className="primary-100 relative h-[117px]">
-          <div className="img-element absolute bottom-0 left-10"></div>
-          <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="xl;px-96 flex h-full items-center">
-            <p className="animate-text text-[32px] font-medium max-sm:hidden">
-              Driving Aid with Innovation and Transparency
-            </p>
-            <div className="car-img flex h-[117px] w-full items-center "></div>
-          </div>
+          <div className="img-element absolute bottom-0 left-10 max-sm:hidden"></div>
+          <div className="img-element-two-sm absolute bottom-0 left-0 md:hidden"></div>
+          <div className="img-element-sm absolute bottom-0 right-0 md:hidden"></div>
+          <div className="img-element-two absolute bottom-0 right-10 max-sm:hidden"></div>
+          <div className="flex items-center px-96"></div>
         </section>
         {/* <CardComponent />
         <HowBeneficiariesCanRecieve />

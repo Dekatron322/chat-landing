@@ -11,7 +11,7 @@ const OurStory = () => {
             <p className="text-sm">Moments That Tell Our Story</p>
           </div>
           <motion.h2
-            className="max-sm:text-32xl h-full max-w-[754px] text-center text-3xl font-medium"
+            className="h-full max-w-[754px] text-center text-3xl font-medium max-sm:text-2xl"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 2 }}

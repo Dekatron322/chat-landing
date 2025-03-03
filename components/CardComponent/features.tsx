@@ -10,7 +10,7 @@ const Features = () => {
           <p className="text-sm">Features</p>
         </div>
         <motion.h2
-          className=" h-full  max-w-[756px] text-4xl font-medium max-sm:text-3xl md:leading-[50px]"
+          className=" max-sm:text-3xlfont-medium  h-full max-w-[756px]  text-4xl max-sm:text-2xl md:leading-[50px]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 2 }}
@@ -20,9 +20,9 @@ const Features = () => {
 
         <div className="grid w-full gap-10 xl:grid-cols-2">
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px]">
               <img src="/Frame 1618874149.png" alt="" className="max-h-[306px] max-sm:hidden xl:max-w-[560px]" />
-              <img src="/Frame 1618874149 (7).png" className="max-w-[340.39px] xl:hidden" />
+              <img src="/Frame 1618874149 (7).png" className="px-4 pt-10 xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Campaign Management Dashboard</h2>
             <p className="paragraph xl:max-w-[529px]">
@@ -31,9 +31,9 @@ const Features = () => {
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 ] flex items-end justify-center rounded-[10px] xl:h-[357px]">
               <img src="/Frame 1618874149 (1).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
-              <img src="/Frame 1618874149 (8).png" className="max-w-[340.39px] xl:hidden" />
+              <img src="/Frame 1618874149 (8).png" className="px-4 pt-10 xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Beneficiary Verification</h2>
             <p className="paragraph max-w-[529px]">
@@ -43,9 +43,9 @@ const Features = () => {
           </div>
 
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px]  xl:h-[357px]">
               <img src="/Frame 1618874149 (2).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
-              <img src="/Frame 1618874149 (9).png" className="max-w-[340.39px] xl:hidden" />
+              <img src="/Frame 1618874149 (9).png" className="px-4 pt-10 xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Vendor Transactions Overview</h2>
             <p className="paragraph max-w-[629px]">
@@ -54,9 +54,9 @@ const Features = () => {
             </p>
           </div>
           <div>
-            <div className="primary-400 flex h-[357px] items-end justify-center rounded-[10px] max-sm:h-[217px]">
+            <div className="primary-400 flex items-end justify-center rounded-[10px] xl:h-[357px] ">
               <img src="/Frame 1618874149 (3).png" alt="" className="max-h-[306px] max-w-[560px] max-sm:hidden" />
-              <img src="/Frame 1618874149 (10).png" className="max-w-[340.39px] xl:hidden" />
+              <img src="/Frame 1618874149 (10).png" className="px-4 pt-10 xl:hidden" />
             </div>
             <h2 className="mb-2 mt-6 text-2xl font-medium">Donor Reporting</h2>
             <p className="paragraph max-w-[529px]">

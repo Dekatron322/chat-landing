@@ -49,7 +49,7 @@ const FAQsComponent = () => {
   }
 
   return (
-    <div className="relative flex w-full max-sm:px-4">
+    <div className="relative z-50 flex w-full max-sm:px-4">
       <div className="img-element-nineteen absolute left-[-123.21px] top-[175px]"></div>
       <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
         <div className="mt-14 flex w-full flex-col items-center justify-center gap-6 max-sm:mt-10">
