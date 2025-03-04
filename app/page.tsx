@@ -12,6 +12,7 @@ import MobileNav from "components/Navbar/MobileNav"
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import CarAnimation from "components/CardComponent/carAnimation"
+import ChangingLives from "components/CardComponent/changing-lives"
 
 export default function Dashboard() {
   const [mounted, setMounted] = useState(false)
@@ -210,14 +211,9 @@ export default function Dashboard() {
 
         <CarAnimation />
         <CardComponent />
+
         <HowBeneficiariesCanRecieve />
-        <section className="paddings mb-10 flex  w-full">
-          <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
-            <div className=" mt-10  ">
-              <img src="/Frame 1618873988.png" alt="" />
-            </div>
-          </div>
-        </section>
+        <ChangingLives />
         <OurStory />
         <FAQsComponent />
       </div>

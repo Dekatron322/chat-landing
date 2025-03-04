@@ -7,7 +7,6 @@ import FAQsComponent from "components/CardComponent/faqs-component"
 import Features from "components/CardComponent/features"
 import Seamless from "components/CardComponent/seamless"
 import HowItWorks from "components/CardComponent/how-it-works"
-
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import { useTheme } from "next-themes"
 import MobileNav from "components/Navbar/MobileNav"
@@ -16,6 +15,21 @@ export default function Dashboard() {
   const { theme, setTheme, systemTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const isDarkMode = theme === "dark"
+
+  // State for animated text
+  const [currentText, setCurrentText] = useState(0)
+  const texts = [
+    "Total Number of Campaigns Managed",
+    "Total Number of Regions Impacted",
+    "Total Number of Beneficiaries Served",
+  ]
+
+  // Corresponding descriptions for each text
+  const descriptions = [
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Explore how our platform impacts regions globally with real-time data.",
+    "Discover the number of beneficiaries served through our initiatives.",
+  ]
 
   useEffect(() => {
     setMounted(true)
@@ -26,6 +40,29 @@ export default function Dashboard() {
       setTheme(systemTheme)
     }
   }, [systemTheme, setTheme, mounted])
+
+  // Animate text every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentText((prev) => (prev + 1) % texts.length)
+    }, 3000) // Change text every 3 seconds
+    return () => clearInterval(interval)
+  }, [texts.length])
+
+  // Function to highlight specific words in green
+  const highlightText = (text: any) => {
+    const words = text.split(" ")
+    return words.map((word: any, index: any) => {
+      if (["Campaigns", "Beneficiaries", "Regions"].includes(word)) {
+        return (
+          <span key={index} className="text-[#05F29A]">
+            {word}{" "}
+          </span>
+        )
+      }
+      return <span key={index}>{word} </span>
+    })
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,18 +81,18 @@ export default function Dashboard() {
   }
 
   return (
-    <section className="   h-full w-full">
-      <div className="   max-sm:w-full">
+    <section className="h-full w-full">
+      <div className="max-sm:w-full">
         <DashboardNav />
         <MobileNav />
-        <div className=" paddings mt-16  flex h-auto w-full">
-          <div className="   ngoImage w-full  gap-6  rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
-            <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
-              <div className="card flex items-center gap-2 rounded-md  px-[20px] py-2">
+        <div className="paddings mt-16 flex h-auto w-full">
+          <div className="ngoImage w-full gap-6 rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
+            <div className="mt-14 flex w-full flex-col items-center justify-center gap-3 max-sm:mt-10">
+              <div className="card flex items-center gap-2 rounded-md px-[20px] py-2">
                 <p className="text-sm">Our All-in-One Management Solution</p>
               </div>
               <motion.h2
-                className=" h-full  max-w-[874px] text-center text-4xl font-medium max-sm:text-3xl md:leading-[55px]"
+                className="h-full max-w-[874px] text-center text-4xl font-medium max-sm:text-3xl md:leading-[55px]"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
@@ -89,10 +126,27 @@ export default function Dashboard() {
 
           <div className="flex h-full w-full items-center justify-between max-sm:flex-col max-sm:p-4 xl:px-64">
             <div>
-              <p className=" text-2xl font-bold max-sm:text-lg">
-                Total Number of <span className="text-[#05F29A]">campaigns</span> managed:
+              <p className="text-2xl font-bold max-sm:text-lg">
+                <motion.span
+                  key={currentText} // Use key to trigger animation on text change
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {highlightText(texts[currentText])}
+                </motion.span>
               </p>
-              <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <motion.p
+                key={currentText} // Use key to trigger animation on text change
+                className="paragraph"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.5 }}
+              >
+                {descriptions[currentText]}
+              </motion.p>
             </div>
 
             {isDarkMode ? (
@@ -116,15 +170,6 @@ export default function Dashboard() {
           <div className="img-element-two absolute bottom-0 right-10 max-sm:hidden"></div>
           <div className="flex items-center px-96"></div>
         </section>
-        {/* <CardComponent />
-        <HowBeneficiariesCanRecieve />
-        <section className="paddings mb-10 flex  w-full">
-          <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
-            <div className=" mt-10  ">
-              <img src="/Frame 1618873988.png" alt="" />
-            </div>
-          </div>
-        </section> */}
 
         <FAQsComponent />
       </div>

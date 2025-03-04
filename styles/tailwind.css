@@ -586,6 +586,14 @@ body {
   @apply bg-[#151E22];
 }
 
+.section-3 {
+  @apply bg-[#F8F8F8];
+}
+
+[data-theme="dark"] .section-3 {
+  @apply bg-[#1C2529];
+}
+
 .faq-bg {
   @apply bg-[#F8F8F8];
 }

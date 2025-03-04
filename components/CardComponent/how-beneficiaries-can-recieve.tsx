@@ -3,7 +3,7 @@ import React from "react"
 
 const HowBeneficiariesCanRecieve = () => {
   return (
-    <section className="section-1  flex  w-full">
+    <section className="section-1 relative flex w-full  overflow-hidden">
       <div className="mt-6   w-full gap-4 max-md:flex-col  max-md:px-0 md:mb-16">
         <div className="flex w-full flex-col items-center justify-center gap-4   max-sm:mt-10   ">
           <div className="card-sm flex items-center gap-2 rounded-full px-3 py-2">
@@ -56,11 +56,11 @@ const HowBeneficiariesCanRecieve = () => {
                 </button>
               </div>
             </div>
-            <div className="max-w-[1104px] gap-[66px] pb-10 xl:flex">
+            <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
               <img src="/Frame 1618874007.png" alt="" className="xl:h-[181px] xl:w-[306px]" />
               <div className="flex flex-col items-start gap-2 xl:gap-5">
                 <h2 className="text-3xl font-medium max-sm:mt-3 max-sm:text-2xl">SMS/USSD (For Feature Phone)</h2>
-                <p className="paragraph txl:ext-[20px]  max-w-[669px]  font-normal">
+                <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Text based codes allow easy fund redemption for beneficiaries without smartphone
                 </p>
                 <button className="primary-text-100 flex items-center gap-2 underline">
@@ -71,6 +71,11 @@ const HowBeneficiariesCanRecieve = () => {
           </div>
         </div>
       </div>
+      <img
+        src="/gradient/Ellipse 9.png" // Replace with your image path
+        alt="Gradient Background"
+        className="absolute bottom-[-550px] left-1/2 z-0 h-auto w-full max-w-[1200px] -translate-x-1/2 transform"
+      />
     </section>
   )
 }

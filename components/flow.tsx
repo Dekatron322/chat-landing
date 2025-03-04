@@ -1,7 +1,17 @@
+import dynamic from "next/dynamic"
 import React from "react"
 
-const flow = () => {
-  return <div>xxx</div>
+// Dynamically import the Lottie component with SSR disabled
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false })
+
+const FlowAnimation = () => {
+  const animationData = require("../public/Flowxxx.json")
+
+  return (
+    <div className="">
+      <Lottie animationData={animationData} loop={true} autoplay={true} />
+    </div>
+  )
 }
 
-export default flow
+export default FlowAnimation
