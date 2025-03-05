@@ -95,7 +95,7 @@ const ChangingLives = () => {
         {sections.map((section, index) => (
           <motion.div
             key={index}
-            className="section-3 absolute w-[341px] transform rounded-xl bg-white p-4 shadow-lg"
+            className="section-3 absolute transform rounded-xl bg-white p-4 shadow-lg max-sm:w-[200px] xl:w-[341px]"
             style={{
               left: section.position.left,
               top: section.position.top,
@@ -107,11 +107,11 @@ const ChangingLives = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <div className="head flex items-center gap-2">
-              <img src={section.image} alt="" className="h-[53px] w-[61px]" />
+              <img src={section.image} alt="" className="h-[53px] w-[61px] max-sm:h-[30px] max-sm:w-[34px]" />
               <div>
-                <p className="text-sm">{section.name}</p>
-                <div className="rounded-full bg-[#05F29A] px-2 py-1 text-xs">
-                  <p className="text-center text-[#000000]">{section.role}</p>
+                <p className="text-sm ">{section.name}</p>
+                <div className="rounded-full bg-[#05F29A] px-2 py-1 xl:text-xs">
+                  <p className="text-center text-[#000000] max-sm:text-[9px]">{section.role}</p>
                 </div>
               </div>
               {index !== activeSection && (

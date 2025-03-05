@@ -10,6 +10,7 @@ import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import { useTheme } from "next-themes"
 import MobileNav from "components/Navbar/MobileNav"
+import CarAnimation from "components/CardComponent/carAnimation"
 
 export default function Dashboard() {
   const { theme, setTheme, systemTheme } = useTheme()
@@ -163,13 +164,7 @@ export default function Dashboard() {
         <HowItWorks />
         <TestimonialSection />
 
-        <section className="primary-100 relative h-[117px]">
-          <div className="img-element absolute bottom-0 left-10 max-sm:hidden"></div>
-          <div className="img-element-two-sm absolute bottom-0 left-0 md:hidden"></div>
-          <div className="img-element-sm absolute bottom-0 right-0 md:hidden"></div>
-          <div className="img-element-two absolute bottom-0 right-10 max-sm:hidden"></div>
-          <div className="flex items-center px-96"></div>
-        </section>
+        <CarAnimation />
 
         <FAQsComponent />
       </div>

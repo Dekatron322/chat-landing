@@ -765,8 +765,26 @@ body {
   height: 50px;
 }
 
+[data-theme="dark"] .img-element-sm {
+  background-image: url("/donors/peep-sitting-15 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 50px;
+}
+
 .img-element-two-sm {
   background-image: url("/media/Frame 1618874147 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85.7px;
+  height: 30px;
+}
+
+[data-theme="dark"] .img-element-two-sm {
+  background-image: url("/donors/Frame 1618874147 (2).png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1367,6 +1385,7 @@ body {
   background-repeat: no-repeat;
   width: 91px;
   height: 92px;
+  @apply max-sm:h-11 max-sm:w-11;
 }
 .link-items {
   @apply font-medium;
@@ -1492,6 +1511,7 @@ body {
   background-repeat: no-repeat;
   width: 91px; /* Set a width for the image container */
   height: 92px; /* Set a height for the image container */
+  @apply max-sm:h-11 max-sm:w-11;
 }
 
 [data-theme="dark"] .backgroundImage {

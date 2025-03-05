@@ -9,6 +9,7 @@ import TestimonialSection from "components/CardComponent/testimonials-section"
 import Slider from "components/CardComponent/slider"
 import FeaturesDonors from "components/CardComponent/features-donors"
 import MobileNav from "components/Navbar/MobileNav"
+import CarAnimation from "components/CardComponent/carAnimation"
 
 export default function Dashboard() {
   return (
@@ -61,16 +62,7 @@ export default function Dashboard() {
         <HowItWorks />
         <TestimonialSection />
 
-        <section className="primary-100 relative h-[117px]">
-          <div className="img-element absolute bottom-0 left-10"></div>
-          <div className="img-element-two absolute bottom-0 right-10"></div>
-          <div className="flex h-full items-center xl:px-96">
-            <p className="animate-text text-[32px] font-medium max-sm:hidden">
-              Driving Aid with Innovation and Transparency
-            </p>
-            <div className="car-img flex h-[117px] w-full items-center "></div>
-          </div>
-        </section>
+        <CarAnimation />
 
         <FAQsComponent />
       </div>
