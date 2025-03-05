@@ -1,9 +1,27 @@
 import { motion } from "framer-motion"
-import React, { useState } from "react"
+import { useTheme } from "next-themes"
+import React, { useEffect, useState } from "react"
 import { BsArrowLeft, BsArrowRight, BsChevronRight } from "react-icons/bs"
 
 const ChangingLives = () => {
   const [activeSection, setActiveSection] = useState(0)
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme, systemTheme } = useTheme()
+  const isDarkMode = theme === "dark"
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (systemTheme && !mounted) {
+      setTheme(systemTheme)
+    }
+  }, [systemTheme, setTheme, mounted])
+
+  const toggleTheme = () => {
+    setTheme(isDarkMode ? "light" : "dark")
+  }
 
   const sections = [
     {
@@ -11,21 +29,27 @@ const ChangingLives = () => {
       role: "Donor",
       image: "/gradient/Frame 1618874027.png",
       text: "Knowing exactly where my contributions go gives me peace of mind. CHATS’ detailed reports and updates are game-changers for donor confidence.",
-      position: { left: "5%", top: "15%" }, // Position for the first section
+      position: { left: "5%", top: "15%" },
+      circleColor: "#FF6B6B", // Unique color for each circle
+      ellipseImage: "/gradient/Ellipse 1834.png", // Unique ellipse image for this section
     },
     {
       name: "Ahmed Bello",
       role: "Beneficiary",
       image: "/gradient/Frame 1618874030.png",
       text: "Knowing exactly where my contributions go gives me peace of mind. CHATS’ detailed reports and updates are game-changers for donor confidence.",
-      position: { left: "50%", top: "50%" }, // Position for the second section
+      position: { left: "50%", top: "50%" },
+      circleColor: "#4ECDC4", // Unique color for each circle
+      ellipseImage: "/gradient/Component 162.png", // Unique ellipse image for this section
     },
     {
       name: "Bryan Solomon",
       role: "NGO Coordinator",
       image: "/gradient/Frame 1618874027 (1).png",
       text: "Knowing exactly where my contributions go gives me peace of mind. CHATS’ detailed reports and updates are game-changers for donor confidence.",
-      position: { right: "10%", top: "5%" }, // Position for the third section
+      position: { right: "10%", top: "5%" },
+      circleColor: "#FFE66D", // Unique color for each circle
+      ellipseImage: "/gradient/Ellipse 1834 (1).png", // Unique ellipse image for this section
     },
   ]
 
@@ -37,7 +61,7 @@ const ChangingLives = () => {
     setActiveSection((prev) => (prev - 1 + sections.length) % sections.length)
   }
 
-  const handleSectionClick = (index: any) => {
+  const handleSectionClick = (index: React.SetStateAction<number>) => {
     setActiveSection(index)
   }
 
@@ -63,9 +87,11 @@ const ChangingLives = () => {
         </div>
       </div>
       <div className="relative h-[500px] w-full">
-        {" "}
-        {/* Adjust height as needed */}
-        <img src="/gradient/image 2.png" alt="" className="h-full w-full object-cover" />
+        {isDarkMode ? (
+          <img src="/gradient/image 2 (1).png" alt="" className="h-full w-full object-fill" />
+        ) : (
+          <img src="/gradient/image 2.png" alt="" className="h-full w-full object-fill" />
+        )}
         {sections.map((section, index) => (
           <motion.div
             key={index}
@@ -110,6 +136,16 @@ const ChangingLives = () => {
                 {section.text}
               </motion.p>
             )}
+            {/* Unique gradient ellipse for each section */}
+
+            <motion.img
+              className="absolute -bottom-7 left-1/2 h-4 w-10"
+              src={section.ellipseImage}
+              alt="gradient ellipse"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+            />
           </motion.div>
         ))}
       </div>
