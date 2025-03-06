@@ -37,7 +37,10 @@ const Footer = () => {
                 <Link href="/" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                   Home
                 </Link>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/solutions"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Solutions
                 </Link>
                 <Link href="/faqs" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
@@ -57,13 +60,22 @@ const Footer = () => {
               {/* Column 3 */}
               <div className="flex flex-col gap-4 max-sm:mb-7">
                 <p className="font-bold xl:text-xl">Resources</p>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/resources/dive"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Insight Report
                 </Link>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/resources"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Blog
                 </Link>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/resources/media-gallery"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Media Gallery
                 </Link>
                 <Link

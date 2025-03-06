@@ -1,9 +1,6 @@
 "use client"
 import DashboardNav from "components/Navbar/DashboardNav"
-import { useState } from "react"
-import { motion } from "framer-motion"
 import Footer from "components/Footer/Footer"
-import Image from "next/image"
 import NgoFaqs from "components/CardComponent/ngo-faqs"
 import DonorFaqs from "components/CardComponent/donor-faqs"
 import VendorFaqs from "components/CardComponent/vendor-faqs"
@@ -11,42 +8,6 @@ import BeneficiaryFaqs from "components/CardComponent/beneficiary-faqs"
 import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
-
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between children
-      },
-    },
-  }
-
-  // Child item animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
-
   return (
     <section className="   h-full w-full">
       <div className="   max-sm:w-full ">

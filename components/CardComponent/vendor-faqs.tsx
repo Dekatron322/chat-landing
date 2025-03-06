@@ -9,37 +9,37 @@ const VendorFaqs = () => {
     {
       question: "What is CHATS, and how does it work",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "Who can use CHATS?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "How secure is CHATS?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "What disbursement options does CHATS offer?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "How can I get started with CHATS?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "Can donors track how their funds are used?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
     {
       question: "What regions does CHATS currently serve?",
       answer:
-        "Lörem ipsum viagra benar nere däkygon heteromäsamma test pseudonar i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i någonstansare  feledes av dinas fett. i ",
+        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
     },
   ]
 
