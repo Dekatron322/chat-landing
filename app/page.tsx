@@ -103,7 +103,7 @@ export default function Dashboard() {
                 </button>
               </div>
             </div>
-            <img src="/Frame 1618873303.png" className=" xl:w-1/2" alt="" />
+            <img src="/Frame 1618873303.svg" className=" xl:w-1/2" alt="" />
           </div>
         </section>
 
@@ -195,16 +195,23 @@ export default function Dashboard() {
                 {isDarkMode ? (
                   <img src="/Frame 1618873977 (2).png" alt="" className="xl:hidden" />
                 ) : (
-                  <img src="/solutions/Frame 1618873977.png" alt="" className="xl:hidden" />
+                  <img src="/Frame 1618873977 (1) copy.svg" alt="" className="xl:hidden" />
                 )}
               </div>
             </div>
           </div>
         </section>
-        <section className="paddings mb-10 flex  w-full">
-          <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
-            <div className=" mt-10  ">
-              <img src="/Frame 1618873988.png" alt="" />
+        <section className="paddings my-10 flex w-full">
+          <div className="flex w-full flex-col items-center justify-center overflow-hidden rounded-lg max-sm:mt-10">
+            <div className=" w-full" style={{ aspectRatio: "16/6" }}>
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/c38lplJETZw?si=VhMOo1sImsX6JRzc"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </section>

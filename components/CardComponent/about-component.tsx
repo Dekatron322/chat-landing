@@ -7,7 +7,7 @@ const AboutComponent = () => {
     <div className="paddings my-10 grid w-full justify-between gap-10 xl:grid-cols-3">
       <motion.div
         className="our-mission-img group relative flex h-[529px] w-full flex-col items-center justify-between overflow-hidden rounded-[20px] bg-cover bg-center bg-no-repeat max-sm:h-[474.7px]"
-        style={{ backgroundImage: 'url("/001.jpeg")' }}
+        style={{ backgroundImage: 'url("/001.jpg")' }}
         whileHover="hover" // Trigger animation on container hover
         initial="initial" // Initial state
       >
@@ -52,7 +52,7 @@ const AboutComponent = () => {
       </motion.div>
       <motion.div
         className="our-mission-img group relative flex h-[529px] w-full flex-col items-center justify-between overflow-hidden rounded-[20px] bg-cover bg-center bg-no-repeat max-sm:h-[474.7px]"
-        style={{ backgroundImage: 'url("/002.jpeg")' }}
+        style={{ backgroundImage: 'url("/002.jpg")' }}
         whileHover="hover" // Trigger animation on container hover
         initial="initial" // Initial state
       >
@@ -97,7 +97,7 @@ const AboutComponent = () => {
       </motion.div>
       <motion.div
         className="our-mission-img group relative flex h-[529px] w-full flex-col items-center justify-between overflow-hidden rounded-[20px] bg-cover bg-center bg-no-repeat max-sm:h-[474.7px]"
-        style={{ backgroundImage: 'url("/003.jpeg")' }}
+        style={{ backgroundImage: 'url("/003.jpg")' }}
         whileHover="hover" // Trigger animation on container hover
         initial="initial" // Initial state
       >

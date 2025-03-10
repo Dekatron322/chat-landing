@@ -35,7 +35,7 @@ const CardComponent = () => {
     {
       title: "Beneficiary App",
       content: (
-        <div className="primary-300 relative flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
+        <div className="primary-400 relative flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
           <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
           <div className="img-element-fifteen-sm absolute bottom-0 left-6 z-20 xl:hidden"></div>
           <div className="img-element-twenty-two absolute bottom-0 left-0"></div>

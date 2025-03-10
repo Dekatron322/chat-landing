@@ -495,7 +495,7 @@ body {
 }
 
 .backgroundImage {
-  background-image: url("/Grid 2.png");
+  background-image: url("/Grid 2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -739,7 +739,7 @@ body {
 }
 
 .img-element {
-  background-image: url("/Frame 1618874147.png");
+  background-image: url("/Frame 1618874147.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -842,7 +842,7 @@ body {
 }
 
 .img-elementx {
-  background-image: url("/Frame 1618874147 (1).png");
+  background-image: url("/Frame 1618874147 (1).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -851,7 +851,7 @@ body {
 }
 
 [data-theme="dark"] .img-element {
-  background-image: url("/Frame 1618874147 (1).png");
+  background-image: url("/Frame 1618874147 (1).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -860,7 +860,7 @@ body {
 }
 
 .img-element-two {
-  background-image: url("/peep-sitting-15 (2).png");
+  background-image: url("/peep-sitting-15.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -869,7 +869,7 @@ body {
 }
 
 [data-theme="dark"] .img-element-two {
-  background-image: url("/peep-sitting-15.png");
+  background-image: url("/peep-sitting-15 (1).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1141,12 +1141,12 @@ body {
 }
 
 .img-element-sixteen {
-  background-image: url("/Blue copy 5.png");
+  background-image: url("/Blue copy 7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
-  height: 400px;
+  height: 390px;
 }
 
 .img-element-sixteen-sm {
@@ -1168,16 +1168,16 @@ body {
 }
 
 .img-element-seventeen {
-  background-image: url("/iPhone-13-Pro-Front copy.png");
+  background-image: url("/iPhone-13-Pro-Front copy 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
-  height: 400px;
+  height: 390px;
 }
 
 .img-element-eighteen {
-  background-image: url("/Celestial-Blue copy 2.png");
+  background-image: url("/Celestial-Blue copy 3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1186,7 +1186,7 @@ body {
 }
 
 .img-element-eighteen-sm {
-  background-image: url("/Celestial-Blue copy 2.png");
+  background-image: url("/Celestial-Blue copy 3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1515,21 +1515,21 @@ body {
 }
 
 [data-theme="dark"] .backgroundImage {
-  background-image: url("/Grid 2 (1).png");
+  background-image: url("/Grid 2 (1).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .our-mission-img {
-  background-image: url("/001.jpeg");
+  background-image: url("/001.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .core-value-img {
-  background-image: url("/002.jpeg");
+  background-image: url("/002.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1560,7 +1560,7 @@ body {
 }
 
 .our-vision-img {
-  background-image: url("/003.jpeg");
+  background-image: url("/003.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1583,7 +1583,7 @@ body {
 }
 
 .backgroundImage2 {
-  background-image: url("/Vertical lines.png");
+  background-image: url("/Grid 2 (1).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

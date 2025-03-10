@@ -25,14 +25,14 @@ const OurStory = () => {
               <div className="scroll-container animate-infinite-scroll flex w-max gap-[66px]">
                 {/* First Set of Images */}
                 <div className="flex gap-[66px]">
-                  <img src="/Frame 1618874037.png" alt="" />
+                  <img src="/Frame 1618874037 (2).png" alt="" />
                   <img src="/Frame 1618874038.png" alt="" />
                   <img src="/Frame 1618874039.png" alt="" />
                   <img src="/Frame 1618874040.png" alt="" />
                 </div>
                 {/* Duplicate Set of Images for Infinite Scroll */}
                 <div className="flex gap-[66px]">
-                  <img src="/Frame 1618874037.png" alt="" />
+                  <img src="/Frame 1618874037 (2).png" alt="" />
                   <img src="/Frame 1618874038.png" alt="" />
                   <img src="/Frame 1618874039.png" alt="" />
                   <img src="/Frame 1618874040.png" alt="" />
