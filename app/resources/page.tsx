@@ -88,7 +88,7 @@ export default function Dashboard() {
         <DashboardNav />
         <MobileNav />
         <div className="paddings relative h-auto w-full max-sm:mt-20 max-sm:rounded-xl xl:mt-32  xl:flex">
-          <img src="/resources/Frame 1618874260 (2).png" alt="" className="rounded-t-lg xl:hidden" />
+          <img src="/resources/Frame 1618874260 (3).webp" alt="" className="rounded-t-lg xl:hidden" />
           <div className="primary-400 relative flex w-full overflow-hidden p-4 max-sm:rounded-b-lg xl:h-[408px] xl:rounded-[15px] xl:p-6">
             <div className="img-element-thirty-one absolute left-0 top-0 max-sm:hidden"></div>
 
