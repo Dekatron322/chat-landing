@@ -25,7 +25,7 @@ export default function Dashboard() {
                 <p className="text-sm">Donor</p>
               </div>
               <motion.h2
-                className="     text-4xl font-medium max-sm:text-3xl md:leading-[50px]"
+                className="text-4xl font-medium max-sm:text-3xl md:leading-[50px]"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
@@ -52,7 +52,7 @@ export default function Dashboard() {
               </button>
             </div>
             <div className="donorImage absolute right-0 top-36 flex h-[628px] w-2/3 justify-center max-sm:hidden"></div>
-            <img src="/donors/Graphite.png" alt="" className=" z-10 w-[722px]" />
+            <img src="/donors/Graphite.webp" alt="" className=" z-10 w-[722px]" />
           </div>
         </div>
         <Slider />

@@ -19,7 +19,7 @@ const Seamless = () => {
           <div className="border-color-100 w-full overflow-hidden pb-10">
             <div className="scroll-containers animate-infinite-scroll flex w-max gap-[21px]">
               {/* First Set of Images */}
-              <div className="flex gap-[21px]">
+              <div className="flex gap-[21px] ">
                 <img src="/scroller/Frame 1618874247.png" alt="" className="h-[159px] w-[110px]" />
                 <img src="/scroller/Frame 1618874248.png" alt="" className="h-[159px] max-w-[110px]" />
                 <img src="/scroller/Frame 1618874249.png" alt="" className="h-[159px] w-[110px]" />

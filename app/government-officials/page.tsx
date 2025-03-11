@@ -57,7 +57,7 @@ export default function Dashboard() {
               {/* Overlay Image */}
               <div className="absolute right-52 top-[50%] z-10 h-[50%] w-full max-sm:hidden">
                 <Image
-                  src="/gov/image 47.png" // Replace with your overlay image path
+                  src="/gov/image 47.webp" // Replace with your overlay image path
                   alt="Overlay"
                   height={221} // 50% of the original image height
                   width={445} // Same as the original image width
@@ -68,7 +68,7 @@ export default function Dashboard() {
               {/* Overlay Image - Positioned at the bottom on mobile */}
               <div className="absolute bottom-[-60px] left-10 z-10 w-[80%] max-md:right-auto max-md:top-auto max-md:h-[30%] xl:hidden">
                 <Image
-                  src="/gov/image 47.png" // Replace with your overlay image path
+                  src="/gov/image 47.webp" // Replace with your overlay image path
                   alt="Overlay"
                   height={221} // 50% of the original image height
                   width={445} // Same as the original image width
@@ -87,7 +87,7 @@ export default function Dashboard() {
               </div>
 
               {/* Original Image */}
-              <Image src="/gov/Frame 1618874207.png" alt="" height={442} width={600} />
+              <Image src="/gov/Frame 1618874207.webp" alt="" height={442} width={600} />
             </div>
           </div>
         </div>
