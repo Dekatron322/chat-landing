@@ -1677,14 +1677,14 @@ body {
 }
 
 .section-img {
-  background-image: url("/MacBook Pro 14_ - 7.png");
+  background-image: url("/MacBook Pro 14_ - 7.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 [data-theme="dark"] .section-img {
-  background-image: url("/MacBook Pro 14_ - 7 (1).png");
+  background-image: url("/MacBook Pro 14_ - 7 (3).webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
