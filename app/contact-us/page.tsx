@@ -13,41 +13,7 @@ import Glossary from "components/CardComponent/glossary"
 import MobileNav from "components/Navbar/MobileNav"
 
 export default function Dashboard() {
-  const [hover, setHover] = useState(false)
-  const [hoverCall, setHoverCall] = useState(false)
-  const [cvHover, setCvHover] = useState(false)
-  const [hoverCard, setHoverCard] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [callCopied, setCallCopied] = useState(false)
   const [activeTab, setActiveTab] = useState("FAQ") // State to manage the active tab
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText("cygnux696@gmail.com")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const handleCallCopy = () => {
-    navigator.clipboard.writeText("08129859405")
-    setCallCopied(true)
-    setTimeout(() => setCallCopied(false), 2000) // Reset copied state after 2 seconds
-  }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between children
-      },
-    },
-  }
-
-  // Child item animation variants
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  }
 
   return (
     <section className="h-full w-full">
@@ -55,7 +21,7 @@ export default function Dashboard() {
         <DashboardNav />
         <MobileNav />
         <div className="paddings h-auto w-full max-sm:mt-20 xl:mt-32 xl:flex">
-          <img src="/contact-us/Frame 1618874342 (1).png" alt="" className=" max-sm:rounded-t-xl xl:hidden" />
+          <img src="/contact-us/n9nbashnfdg3rdd8mbgc.webp" alt="" className=" max-sm:rounded-t-xl xl:hidden" />
           <div className="primary-200 relative flex w-full overflow-hidden p-6 max-sm:rounded-b-xl xl:h-[408px] xl:rounded-[15px]">
             <div className="img-element-twenty-eight absolute right-0 top-0 max-sm:hidden"></div>
             <div className="img-element-twenty-nine absolute left-0 max-sm:bottom-0 xl:top-10"></div>

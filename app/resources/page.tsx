@@ -10,7 +10,7 @@ import CarAnimation from "components/CardComponent/carAnimation"
 
 const blogEntries = [
   {
-    img: "/resources/Frame 1618874266.png",
+    img: "/resources/Frame 1618874266.webp",
     title: "Fresh Perspectives: Explore The Latest In Aid Innovation With CHATS...",
     date: "December 27, 2024",
     readTime: "21 mins read",
@@ -18,7 +18,7 @@ const blogEntries = [
     url: "/resources/blog-detail",
   },
   {
-    img: "/resources/Frame 1618874266 (1).png",
+    img: "/resources/Frame 1618874266 (1).webp",
     title: "Dive Into The Data: Key Trends Shaping Humanitarian Aid",
     date: "December 27, 2024",
     readTime: "21 mins read",
@@ -26,7 +26,7 @@ const blogEntries = [
     url: "/resources/dive",
   },
   {
-    img: "/resources/Frame 1618874266 (2).png",
+    img: "/resources/Frame 1618874266 (2).webp",
     title: "Explore Our Visual Stories And Moments",
     date: "December 27, 2024",
     readTime: "21 mins read",
@@ -34,7 +34,7 @@ const blogEntries = [
     url: "/resources/media-gallery",
   },
   {
-    img: "/resources/Frame 1618874266 (3).png",
+    img: "/resources/Frame 1618874266 (3).webp",
     title: "The CHATS Brand Kit Is Your Go-To Resource",
     date: "December 27, 2024",
     readTime: "21 mins read",
