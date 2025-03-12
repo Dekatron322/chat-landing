@@ -7,39 +7,29 @@ const NgoFaqs = () => {
 
   const faqs = [
     {
-      question: "What is CHATS, and how does it work",
+      question: "How can my organization start a campaign on Chats.cash?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Organizations can start campaigns through the NGO Dashboard. This involves setting up campaign details, onboarding beneficiaries and vendors (if applicable), inviting donors, and managing all aspects of the campaign lifecycle.",
     },
     {
-      question: "Who can use CHATS?",
+      question: "How does Chats.cash help NGOs onboard and verify beneficiaries?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "NGOs and their field agents can use the NGO Dashboard and Field Agent App to onboard beneficiaries. Verification processes are in place to ensure aid reaches the intended recipients, maintaining data integrity and reducing fraud.",
     },
     {
-      question: "How secure is CHATS?",
+      question: "How can NGOs track the progress of their campaigns on Chats.cash?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "The NGO Dashboard provides real-time tracking of campaign progress, including donation inflows, aid distribution status, vendor payments, and field agent activities, offering a comprehensive overview of campaign operations.",
     },
     {
-      question: "What disbursement options does CHATS offer?",
+      question: "How does Chats.cash facilitate reporting to donors?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Chats.cash automates the generation of detailed and tamper-proof campaign reports for donors. NGOs can easily share these reports, enhancing donor trust and demonstrating accountability.",
     },
     {
-      question: "How can I get started with CHATS?",
+      question: "What are the different ways beneficiaries can receive aid through Chats.cash?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "Can donors track how their funds are used?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "What regions does CHATS currently serve?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Beneficiaries can receive aid through QR code paper vouchers, SMS for feature phones, or via the Beneficiary App for smartphone users, ensuring accessibility across different technology levels.",
     },
   ]
 

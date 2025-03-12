@@ -8,39 +8,39 @@ const FAQsComponent = () => {
 
   const faqs = [
     {
-      question: "What is CHATS, and how does it work",
+      question: "What is Chats.cash and what does CHATS stand for?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Chats.cash is a humanitarian aid transfer solution. CHATS stands for Convexity Humanitarian Aid Transfer Solution. It is an aid distribution platform designed for cash, voucher, and item-based campaigns.",
     },
     {
-      question: "Who can use CHATS?",
+      question: "What problem does Chats.cash solve in humanitarian aid?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Chats.cash addresses the challenges of transparency, accountability, and efficiency in aid distribution. It ensures aid reaches beneficiaries directly, reduces fraud, and provides donors with tamper-proof reports, fostering trust and effective aid delivery.",
     },
     {
-      question: "How secure is CHATS?",
+      question: "Who are the main users of the Chats.cash platform?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "The primary users are Donors, Humanitarian Organizations (NGOs/Government Institutions/individuals running campaigns), Field Agents, Vendors, and Beneficiaries. Each has a dedicated platform or app within the Chats.cash ecosystem.",
     },
     {
-      question: "What disbursement options does CHATS offer?",
+      question: "What are the key benefits of using Chats.cash for humanitarian aid distribution?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Key benefits include enhanced transparency, tamper-proof reporting using blockchain, efficient aid delivery, reduced operational costs for NGOs, increased donor trust, and dignified aid receipt for beneficiaries.",
     },
     {
-      question: "How can I get started with CHATS?",
+      question: "What types of aid campaigns can be managed on Chats.cash?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Chats.cash supports cash-based assistance, voucher-based assistance, and item-based distribution campaigns, offering flexibility for various humanitarian needs.",
     },
     {
-      question: "Can donors track how their funds are used?",
+      question: "How does Chats.cash ensure transparency and accountability in aid distribution?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "By utilizing blockchain technology, Chats.cash provides a tamper-proof record of all transactions and campaign activities. This ensures transparency and allows donors to verify the impact of their donations through detailed reports.",
     },
     {
-      question: "What regions does CHATS currently serve?",
+      question: "How does Chats.cash ensure transparency and accountability in aid distribution?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "By utilizing blockchain technology, Chats.cash provides a tamper-proof record of all transactions and campaign activities. This ensures transparency and allows donors to verify the impact of their donations through detailed reports.",
     },
   ]
 

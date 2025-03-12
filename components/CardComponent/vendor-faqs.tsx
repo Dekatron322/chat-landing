@@ -7,39 +7,19 @@ const VendorFaqs = () => {
 
   const faqs = [
     {
-      question: "What is CHATS, and how does it work",
+      question: "How do Field Agents use the Field Agent App?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Field Agents use the app to onboard and verify beneficiaries and vendors, provide campaign feedback, and manage aid distribution at the field level, streamlining operations and data collection.",
     },
     {
-      question: "Who can use CHATS?",
+      question: "How do Vendors get paid through Chats.cash?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Vendors onboarded for campaigns can use the Vendor App to verify their services and manage payments, ensuring transparent and efficient compensation for their role in aid distribution.",
     },
     {
-      question: "How secure is CHATS?",
+      question: "What kind of support and training is provided for using Chats.cash platforms?",
       answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "What disbursement options does CHATS offer?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "How can I get started with CHATS?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "Can donors track how their funds are used?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
-    },
-    {
-      question: "What regions does CHATS currently serve?",
-      answer:
-        "CHATS is a platform designed to streamline case and voucher aid distribution. It offers tools for donors, NGOS, and beneficiaries to ensure transparency, efficiency, and impact",
+        "Chats.cash offers comprehensive support and training resources for all user groups, including documentation, tutorials, and customer support to ensure effective platform utilization.",
     },
   ]
 

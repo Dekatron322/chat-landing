@@ -107,7 +107,7 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <div className="section-img  h-[664px]"></div>
+        <div className="section-img h-[664px]"></div>
         <AboutComponent />
         <section className="section-1  flex  w-full">
           <div className="mt-6   w-full gap-4 max-md:flex-col max-md:px-0 md:mb-16">
