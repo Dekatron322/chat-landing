@@ -65,7 +65,7 @@ export default function Dashboard() {
           </div>
         </div>
         <section className="paddings">
-          <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[508px]">
+          <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[380px] 2xl:h-[508px]">
             <div className="img-element-eighteen absolute bottom-0 left-10 max-sm:hidden"></div>
             <div className="img-element-eighteen-sm absolute bottom-0 left-6 xl:hidden"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
@@ -87,7 +87,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="primary-200 relative mt-10  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[508px]">
+          <div className="primary-200 relative  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[380px] 2xl:h-[508px]">
             <div className="img-element-three absolute bottom-0 left-10 max-sm:hidden"></div>
             <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
             <div className="img-element-three-sm absolute bottom-0 left-6 xl:hidden"></div>
@@ -110,8 +110,8 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="relative mt-10 flex h-full w-full overflow-hidden rounded-[15px] xl:mt-10 xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
-            <div className=" grid w-full gap-10 xl:grid-cols-2">
+          <div className="relative mt-10 flex h-full w-full overflow-hidden rounded-[15px]  xl:h-[380px] xl:bg-[#05F29A] xl:p-6 2xl:h-[508px] 2xl:p-10">
+            <div className=" grid w-full gap-10 xl:grid-cols-2 xl:gap-6">
               <div className="relative h-full w-full overflow-auto rounded-[10px] bg-[#151E22] max-sm:h-[507px]">
                 <div className="img-element-sixteen absolute bottom-0 left-10 max-sm:hidden"></div>
                 <div className="img-element-sixteen-sm absolute bottom-0 left-6 xl:hidden"></div>
@@ -157,7 +157,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="primary-400 relative mt-10 flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
+          <div className="primary-400 relative mt-10 flex h-[508px] w-full overflow-hidden rounded-[15px] p-6 xl:h-[380px]">
             <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
             <div className="img-element-fifteen-sm absolute bottom-0 left-14 z-50 xl:hidden"></div>
             <div className="img-element-twenty-two absolute bottom-0 left-0"></div>

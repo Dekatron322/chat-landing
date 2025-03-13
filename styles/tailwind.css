@@ -881,9 +881,33 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 760px;
-  height: 355px;
+  width: 760px; /* Default size for larger screens */
+  height: 355px; /* Default size for larger screens */
 }
+
+/* Adjust for smaller desktop screens */
+@media (max-width: 1440px) {
+  .img-element-three {
+    width: 600px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-element-three {
+    width: 500px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-element-three {
+    width: 400px;
+    height: 180px;
+  }
+}
+
+/* Hide on mobile screens (already handled by max-sm:hidden) */
 
 .img-element-three-sm {
   background-image: url("/Celestial-Blue.png");
@@ -901,15 +925,6 @@ body {
   background-repeat: no-repeat;
   width: 300px;
   height: 115px;
-}
-
-[data-theme="dark"] .img-element-three {
-  background-image: url("/Celestial-Blue.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 760px;
-  height: 355px;
 }
 
 .img-element-five {
@@ -1126,8 +1141,37 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 410px;
+  width: 350px; /* Default size for larger screens */
+  height: 410px; /* Default size for larger screens */
+}
+
+/* Adjust for smaller desktop screens */
+@media (max-width: 1500px) {
+  .img-element-fifteen {
+    width: 280px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-element-fifteen {
+    width: 230px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-element-fifteen {
+    width: 180px;
+    height: 230px;
+  }
+}
+
+/* Hide on mobile screens (if needed) */
+@media (max-width: 768px) {
+  .img-element-fifteen {
+    display: none; /* Hide on smaller screens */
+  }
 }
 
 .img-element-fifteen-sm {
@@ -1144,8 +1188,37 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 280px;
-  height: 390px;
+  width: 280px; /* Default size for larger screens */
+  height: 390px; /* Default size for larger screens */
+}
+
+/* Adjust for smaller desktop screens */
+@media (max-width: 1500px) {
+  .img-element-sixteen {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-element-sixteen {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-element-sixteen {
+    width: 160px;
+    height: 250px;
+  }
+}
+
+/* Hide on mobile screens (if needed) */
+@media (max-width: 768px) {
+  .img-element-sixteen {
+    display: none; /* Hide on smaller screens */
+  }
 }
 
 .img-element-sixteen-sm {
@@ -1175,6 +1248,35 @@ body {
   height: 390px;
 }
 
+/* Adjust for smaller desktop screens */
+@media (max-width: 1500px) {
+  .img-element-seventeen {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-element-seventeen {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-element-seventeen {
+    width: 160px;
+    height: 250px;
+  }
+}
+
+/* Hide on mobile screens (if needed) */
+@media (max-width: 768px) {
+  .img-element-seventeen {
+    display: none; /* Hide on smaller screens */
+  }
+}
+
 .img-element-eighteen {
   background-image: url("/Celestial-Blue copy 3.png");
   background-size: cover;
@@ -1182,6 +1284,33 @@ body {
   background-repeat: no-repeat;
   width: 900px;
   height: 420px;
+}
+@media (max-width: 1500px) {
+  .img-element-eighteen {
+    width: 650px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img-element-eighteen {
+    width: 600px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-element-eighteen {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* Hide on mobile screens (if needed) */
+@media (max-width: 768px) {
+  .img-element-eighteen {
+    display: none; /* Hide on smaller screens */
+  }
 }
 
 .img-element-eighteen-sm {
@@ -1665,7 +1794,7 @@ body {
 }
 
 .paddings {
-  @apply px-10 py-6 max-sm:px-4 max-sm:py-2 lg:px-10 xl:px-16 2xl:px-40 3xl:px-24;
+  @apply px-10 py-6 max-sm:px-4 max-sm:py-2 lg:px-10 xl:px-12 2xl:px-40 3xl:px-24;
 }
 
 .navbar {
@@ -1708,18 +1837,17 @@ body {
 
 .image-container {
   background-image: url("/Frame 1618873977 (1).svg");
-  height: 345px;
-  width: 879px; /* Set the width as needed */
   background-size: contain; /* or cover, depending on your needs */
   background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  height: 40vh; /* Use viewport height for responsive height */
+  width: 80vw; /* Use viewport width for responsive width */
+  max-width: 879px; /* Set a maximum width to prevent it from getting too large */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 [data-theme="dark"] .image-container {
   background-image: url("/Frame 1618873977.svg");
-  height: 345px;
-  width: 879px; /* Set the width as needed */
-  background-size: contain; /* or cover, depending on your needs */
-  background-repeat: no-repeat;
 }
 
 .card-bg {

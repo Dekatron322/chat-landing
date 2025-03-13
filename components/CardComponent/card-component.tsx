@@ -8,7 +8,7 @@ const CardComponent = () => {
     {
       title: "Donor Dashboard",
       content: (
-        <div className="primary-200 relative  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[508px]">
+        <div className="primary-200 relative  flex w-full  overflow-hidden rounded-[15px] p-6 max-sm:h-[427px] xl:mt-10 xl:h-[380px] 2xl:h-[508px]">
           <div className="img-element-three absolute bottom-0 left-10 max-sm:hidden"></div>
           <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>
           <div className="img-element-three-sm absolute bottom-0 left-6 xl:hidden"></div>
@@ -35,7 +35,7 @@ const CardComponent = () => {
     {
       title: "Beneficiary App",
       content: (
-        <div className="primary-400 relative flex h-[508px] w-full overflow-hidden rounded-[15px] p-6">
+        <div className="primary-400 relative flex h-[508px] w-full overflow-hidden rounded-[15px] p-6 xl:h-[380px]">
           <div className="img-element-fifteen absolute bottom-0 left-56 max-sm:hidden"></div>
           <div className="img-element-fifteen-sm absolute bottom-0 left-6 z-20 xl:hidden"></div>
           <div className="img-element-twenty-two absolute bottom-0 left-0"></div>
@@ -63,8 +63,8 @@ const CardComponent = () => {
     {
       title: "Field Agent/Vendor App",
       content: (
-        <div className="relative flex h-full w-full overflow-hidden rounded-[15px] xl:mt-10 xl:h-[508px] xl:bg-[#05F29A] xl:p-10">
-          <div className=" grid w-full gap-10 xl:grid-cols-2">
+        <div className="relative flex h-full w-full overflow-hidden rounded-[15px] xl:h-[380px]  xl:bg-[#05F29A] xl:p-6 2xl:mt-10 2xl:h-[508px] 2xl:p-10">
+          <div className=" grid w-full gap-10 xl:grid-cols-2 xl:gap-6">
             <div className="relative h-full w-full overflow-auto rounded-[10px] bg-[#151E22] max-sm:h-[507px]">
               <div className="img-element-sixteen absolute bottom-0 left-10 max-sm:hidden"></div>
               <div className="img-element-sixteen-sm absolute bottom-0 left-6 xl:hidden"></div>
@@ -72,12 +72,14 @@ const CardComponent = () => {
               <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                 <div className="max-sm:hidden"></div>
                 <div className="flex  flex-col gap-4 max-sm:w-full ">
-                  <p className="w-full text-start text-[24px] font-bold text-[#ffffff]">Field Agent App</p>
-                  <p className="w-full text-[#ffffff]">
+                  <p className="w-full text-start text-[24px] font-bold text-[#ffffff] xl:text-[20px]">
+                    Field Agent App
+                  </p>
+                  <p className="w-full text-[#ffffff] xl:text-sm">
                     <span className="text-[#05F29A]">What it Does:</span> Field agents can verify beneficiaries,
                     distribute aid, and report on-ground activities.
                   </p>
-                  <p className="text-[#ffffff]">
+                  <p className="text-[#ffffff] xl:text-sm">
                     <span className="text-[#05F29A]">Benefit:</span> Simplifies fieldwork and ensures accurate,
                     real-time data collection.
                   </p>
@@ -93,14 +95,14 @@ const CardComponent = () => {
               <div className="h-full w-full grid-cols-2 items-center justify-between p-6 xl:grid">
                 <div className="max-sm:hidden"></div>
                 <div className="flex  flex-col gap-4 max-sm:w-full ">
-                  <p className="text-start text-[24px] font-bold">Vendor App</p>
-                  <p>
-                    <span className="text-[#05F29A] max-sm:text-[#ffffff]">What it Does:</span> Vendors can redeem
+                  <p className="text-start text-[24px] font-bold xl:text-[20xp]">Vendor App</p>
+                  <p className="xl:text-sm">
+                    <span className="text-[#05F29A] max-sm:text-[#ffffff] ">What it Does:</span> Vendors can redeem
                     digital vouchers, process NFC payments, and track disbursements
                   </p>
-                  <p>
-                    <span className="text-[#05F29A] max-sm:text-[#ffffff]">Benefit:</span> Fast, secure payments and
-                    easy transaction management.
+                  <p className="xl:text-sm">
+                    <span className="text-[#05F29A] max-sm:text-[#ffffff] xl:text-sm">Benefit:</span> Fast, secure
+                    payments and easy transaction management.
                   </p>
                   <div>
                     <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
@@ -115,7 +117,7 @@ const CardComponent = () => {
     {
       title: "NGO Dashboard",
       content: (
-        <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[508px]">
+        <div className="primary-400 relative flex w-full overflow-hidden rounded-[15px] p-6 max-sm:h-[507px] xl:h-[380px] 2xl:h-[508px]">
           <div className="img-element-eighteen absolute bottom-0 left-10 max-sm:hidden"></div>
           <div className="img-element-eighteen-sm absolute bottom-0 left-6 xl:hidden"></div>
           <div className="img-element-four absolute bottom-0 right-0 max-sm:hidden"></div>

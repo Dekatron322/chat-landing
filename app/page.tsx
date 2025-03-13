@@ -75,19 +75,19 @@ export default function Dashboard() {
           </div>
         </div>
         <section className="section-1 px-4">
-          <div className="my-6 flex w-full  justify-between  gap-7 max-sm:flex-col ">
-            <div className="card-lg  flex flex-col gap-7 p-4 xl:w-1/2  xl:p-7">
-              <div className="flex w-full items-start justify-between gap-3 max-sm:flex-col">
-                <div className="dark-green-bg flex items-center gap-2 rounded-full  px-4  py-2">
+          <div className="my-6 flex w-full justify-between gap-7 max-sm:flex-col">
+            {/* Card Content */}
+            <div className="card-lg flex w-1/2 flex-col gap-7 p-4 xl:p-7">
+              <div className="flex w-full items-start justify-between gap-3 max-2xl:flex-col max-sm:flex-col">
+                <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
                   <img src="/chats transparent 1.png" alt="" className="w-7" />
                   <p className="text-sm">About Us</p>
                 </div>
-
-                <div className="grey-400 flex items-center gap-2 rounded-full px-4  py-2">
+                <div className="grey-400 flex items-center gap-2 rounded-full px-4 py-2">
                   <p className="text-sm">Transforming Aid Distribution with Trust and Innovation</p>
                 </div>
               </div>
-              <p className="paragraph-1 text-base xl:leading-[35px]">
+              <p className="paragraph-1 text-base max-2xl:text-sm lg:leading-7 2xl:leading-[35px]">
                 CHATS is a purpose-driven platform designed to simplify and enhance aid distribution for humanitarian
                 organizations, donors, and beneficiaries. By combining cutting-edge technology with a commitment to
                 transparency, we ensure that every donation is impactful and verifiable. Our ecosystem offers flexible
@@ -103,7 +103,9 @@ export default function Dashboard() {
                 </button>
               </div>
             </div>
-            <img src="/Frame 1618873303.svg" className=" xl:w-1/2" alt="" />
+
+            {/* Image */}
+            <img src="/Frame 1618873303.svg" className="flex h-full " alt="" />
           </div>
         </section>
 
@@ -175,7 +177,7 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="card-lg mt-7  w-full items-center justify-between max-sm:p-4 xl:flex  xl:h-[397px]    xl:p-7">
+              <div className="card-lg mt-7 w-full items-center justify-between max-sm:p-4 xl:flex xl:h-[397px]  xl:gap-10    xl:p-7">
                 <div>
                   <div className="flex w-full  gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
