@@ -108,14 +108,14 @@ const MobileNav = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      className="fixed  left-0 right-0 top-0 z-50  flex justify-center   backdrop-blur md:hidden"
+      className="fixed  left-0 right-0 top-0 z-50  flex justify-center   backdrop-blur xl:hidden"
     >
       <div className="hero-container  z-50 flex w-full items-center justify-between p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:rounded-xl max-sm:px-3 xl:rounded-full">
         <div className="mobilebg fixed left-0 right-0 top-0 z-50 flex items-center  justify-between p-4">
           <Link href="/">
             <img src="/chats transparent 1 (1).png" alt="" className="h-10" />
           </Link>
-          <button className="sm:hidden" onClick={toggleMobileMenu}>
+          <button className="xl:hidden" onClick={toggleMobileMenu}>
             <CgMenu className="h-6 w-6" />
           </button>
         </div>

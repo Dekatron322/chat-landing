@@ -75,10 +75,10 @@ export default function Dashboard() {
           </div>
         </div>
         <section className="section-1 px-4">
-          <div className="my-6 flex w-full justify-between gap-7 max-sm:flex-col">
+          <div className="my-6 flex w-full justify-between gap-7 max-xl:flex-col">
             {/* Card Content */}
-            <div className="card-lg flex w-1/2 flex-col gap-7 p-4 xl:p-7">
-              <div className="flex w-full items-start justify-between gap-3 max-2xl:flex-col max-sm:flex-col">
+            <div className="card-lg flex flex-col gap-7 p-4 xl:p-7 2xl:w-1/2">
+              <div className="flex w-full items-start justify-between gap-3 max-2xl:flex-col max-xl:flex-col">
                 <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
                   <img src="/chats transparent 1.png" alt="" className="w-7" />
                   <p className="text-sm">About Us</p>
@@ -87,7 +87,7 @@ export default function Dashboard() {
                   <p className="text-sm">Transforming Aid Distribution with Trust and Innovation</p>
                 </div>
               </div>
-              <p className="paragraph-1 text-base max-2xl:text-sm lg:leading-7 2xl:leading-[35px]">
+              <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
                 CHATS is a purpose-driven platform designed to simplify and enhance aid distribution for humanitarian
                 organizations, donors, and beneficiaries. By combining cutting-edge technology with a commitment to
                 transparency, we ensure that every donation is impactful and verifiable. Our ecosystem offers flexible
@@ -149,7 +149,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="card-lg card-bg relative flex flex-col justify-between p-7 xl:h-[328px]">
+                <div className="card-lg card-bg relative flex  flex-col justify-between p-7 max-xl:h-[328px] max-xs:h-auto md:h-[328px]">
                   {/* Top Section */}
                   <div className="flex w-full justify-between gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -162,7 +162,7 @@ export default function Dashboard() {
                   <div className="absolute right-32 top-20 max-sm:right-6">
                     <img src="/Frame 1618873317.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
-                  <div className="absolute bottom-4 left-14 -translate-x-1/2 -translate-y-1/2 transform xl:left-32 xl:top-1/2">
+                  <div className="absolute left-32 top-1/2 -translate-x-1/2 -translate-y-1/2 transform max-sm:bottom-4 max-sm:left-14">
                     <img src="/Frame 1618873318.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
                   <div className="absolute bottom-10   right-1/3 xl:bottom-20">
@@ -177,7 +177,7 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="card-lg mt-7 w-full items-center justify-between max-sm:p-4 xl:flex xl:h-[397px]  xl:gap-10    xl:p-7">
+              <div className="card-lg mt-7 w-full items-center justify-between max-xl:p-7 xl:flex  xl:h-[397px]  xl:gap-10   xl:p-7">
                 <div>
                   <div className="flex w-full  gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -187,7 +187,7 @@ export default function Dashboard() {
                   </div>
 
                   {/* Add margin-top to create space */}
-                  <div className="max-sm:my-2 xl:mt-4">
+                  <div className="mt-4 max-sm:my-2">
                     <p className="paragraph-1 text-2xl leading-[35px] max-sm:text-xl">
                       Ensuring every dollar makes a measurable impact
                     </p>
@@ -195,9 +195,9 @@ export default function Dashboard() {
                 </div>
                 <div className="image-container w-full max-sm:hidden"></div>
                 {isDarkMode ? (
-                  <img src="/Frame 1618873977 (2).png" alt="" className="xl:hidden" />
+                  <img src="/Frame 1618873977 (2).png" alt="" className="sm:hidden " />
                 ) : (
-                  <img src="/Frame 1618873977 (1) copy.svg" alt="" className="xl:hidden" />
+                  <img src="/Frame 1618873977 (1) copy.svg" alt="" className="sm:hidden" />
                 )}
               </div>
             </div>

@@ -118,7 +118,7 @@ const DashboardNav = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      className="paddings fixed left-0 right-0 top-0 z-50  flex justify-center pt-7 backdrop-blur max-sm:hidden"
+      className="paddings fixed left-0 right-0 top-0 z-50  flex justify-center pt-7 backdrop-blur max-xl:hidden"
     >
       <div className="hero-container z-50 flex w-full items-center justify-between p-4 backdrop-blur max-sm:flex-col-reverse max-sm:gap-3 max-sm:rounded-xl max-sm:px-3 xl:rounded-full">
         <div className="flex items-center gap-10 max-sm:w-full max-sm:justify-between">
