@@ -108,8 +108,12 @@ export default function Dashboard() {
             <img src="/Frame 1618873303.svg" className="flex h-full " alt="" />
           </div>
         </section>
+        {isDarkMode ? (
+          <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex h-full " />
+        ) : (
+          <img src="/Frame 1618874455.webp" className="flex h-full " alt="" />
+        )}
 
-        <div className="section-img h-[664px]"></div>
         <AboutComponent />
         <section className="section-1  flex  w-full">
           <div className="mt-6   w-full gap-4 max-md:flex-col max-md:px-0 md:mb-16">
