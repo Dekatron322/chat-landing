@@ -77,7 +77,7 @@ const HowItWorks = () => {
                 </div>
                 <div>
                   <h2 className="mb-3 h-full max-w-[754px] text-2xl font-medium max-sm:text-xl">{item.title}</h2>
-                  <p className="text-base leading-6">{item.text}</p>
+                  <p className="text-base leading-6 max-xl:text-sm">{item.text}</p>
                 </div>
               </motion.div>
             ))}
