@@ -109,9 +109,9 @@ export default function Dashboard() {
           </div>
         </section>
         {isDarkMode ? (
-          <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex max-sm:h-[300px]" />
+          <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex " />
         ) : (
-          <img src="/Frame 1618874455.webp" className="flex max-sm:h-[300px]" alt="" />
+          <img src="/Frame 1618874455.webp" className="flex " alt="" />
         )}
 
         <AboutComponent />
