@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://chat-landing-theta.vercel.app/",
+    url: "https://github.com/Dekatron322/chat-landing/blob/main/public/body.jpeg?raw=true",
     images: [
       {
         width: 1200,
