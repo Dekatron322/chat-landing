@@ -16,7 +16,7 @@ export const projects = [
     year: "2025",
     category: "Web 3",
     industry: "Finance",
-    title: "Altima",
+    title: "Chats",
     description: "A simplified user centered preoder system, aimed at simplifying preoder of smart door handles",
     info: "The Stacks ecosystem is growing at a bullish pace. With about 10 protocols & communities, 19 partners & integrations, 12 tools and utilities, and about 27 dApps are currently built on the ecosystem. Stacks ecosystem is becoming a significant player in the decentralized market and web3 as a whole.",
     imageSrc: "/thumbnail01.png",
