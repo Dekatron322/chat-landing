@@ -286,7 +286,7 @@ export default function Dashboard() {
                     How CHATS is Revolutionizing Aid Distribution for Greater Impact
                   </h2>
                   <p className="paragraph">
-                    In today's fast-paced world, ensuring aid reaches those in need efficiently, transparently, and
+                    In today&apos;s fast-paced world, ensuring aid reaches those in need efficiently, transparently, and
                     securely is more important than ever. CHATS, a cutting-edge platform designed for seamless cash and
                     voucher aid distribution........
                   </p>
