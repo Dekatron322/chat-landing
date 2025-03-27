@@ -98,10 +98,16 @@ const Footer = () => {
                 <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
                   Disclaimer
                 </Link>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/terms-of-use"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Terms of Use
                 </Link>
-                <Link href="#" className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]">
+                <Link
+                  href="/cookie-policy"
+                  className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
+                >
                   Cookie Policy
                 </Link>
               </div>

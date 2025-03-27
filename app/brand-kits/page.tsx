@@ -57,7 +57,7 @@ export default function Dashboard() {
           <div className="primary-400  relative   flex w-full overflow-hidden  rounded-[15px] p-6 max-sm:pb-20 xl:h-[423px]">
             <div className="img-element-twenty-six absolute bottom-10 left-0 max-sm:hidden"></div>
             <div className="img-element-twenty-seven absolute bottom-10 right-0 max-sm:hidden"></div>
-            <div className="img-element-thirty-three absolute bottom-0 right-0 "></div>
+            <div className="img-element-thirty-three absolute bottom-0 right-0 xl:hidden"></div>
 
             <div className="flex w-full items-center justify-between xl:pl-80">
               <div className=" flex max-w-[834px] flex-col">
