@@ -65,7 +65,7 @@ export default function Dashboard() {
                 CHATS is the first—and largest—nonprofit that lets individual donors send money to those living in
                 extreme poverty. The Services provide users with access to a variety of information and resources,
                 including research papers, works of authorship, e-newsletters, news feeds, blogs, and other relevant
-                content (collectively, the "Content").
+                content (collectively, the &quot;Content&quot;).
               </p>
 
               <h4 className="text-xl">Personal Information</h4>
@@ -166,10 +166,11 @@ export default function Dashboard() {
             <div className="flex flex-col gap-4">
               <h4 className="text-xl">User-Generated Content and Blogs</h4>
               <p>
-                The Website may contain user-generated content, including blogs and videos ("Content"). The views and
-                opinions expressed in such Content belong solely to their respective authors and do not necessarily
-                reflect the views of CHATS, its management, or employees. CHATS does not endorse, verify, or assume
-                responsibility for any Content posted by users, employees, volunteers, or third-party contributors.
+                The Website may contain user-generated content, including blogs and videos (&quot;Content&quot;). The
+                views and opinions expressed in such Content belong solely to their respective authors and do not
+                necessarily reflect the views of CHATS, its management, or employees. CHATS does not endorse, verify, or
+                assume responsibility for any Content posted by users, employees, volunteers, or third-party
+                contributors.
               </p>
               <p>
                 By submitting Content, you grant CHATS a non-exclusive, worldwide, royalty-free license to use, display,
@@ -196,11 +197,11 @@ export default function Dashboard() {
               <p>
                 License, sublicense, sell, resell, transfer, assign, distribute, or commercially exploit the Services or
                 Content. Modify, copy, or create derivative works based on the Services or Content. Create unauthorized
-                links to the Services or "frame" or "mirror" the Website on any other platform. Reverse engineer,
-                decompile, or attempt to access the Website&apos;s underlying technology for competitive purposes.
-                Launch automated programs, including web crawlers, bots, viruses, or scripts that could burden the
-                Website&apos;s operation. Interfere with, disrupt, or attempt to gain unauthorized access to the
-                Website, its systems, or networks.
+                links to the Services or &quot;frame&quot; or &quot;mirror&quot; the Website on any other platform.
+                Reverse engineer, decompile, or attempt to access the Website&apos;s underlying technology for
+                competitive purposes. Launch automated programs, including web crawlers, bots, viruses, or scripts that
+                could burden the Website&apos;s operation. Interfere with, disrupt, or attempt to gain unauthorized
+                access to the Website, its systems, or networks.
               </p>
               <p>
                 CHATS reserves the right to investigate and take legal action against violations, including suspending
