@@ -273,7 +273,7 @@ const BlogDetails = () => {
     <div>
       <DashboardNav />
       <MobileNav />
-      <div className="paddings xl:mt-32">
+      <div className="paddings mt-32 max-sm:pt-16">
         <div className="flex w-full justify-center gap-10 ">
           <div className="flex w-1/3 flex-col gap-12 max-sm:hidden">
             {/* <div className="primary-900  h-[302px] w-full overflow-hidden rounded-[10px] p-4">
@@ -310,7 +310,7 @@ const BlogDetails = () => {
             </div>
           </div>
           <div className="w-full">
-            <ul className="mb-[23px] flex gap-2">
+            <ul className="mb-[23px] flex flex-wrap gap-2">
               <li>Blog</li>
               <li className="list-inside list-disc">Published {formatDate(post.publishedAt)}</li>
               <li className="list-inside list-disc">
@@ -336,9 +336,11 @@ const BlogDetails = () => {
                 <div>
                   <p>Chats Team</p>
                   <ul className="flex gap-2 text-xs">
-                    <li className="">December 27, 2024 </li>
+                    <li className="">{formatDate(post.publishedAt)}</li>
                     <li className="list-inside list-disc">
-                      <span className="primary-text-900">15 min read</span>
+                      <span className="primary-text-900">
+                        {post.content?.html ? calculateReadTime(post.content.html) : "15 min read"}
+                      </span>
                     </li>
                   </ul>
                 </div>
