@@ -273,7 +273,7 @@ const BlogDetails = () => {
     <div>
       <DashboardNav />
       <MobileNav />
-      <div className="paddings mt-32 max-sm:pt-16">
+      <div className="paddings mt-32 max-sm:mt-20">
         <div className="flex w-full justify-center gap-10 ">
           <div className="flex w-1/3 flex-col gap-12 max-sm:hidden">
             {/* <div className="primary-900  h-[302px] w-full overflow-hidden rounded-[10px] p-4">
