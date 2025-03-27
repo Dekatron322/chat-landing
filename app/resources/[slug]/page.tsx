@@ -330,7 +330,7 @@ const BlogDetails = () => {
               />
             </div>
 
-            <div className="border-color-100 flex w-full items-center justify-between border-b border-t py-3">
+            <div className="border-color-100 flex w-full items-center justify-between border-b border-t py-3 max-sm:hidden">
               <div className="flex items-center">
                 <Image src="/resources/Frame 1618874298.png" width={57} height={57} alt="" />
                 <div>
