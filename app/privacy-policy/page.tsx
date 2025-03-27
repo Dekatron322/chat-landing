@@ -75,7 +75,7 @@ export default function Dashboard() {
             Updated March 26, 2025
             <b className="paragraph-2"> 15 min read</b>
           </p>
-          <div className="mt-4 flex gap-4 xl:items-center">
+          <div className="mt-4 flex items-start gap-4 xl:items-center">
             <Image alt="" src="/policy/messages-3.png" width={24} height={24} />
             <p className="paragraph underline" style={{ textDecorationColor: "#05F29A", textUnderlineOffset: "4px" }}>
               This Privacy Policy is intended to help you understand the types of information we gather and cookies we
