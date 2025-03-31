@@ -123,10 +123,21 @@ const Footer = () => {
                   +123 456 7890
                 </Link>
                 <div className="flex w-full gap-[15px]">
-                  <img src="/skill-icons_instagram.png" className="h-[23.53px] w-[23.53px]" />
-                  <img src="/devicon_linkedin.png" className="h-[23.53px] w-[23.53px]" />
-                  <img src="/Frame 1618874081 (1).png" className="h-[23.53px] w-[23.53px]" />
-                  <img src="/prime_twitter.png" className="h-[23.53px] w-[23.53px]" />
+                  <Link href="https://instagram.com/withconvexity" target="_blank">
+                    <img src="/skill-icons_instagram.png" className="h-[23.53px] w-[23.53px]" />
+                  </Link>
+                  <Link href="https://linkedin.com/convexity">
+                    <img src="/devicon_linkedin.png" className="h-[23.53px] w-[23.53px]" />
+                  </Link>
+                  <Link href="https://www.youtube.com/@withconvexity" target="_blank">
+                    <img src="/Frame 1618874081 (1).png" className="h-[23.53px] w-[23.53px]" />
+                  </Link>
+                  <Link href="https://facebook.com/convexity" target="_blank">
+                    <img src="/15707884.png" className="h-[23.53px] w-[23.53px]" />
+                  </Link>
+                  <Link href="https://twitter.com/withconvexity_" target="_blank">
+                    <img src="/prime_twitter.png" className="h-[23.53px] w-[23.53px]" />
+                  </Link>
                 </div>
               </div>
             </div>
