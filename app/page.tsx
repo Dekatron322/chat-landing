@@ -117,11 +117,13 @@ export default function Dashboard() {
             <img src="/Frame 1618873303.svg" className="flex h-full " alt="" />
           </div>
         </section>
-        {isDarkMode ? (
-          <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex " />
-        ) : (
-          <img src="/Frame 1618874455.webp" className="flex " alt="" />
-        )}
+        <Link href="https://calendly.com/convexitytech/chats" target="_blank">
+          {isDarkMode ? (
+            <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex " />
+          ) : (
+            <img src="/Frame 1618874455.webp" className="flex " alt="" />
+          )}
+        </Link>
 
         <AboutComponent />
         <section className="section-1  flex  w-full">
