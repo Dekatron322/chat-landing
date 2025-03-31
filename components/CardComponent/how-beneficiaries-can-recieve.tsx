@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Link from "next/link"
 import React from "react"
 
 const HowBeneficiariesCanRecieve = () => {
@@ -27,9 +28,13 @@ const HowBeneficiariesCanRecieve = () => {
                 <p className="paragraph font-normal  xl:max-w-[669px]  xl:text-[20px]">
                   Beneficiaries can get unique payment vouches that would be scannedby the vendor for the payment
                 </p>
-                <button className="primary-text-100 flex items-center gap-2 underline">
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="primary-text-100 flex items-center gap-2 underline"
+                >
                   Get Started <img src="/weui_arrow-filled.png" className="h-6 w-3" />{" "}
-                </button>
+                </Link>
               </div>
             </div>
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
@@ -39,9 +44,13 @@ const HowBeneficiariesCanRecieve = () => {
                 <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Physical card enable transactions offline via NFC Embedded devices, ideal for those without phones
                 </p>
-                <button className="primary-text-100 flex items-center gap-2 underline">
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="primary-text-100 flex items-center gap-2 underline"
+                >
                   Get Started <img src="/weui_arrow-filled.png" className="h-6 w-3" />{" "}
-                </button>
+                </Link>
               </div>
             </div>
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
@@ -51,9 +60,13 @@ const HowBeneficiariesCanRecieve = () => {
                 <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Funds are credited directly to beneficiaries , cHATS linked wallet, accessible to all
                 </p>
-                <button className="primary-text-100 flex items-center gap-2 underline">
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="primary-text-100 flex items-center gap-2 underline"
+                >
                   Get Started <img src="/weui_arrow-filled.png" className="h-6 w-3" />{" "}
-                </button>
+                </Link>
               </div>
             </div>
             <div className="border-color-100 max-w-[1104px] gap-[66px] border-b pb-10 xl:flex">
@@ -63,9 +76,13 @@ const HowBeneficiariesCanRecieve = () => {
                 <p className="paragraph max-w-[669px]  font-normal  xl:text-[20px]">
                   Text based codes allow easy fund redemption for beneficiaries without smartphone
                 </p>
-                <button className="primary-text-100 flex items-center gap-2 underline">
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="primary-text-100 flex items-center gap-2 underline"
+                >
                   Get Started <img src="/weui_arrow-filled.png" className="h-6 w-3" />{" "}
-                </button>
+                </Link>
               </div>
             </div>
           </div>

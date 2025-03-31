@@ -13,6 +13,7 @@ import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import CarAnimation from "components/CardComponent/carAnimation"
 import ChangingLives from "components/CardComponent/changing-lives"
+import Link from "next/link"
 
 export default function Dashboard() {
   const [mounted, setMounted] = useState(false)
@@ -64,11 +65,15 @@ export default function Dashboard() {
                 Our platform enhances donor confidence and enables NGOs to deliver impactful, transparent campaign
               </motion.p>
 
-              <button className="slide-button relative my-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+              <Link
+                href="https://calendly.com/convexitytech/chats"
+                target="_blank"
+                className="slide-button relative my-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+              >
                 <div className="btn-img-element absolute bottom-0 left-0"></div>
                 <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                 Get Started
-              </button>
+              </Link>
 
               <GlobeAnimation />
             </div>
@@ -96,11 +101,15 @@ export default function Dashboard() {
                 trust, and driving meaningful change in communities worldwide
               </p>
               <div>
-                <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+                >
                   <div className="btn-img-element absolute bottom-0 left-0"></div>
                   <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                   Get Started
-                </button>
+                </Link>
               </div>
             </div>
 

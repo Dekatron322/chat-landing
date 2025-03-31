@@ -4,6 +4,7 @@ import DashboardNav from "components/Navbar/DashboardNav"
 import MobileNav from "components/Navbar/MobileNav"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import React, { useState } from "react"
 
 const blogEntries = [
@@ -92,11 +93,15 @@ const BlogDetails = () => {
                 Manage campaigns, verify beneficiaries, and report to donors seamlessly—unlock the power of the NGO
                 Dashboard today!
               </p>
-              <button className="slide-button2 relative flex overflow-hidden rounded-full border bg-[#151E22] px-5 py-2 text-sm">
+              <Link
+                href="https://calendly.com/convexitytech/chats"
+                target="_blank"
+                className="slide-button2 relative flex overflow-hidden rounded-full border bg-[#151E22] px-5 py-2 text-sm"
+              >
                 <div className="btn-img-element absolute bottom-0 right-[-20]"></div>
                 <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-full">

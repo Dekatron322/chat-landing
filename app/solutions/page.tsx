@@ -6,6 +6,7 @@ import FAQsComponent from "components/CardComponent/faqs-component"
 import Image from "next/image"
 import MobileNav from "components/Navbar/MobileNav"
 import CarAnimation from "components/CardComponent/carAnimation"
+import Link from "next/link"
 
 export default function Dashboard() {
   return (
@@ -82,7 +83,13 @@ export default function Dashboard() {
                   improves accountability.
                 </p>
                 <div>
-                  <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                  <Link
+                    href="https://calendly.com/convexitytech/chats"
+                    target="_blank"
+                    className="border-color rounded-full border px-5 py-2 text-sm"
+                  >
+                    Get Started
+                  </Link>
                 </div>
               </div>
             </div>
@@ -104,7 +111,13 @@ export default function Dashboard() {
                   and ensure funds are used effectively.
                 </p>
                 <div>
-                  <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                  <Link
+                    href="https://calendly.com/convexitytech/chats"
+                    target="_blank"
+                    className="border-color rounded-full border px-5 py-2 text-sm"
+                  >
+                    Get Started
+                  </Link>
                 </div>
               </div>
             </div>
@@ -129,7 +142,13 @@ export default function Dashboard() {
                       real-time data collection.
                     </p>
                     <div>
-                      <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                      <Link
+                        href="https://calendly.com/convexitytech/chats"
+                        target="_blank"
+                        className="border-color rounded-full border px-5 py-2 text-sm"
+                      >
+                        Get Started
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -150,7 +169,13 @@ export default function Dashboard() {
                       easy transaction management.
                     </p>
                     <div>
-                      <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                      <Link
+                        href="https://calendly.com/convexitytech/chats"
+                        target="_blank"
+                        className="border-color rounded-full border px-5 py-2 text-sm"
+                      >
+                        Get Started
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -175,7 +200,13 @@ export default function Dashboard() {
                   receive and utilize aid.
                 </p>
                 <div>
-                  <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                  <Link
+                    href="https://calendly.com/convexitytech/chats"
+                    target="_blank"
+                    className="border-color rounded-full border px-5 py-2 text-sm"
+                  >
+                    Get Started
+                  </Link>
                 </div>
               </div>
             </div>

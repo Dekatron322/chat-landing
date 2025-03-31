@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
+import Link from "next/link"
 import React, { useState } from "react"
 
 const CardComponent = () => {
@@ -25,7 +26,13 @@ const CardComponent = () => {
                 ensure funds are used effectively.
               </p>
               <div>
-                <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="border-color rounded-full border px-5 py-2 text-sm"
+                >
+                  Get Started
+                </Link>
               </div>
             </div>
           </div>
@@ -53,7 +60,13 @@ const CardComponent = () => {
                 receive and utilize aid.
               </p>
               <div>
-                <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="border-color rounded-full border px-5 py-2 text-sm"
+                >
+                  Get Started
+                </Link>
               </div>
             </div>
           </div>
@@ -84,7 +97,13 @@ const CardComponent = () => {
                     real-time data collection.
                   </p>
                   <div>
-                    <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                    <Link
+                      href="https://calendly.com/convexitytech/chats"
+                      target="_blank"
+                      className="border-color rounded-full border px-5 py-2 text-sm"
+                    >
+                      Get Started
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -105,7 +124,13 @@ const CardComponent = () => {
                     payments and easy transaction management.
                   </p>
                   <div>
-                    <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                    <Link
+                      href="https://calendly.com/convexitytech/chats"
+                      target="_blank"
+                      className="border-color rounded-full border px-5 py-2 text-sm"
+                    >
+                      Get Started
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -134,7 +159,13 @@ const CardComponent = () => {
                 improves accountability.
               </p>
               <div>
-                <button className="border-color rounded-full border px-5 py-2 text-sm">Get Started</button>
+                <Link
+                  href="https://calendly.com/convexitytech/chats"
+                  target="_blank"
+                  className="border-color rounded-full border px-5 py-2 text-sm"
+                >
+                  Get Started
+                </Link>
               </div>
             </div>
           </div>

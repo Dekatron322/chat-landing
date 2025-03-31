@@ -232,11 +232,15 @@ const MobileNav = () => {
                 )}
               </div>
             </div>
-            <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+            <Link
+              href="https://calendly.com/convexitytech/chats"
+              target="_blank"
+              className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+            >
               <div className="btn-img-element absolute bottom-0 left-0"></div>
               <div className="btn-img-element-one absolute bottom-2 right-2"></div>
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
       </div>
