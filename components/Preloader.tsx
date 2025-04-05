@@ -14,7 +14,6 @@ export default function Preloader() {
             className="absolute inset-0 m-auto h-10 w-10 animate-pulse"
           />
         </div>
-        <p className="mt-4 text-lg font-medium text-[#05F29A]">Loading CHATS Platform...</p>
       </div>
     </div>
   )
