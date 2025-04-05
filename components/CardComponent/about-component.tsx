@@ -15,7 +15,7 @@ const AboutCard = ({ imageSrc, title, description, link }: AboutCardProps) => {
 
   return (
     <motion.div
-      className="group relative flex h-[529px] w-full flex-col items-center justify-between overflow-hidden rounded-[20px] max-sm:h-[474.7px]"
+      className="group relative flex h-[529px] w-full flex-col items-center justify-between overflow-hidden rounded-[20px] bg-[#1c2529] max-sm:h-[474.7px]"
       whileHover="hover"
       initial="initial"
     >
@@ -30,7 +30,7 @@ const AboutCard = ({ imageSrc, title, description, link }: AboutCardProps) => {
           onLoadingComplete={() => setIsLoaded(true)}
         />
         {!isLoaded && (
-          <div className="absolute inset-0 flex flex-col items-center justify-between p-8">
+          <div className="absolute inset-0 flex flex-col items-center justify-between bg-[#1c2529] p-8">
             {/* Skeleton for the entire card structure */}
             <div className="h-10 w-32 animate-pulse rounded-full bg-gray-300"></div>
 
