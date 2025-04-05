@@ -1,6 +1,7 @@
 import "styles/tailwind.css"
 import { Metadata } from "next"
 import ThemeProviders from "components/ProvidersComponents/ThemeProviders"
+import PreloaderWrapper from "components/PreloaderWrapper"
 
 const satoshi = {
   className: "font-satoshi",
@@ -16,20 +17,12 @@ export const metadata: Metadata = {
     "CHATS transforms the future of humanitarian efforts with verifiable solutions for cash and voucher aid. Our platform enhances donor confidence and enables NGOs to deliver impactful, transparent campaign",
   icons: {
     icon: [
-      // Basic favicon
       { url: "/chats transparent 1.png" },
-      // New favicon for modern browsers
       { url: "/chats transparent 1.png", sizes: "16x16", type: "image/png" },
       { url: "/chats transparent 1.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [
-      // Apple touch icon
-      { url: "/apple-touch-icon.png" },
-    ],
-    other: [
-      // For other platforms
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#5bbad5" },
-    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#5bbad5" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -50,7 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={satoshi.className} style={satoshi.style}>
       <body>
-        <ThemeProviders>{children}</ThemeProviders>
+        <ThemeProviders>
+          <PreloaderWrapper>{children}</PreloaderWrapper>
+        </ThemeProviders>
       </body>
     </html>
   )
