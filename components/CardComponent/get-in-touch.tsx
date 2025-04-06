@@ -22,7 +22,9 @@ const GetInTouch = () => {
             <h2 className="text-2xl font-bold">Chat to support</h2>
             <p className="paragraph">Our team is here to help!</p>
           </div>
-          <div className="underline">Send a message</div>
+          <Link href="mailto:info@withconvexity.com" className="underline">
+            Send a message
+          </Link>
         </div>
         <div className="primary-900 flex h-[283px] w-full flex-col gap-[35px] rounded-[10px] px-5 py-10 xl:px-20">
           <Image src="/contact-us/Frame 1618873473 (1).png" alt="" height={61} width={61} />

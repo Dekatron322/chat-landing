@@ -148,8 +148,10 @@ export default function Dashboard() {
             <div className="flex flex-col gap-4">
               <h4 className="text-2xl">7. Contact Information</h4>
               <p>
-                For questions about this Cookie Policy or your privacy rights, please contact us at: [Insert contact
-                details]
+                For questions about this Cookie Policy or your privacy rights, please contact us at:{" "}
+                <a href="mailto:info@withconvexity.com" className="text-[#05f29a]">
+                  info@withconvexity.com
+                </a>
               </p>
             </div>
           </div>

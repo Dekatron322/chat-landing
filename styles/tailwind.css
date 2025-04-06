@@ -1740,7 +1740,7 @@ body {
 }
 
 .image-container {
-  background-image: url("/Frame 1618873977 (1).svg");
+  background-image: url("/Frame 1618873977 (3).svg");
   background-size: contain; /* or cover, depending on your needs */
   background-repeat: no-repeat;
   background-position: center; /* Center the background image */
@@ -1751,7 +1751,7 @@ body {
 }
 
 [data-theme="dark"] .image-container {
-  background-image: url("/Frame 1618873977.svg");
+  background-image: url("/Frame 1618873977 (2).svg");
 }
 
 .card-bg {

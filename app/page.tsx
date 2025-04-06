@@ -122,13 +122,24 @@ export default function Dashboard() {
             <img src="/Frame 1618873303.svg" className="flex h-full w-1/2" alt="" />
           </div>
         </section>
-        <Link href="https://calendly.com/convexitytech/chats" target="_blank">
-          {isDarkMode ? (
-            <img src="/MacBook Pro 14_ - 7 (5).webp" className="flex " />
-          ) : (
-            <img src="/Frame 1618874455.webp" className="flex " alt="" />
-          )}
-        </Link>
+        <div className="relative h-auto w-full">
+          {/* The image */}
+          <img
+            src={isDarkMode ? "/MacBook Pro 14_ - 7 (11).webp" : "/MacBook Pro 14_ - 7 (10).webp"}
+            alt="Hero Image"
+            className="h-auto w-full"
+          />
+
+          {/* The absolutely positioned link over the image */}
+          <Link
+            href="https://calendly.com/convexitytech/chats"
+            target="_blank"
+            className="absolute bottom-[12%] left-[10%] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border   border-[#cdcdcd] bg-transparent  px-10 py-[10px] font-medium text-[#ffffff] transition-all duration-200 ease-in-out hover:bg-[#05F29A]/90 max-xl:bottom-10  max-xl:left-[11%]  max-sm:hidden
+        "
+          >
+            Get Started
+          </Link>
+        </div>
 
         <AboutComponent />
         <section className="section-1  flex  w-full">
@@ -215,7 +226,7 @@ export default function Dashboard() {
                 </div>
                 <div className="image-container w-full max-sm:hidden"></div>
                 {isDarkMode ? (
-                  <img src="/Frame 1618873977 (2).png" alt="" className="sm:hidden " />
+                  <img src="/Frame 1618873977 (4).svg" alt="" className="sm:hidden " />
                 ) : (
                   <img src="/Frame 1618873977 (1) copy.svg" alt="" className="sm:hidden" />
                 )}

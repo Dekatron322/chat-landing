@@ -74,9 +74,13 @@ export default function Dashboard() {
                   marketing materials, the Brand Kit ensures every touchpoint reflects the CHATS identity with clarity
                   and impact.
                 </p>
-                <button className="border-color-100 mt-4 max-w-[152px] rounded-md border px-5 py-2 text-sm">
+                <Link
+                  href="https://drive.google.com/drive/folders/1EIc0LzPTSdrIOFsrvtbwdSKbVJ_H4qWo?usp=sharing"
+                  target="_blank"
+                  className="border-color-100 mt-4 max-w-[152px] rounded-md border px-5 py-2 text-sm"
+                >
                   Download All
-                </button>
+                </Link>
               </div>
             </div>
           </div>
