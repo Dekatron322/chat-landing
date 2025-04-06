@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React, { useState } from "react"
 
 const SeeItInActionListItem = () => {
@@ -19,7 +20,11 @@ const SeeItInActionListItem = () => {
           }`}
         ></div>
         {/* Content */}
-        <div className="relative z-10 flex h-full items-center justify-center gap-2 px-4 text-sm font-bold uppercase text-white">
+        <Link
+          href="https://youtube.com/playlist?list=PL2YlPy0isjpLck5eQcWLwsRRGLQzzDhHK&si=meA-bj_VAjuJwVi1"
+          target="_blank"
+          className="relative z-10 flex h-full items-center justify-center gap-2 px-4 text-sm font-bold uppercase text-white"
+        >
           <img src="/logos_youtube-icon.png" alt="" className="h-[27.42px] w-[39px]" />
           <div className="flex w-full flex-col gap-1">
             <p>See It in Action: Stories That Inspire</p>
@@ -32,11 +37,14 @@ const SeeItInActionListItem = () => {
               }`}
             ></div>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Bottom Section */}
-      <div className="relative flex h-[115.5px] w-full items-center justify-center gap-4 rounded-[20px] bg-[#151E22] px-6">
+      <Link
+        href="/resources"
+        className="relative flex h-[115.5px] w-full items-center justify-center gap-4 rounded-[20px] bg-[#151E22] px-6"
+      >
         <div className="img-element-eight absolute bottom-0 right-0"></div>
         <img src="/si_webcam-line.png" alt="" className="h-[33px] w-[33px]" />
         <div className="flex flex-col gap-2">
@@ -45,7 +53,7 @@ const SeeItInActionListItem = () => {
           </p>
           <p className="text-xs text-[#05F29A]">Save your space</p>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }

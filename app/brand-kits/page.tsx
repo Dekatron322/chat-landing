@@ -10,6 +10,7 @@ import HowItWorks from "components/CardComponent/how-it-works"
 import TestimonialSection from "components/CardComponent/testimonials-section"
 import Image from "next/image"
 import MobileNav from "components/Navbar/MobileNav"
+import Link from "next/link"
 
 export default function Dashboard() {
   const [hover, setHover] = useState(false)
@@ -88,7 +89,9 @@ export default function Dashboard() {
               Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
               or concerns, and we&lsquo;ll get back to you promptly
             </p>
-            <button className="faq-border rounded-md border px-5 py-2 text-sm">Get in touch</button>
+            <Link href="contact" className="faq-border rounded-md border px-5 py-2 text-sm">
+              Get in touch
+            </Link>
           </div>
         </section>
       </div>

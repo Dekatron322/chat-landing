@@ -25,7 +25,7 @@ const CardComponent = () => {
                 <span className="text-[#05F29A]">Benefit:</span> Transparency and real-time updates build confidence and
                 ensure funds are used effectively.
               </p>
-              <div>
+              <div className="mt-2">
                 <Link
                   href="https://calendly.com/convexitytech/chats"
                   target="_blank"
@@ -59,7 +59,7 @@ const CardComponent = () => {
                 <span className="text-[#05F29A]">Benefit:</span> Provides an easy, reliable way for beneficiaries to
                 receive and utilize aid.
               </p>
-              <div>
+              <div className="mt-2">
                 <Link
                   href="https://calendly.com/convexitytech/chats"
                   target="_blank"
@@ -96,7 +96,7 @@ const CardComponent = () => {
                     <span className="text-[#05F29A]">Benefit:</span> Simplifies fieldwork and ensures accurate,
                     real-time data collection.
                   </p>
-                  <div>
+                  <div className="mt-2">
                     <Link
                       href="https://calendly.com/convexitytech/chats"
                       target="_blank"
@@ -123,7 +123,7 @@ const CardComponent = () => {
                     <span className="text-[#05F29A] max-sm:text-[#ffffff] xl:text-sm">Benefit:</span> Fast, secure
                     payments and easy transaction management.
                   </p>
-                  <div>
+                  <div className="mt-2">
                     <Link
                       href="https://calendly.com/convexitytech/chats"
                       target="_blank"
@@ -158,7 +158,7 @@ const CardComponent = () => {
                 <span className="text-[#05F29A]">Benefit:</span> Streamlines operations, builds trust with donors, and
                 improves accountability.
               </p>
-              <div>
+              <div className="mt-2">
                 <Link
                   href="https://calendly.com/convexitytech/chats"
                   target="_blank"

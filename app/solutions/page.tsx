@@ -18,35 +18,50 @@ export default function Dashboard() {
           <div className="solutionImage relative h-[590px] w-full gap-6 rounded-[19px] max-md:flex-col max-md:px-0 md:mb-16">
             {/* Floating Buttons */}
             <div className="animate-float absolute left-4 top-10 xl:left-10 xl:top-1/4">
-              <button className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg">
+              <Link
+                href="/ngos"
+                className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg"
+              >
                 NGO Dashboard
-              </button>
+              </Link>
               <Image src="/solutions/Vector (4).png" alt="" width={18.56} height={23.39} className="ml-10 mt-2" />
             </div>
-            <div className="animate-float absolute right-10 top-20 delay-100 xl:top-1/3">
+            <Link
+              href="https://calendly.com/convexitytech/chats"
+              target="_blank"
+              className="animate-float absolute right-10 top-20 delay-100 xl:top-1/3"
+            >
               <button className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg">
                 Beneficiary App
               </button>
               <Image src="/solutions/Vector (2).png" alt="" width={18.56} height={23.39} className="ml-10 mt-2" />
-            </div>
-            <div className="animate-float absolute left-1/4 top-[24%] delay-200 xl:bottom-1/4">
+            </Link>
+            <Link href="/donors" className="animate-float absolute left-1/4 top-[24%] delay-200 xl:bottom-1/4">
               <button className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg">
                 Donor Dashboard
               </button>
               <Image src="/solutions/Vector (3).png" alt="" width={18.56} height={23.39} className="ml-10 mt-2" />
-            </div>
-            <div className="animate-float absolute bottom-1/3 right-3 delay-300 max-sm:bottom-10 xl:right-1/4">
+            </Link>
+            <Link
+              href="https://calendly.com/convexitytech/chats"
+              target="_blank"
+              className="animate-float absolute bottom-1/3 right-3 delay-300 max-sm:bottom-10 xl:right-1/4"
+            >
               <button className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg">
                 Vendor App
               </button>
               <Image src="/solutions/Vector (5).png" alt="" width={18.56} height={23.39} className="ml-10 mt-2" />
-            </div>
-            <div className="animate-float absolute bottom-7 right-1/2 delay-300 max-sm:left-10">
+            </Link>
+            <Link
+              href="https://calendly.com/convexitytech/chats"
+              target="_blank"
+              className="animate-float absolute bottom-7 right-1/2 delay-300 max-sm:left-10"
+            >
               <button className="border-color-100 mt-4 flex  items-center  justify-center overflow-hidden rounded-full border px-5 py-2 text-sm text-[#ffffff] shadow-lg">
                 Field Agent App
               </button>
               <Image src="/solutions/Vector (6).png" alt="" width={18.56} height={23.39} className="ml-10 mt-2" />
-            </div>
+            </Link>
 
             {/* Content */}
             <div className=" flex h-full w-full flex-col items-center justify-center gap-3  max-sm:px-10">
@@ -82,7 +97,7 @@ export default function Dashboard() {
                   <span className="text-[#05F29A]">Benefit:</span> Streamlines operations, builds trust with donors, and
                   improves accountability.
                 </p>
-                <div>
+                <div className="mt-3">
                   <Link
                     href="https://calendly.com/convexitytech/chats"
                     target="_blank"
@@ -110,7 +125,7 @@ export default function Dashboard() {
                   <span className="text-[#05F29A]">Benefit:</span> Transparency and real-time updates build confidence
                   and ensure funds are used effectively.
                 </p>
-                <div>
+                <div className="mt-3">
                   <Link
                     href="https://calendly.com/convexitytech/chats"
                     target="_blank"
@@ -199,7 +214,7 @@ export default function Dashboard() {
                   <span className="text-[#05F29A]">Benefit:</span> Provides an easy, reliable way for beneficiaries to
                   receive and utilize aid.
                 </p>
-                <div>
+                <div className="mt-3">
                   <Link
                     href="https://calendly.com/convexitytech/chats"
                     target="_blank"

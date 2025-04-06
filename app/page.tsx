@@ -94,17 +94,22 @@ export default function Dashboard() {
               </div>
               <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
                 CHATS is a purpose-driven platform designed to simplify and enhance aid distribution for humanitarian
-                organizations, donors, and beneficiaries. By combining cutting-edge technology with a commitment to
-                transparency, we ensure that every donation is impactful and verifiable. Our ecosystem offers flexible
-                disbursement methods, real-time reporting, and privacy-preserving tools, enabling NGOs and donors to
-                collaborate seamlessly. At CHATS, we’re not just distributing aid; we’re building confidence, fostering
-                trust, and driving meaningful change in communities worldwide
+                organizations, donors, and beneficiaries. By combining blockchain technology with a commitment to
+                transparency, we ensure that every donation is impactful and verifiable.
               </p>
-              <div>
+              <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
+                Our ecosystem offers flexible disbursement methods, real-time reporting, and privacy-preserving tools,
+                enabling NGOs and donors to collaborate seamlessly.
+              </p>
+              <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
+                At CHATS, we’re not just distributing aid; we’re building confidence, fostering trust, and driving
+                meaningful change in communities worldwide.
+              </p>
+              <div className="flex">
                 <Link
                   href="https://calendly.com/convexitytech/chats"
                   target="_blank"
-                  className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+                  className="slide-button relative  flex overflow-hidden rounded-full border px-5 py-2 text-sm"
                 >
                   <div className="btn-img-element absolute bottom-0 left-0"></div>
                   <div className="btn-img-element-one absolute bottom-2 right-2"></div>
@@ -114,7 +119,7 @@ export default function Dashboard() {
             </div>
 
             {/* Image */}
-            <img src="/Frame 1618873303.svg" className="flex h-full " alt="" />
+            <img src="/Frame 1618873303.svg" className="flex h-full w-1/2" alt="" />
           </div>
         </section>
         <Link href="https://calendly.com/convexitytech/chats" target="_blank">
@@ -158,7 +163,7 @@ export default function Dashboard() {
 
                   {/* Add margin-top to create space */}
                   <div className="mt-4">
-                    <h2 className="text-[85px] font-bold max-sm:text-3xl">2,500,000+</h2>
+                    <h2 className="text-[85px] font-bold max-sm:text-3xl">43,048+</h2>
                     <p className="paragraph-1 text-base leading-[35px]">
                       Millions of lives improved through efficient aid distribution.
                     </p>

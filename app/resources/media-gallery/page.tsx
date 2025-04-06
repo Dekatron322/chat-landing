@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react"
 import MobileNav from "components/Navbar/MobileNav"
 import { queryAllBlog, querySingleBlog } from "utils/blogPosts"
 import { useParams } from "next/navigation"
+import Link from "next/link"
 
 const blogEntries = [
   {
@@ -378,7 +379,9 @@ const MediaGallery = () => {
             Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
             or concerns, and we&lsquo;ll get back to you promptly
           </p>
-          <button className="faq-border rounded-md border px-5 py-2 text-sm">Get in touch</button>
+          <Link href="contact" className="faq-border rounded-md border px-5 py-2 text-sm">
+            Get in touch
+          </Link>
         </div>
       </div>
 

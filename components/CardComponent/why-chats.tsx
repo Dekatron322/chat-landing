@@ -21,21 +21,27 @@ const WhyChats = () => {
         </div>
         <div className="grid gap-10 xl:grid-cols-3">
           <div className="flex w-full flex-col items-center justify-center">
-            <Image src="/gov/Frame 1618874215.png" alt="" width={285} height={139} className="mb-6" />
+            <div className="h-[160px]">
+              <Image src="/gov/Frame 1618874215.png" alt="" width={285} height={139} className="mb-6" />
+            </div>
             <h5 className="mb-2 font-medium">Centralized Campaign Oversight</h5>
             <p className="paragraph text-center">
               Manage multiple aid initiatives from a single dashboard. Monitor disbursement progress,{" "}
             </p>
           </div>
           <div className="flex w-full flex-col items-center justify-center">
-            <Image src="/gov/Frame 1618874225.png" alt="" width={285} height={139} className="mb-6" />
+            <div className="h-[160px]">
+              <Image src="/gov/Frame 1618874225.png" alt="" width={285} height={139} className="mb-6" />
+            </div>
             <h5 className="mb-2">Beneficiary Database Management</h5>
             <p className="paragraph text-center">
               Leverage advanced tools to verify, organize, and update beneficiary information securely.
             </p>
           </div>
           <div className="flex w-full flex-col items-center justify-center">
-            <Image src="/gov/Frame 1618874227.png" alt="" width={285} height={139} className="mb-6" />
+            <div className="h-[160px]">
+              <Image src="/gov/Frame 1618874227.png" alt="" width={280} height={139} className="mb-6" />
+            </div>
             <h5 className="mb-2">Comprehensive Reporting and Analytics</h5>
             <p className="paragraph text-center">
               Manage multiple aid initiatives from a single dashboard. Monitor disbursement progress,{" "}

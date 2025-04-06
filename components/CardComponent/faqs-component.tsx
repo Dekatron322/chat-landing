@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import React, { useState } from "react"
 import { CgChevronDown } from "react-icons/cg"
 
@@ -111,7 +112,9 @@ const FAQsComponent = () => {
               Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
               or concerns, and we&lsquo;ll get back to you promptly
             </p>
-            <button className="faq-border rounded-md border px-5 py-2 text-sm">Get in touch</button>
+            <Link href="contact" className="faq-border rounded-md border px-5 py-2 text-sm">
+              Get in touch
+            </Link>
           </div>
         </div>
       </div>

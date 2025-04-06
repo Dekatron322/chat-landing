@@ -10,6 +10,7 @@ import AllInOne from "components/CardComponent/all-in-one"
 import WhyChats from "components/CardComponent/why-chats"
 import MobileNav from "components/Navbar/MobileNav"
 import CarAnimation from "components/CardComponent/carAnimation"
+import Link from "next/link"
 
 export default function Dashboard() {
   return (
@@ -45,11 +46,15 @@ export default function Dashboard() {
                 updates, and detailed insights into how your contributions are making a difference
               </motion.p>
 
-              <button className="slide-button relative mt-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+              <Link
+                href="https://calendly.com/convexitytech/chats"
+                target="_blank"
+                className="slide-button relative mt-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+              >
                 <div className="btn-img-element absolute bottom-0 left-0"></div>
                 <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                 Signup
-              </button>
+              </Link>
             </div>
 
             {/* Wrapper for the image and overlay */}

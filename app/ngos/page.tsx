@@ -11,6 +11,7 @@ import TestimonialSection from "components/CardComponent/testimonials-section"
 import { useTheme } from "next-themes"
 import MobileNav from "components/Navbar/MobileNav"
 import CarAnimation from "components/CardComponent/carAnimation"
+import Link from "next/link"
 
 export default function Dashboard() {
   const { theme, setTheme, systemTheme } = useTheme()
@@ -111,11 +112,15 @@ export default function Dashboard() {
                 transparent reports to donors.
               </motion.p>
 
-              <button className="slide-button relative mt-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+              <Link
+                href="https://calendly.com/convexitytech/chats"
+                target="_blank"
+                className="slide-button relative mt-4 flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+              >
                 <div className="btn-img-element absolute bottom-0 left-0"></div>
                 <div className="btn-img-element-one absolute bottom-2 right-2"></div>
                 Signup
-              </button>
+              </Link>
 
               <img src="/Graphite.png" alt="" className="w-[722px]" />
             </div>
