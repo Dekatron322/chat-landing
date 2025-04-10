@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
-import React, { useState, useRef, useEffect } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 const CardComponent = () => {
   const [activeTab, setActiveTab] = useState(0)
