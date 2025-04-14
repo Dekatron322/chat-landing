@@ -16,38 +16,25 @@ import ChangingLives from "components/CardComponent/changing-lives"
 import Link from "next/link"
 
 export default function Dashboard() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme, systemTheme } = useTheme()
-  const isDarkMode = theme === "dark"
+  const { theme, setTheme } = useTheme()
+  const { resolvedTheme } = useTheme()
+  const isDarkMode = resolvedTheme === "dark"
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  useEffect(() => {
-    if (systemTheme && !mounted) {
-      setTheme(systemTheme)
-    }
-  }, [systemTheme, setTheme, mounted])
-
-  const toggleTheme = () => {
-    setTheme(isDarkMode ? "light" : "dark")
-  }
   return (
     <section className="h-full w-full">
       <div className="max-sm:w-full">
         <DashboardNav />
         <MobileNav />
 
-        <div className="backgroundImage mt-16  flex h-auto w-full ">
-          <div className=" paddings   w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
-            <div className="mt-14 flex w-full flex-col items-center justify-center gap-3   max-sm:mt-10   ">
+        <div className="backgroundImage mt-16 flex h-auto w-full">
+          <div className="paddings w-full gap-6 max-md:flex-col max-md:px-0 md:mb-16">
+            <div className="mt-14 flex w-full flex-col items-center justify-center gap-3 max-sm:mt-10">
               <div className="card flex items-center gap-2 rounded-full px-2 py-2 xl:px-[20px]">
                 <img src="/chats transparent 1.png" alt="" className="w-7" />
                 <p className="text-sm">Convexity Humanitarian Aid Transfer Solution</p>
               </div>
               <motion.h2
-                className=" h-full  max-w-[913px] text-center text-[64px] font-medium max-sm:text-3xl md:leading-[80px]"
+                className="h-full max-w-[913px] text-center text-[64px] font-medium max-sm:text-3xl md:leading-[80px]"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
@@ -81,7 +68,6 @@ export default function Dashboard() {
         </div>
         <section className="section-1 px-4">
           <div className="my-6 flex w-full justify-between gap-7 max-xl:flex-col">
-            {/* Card Content */}
             <div className="card-lg flex flex-col gap-7 p-4 xl:p-7 2xl:w-1/2">
               <div className="flex w-full items-start justify-between gap-3 max-2xl:flex-col max-xl:flex-col">
                 <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
@@ -102,14 +88,14 @@ export default function Dashboard() {
                 enabling NGOs and donors to collaborate seamlessly.
               </p>
               <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
-                At CHATS, we’re not just distributing aid; we’re building confidence, fostering trust, and driving
+                At CHATS, we're not just distributing aid; we're building confidence, fostering trust, and driving
                 meaningful change in communities worldwide.
               </p>
               <div className="flex">
                 <Link
                   href="https://calendly.com/convexitytech/chats"
                   target="_blank"
-                  className="slide-button relative  flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+                  className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm"
                 >
                   <div className="btn-img-element absolute bottom-0 left-0"></div>
                   <div className="btn-img-element-one absolute bottom-2 right-2"></div>
@@ -118,35 +104,31 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Image */}
             <img src="/Frame 1618873303.svg" className="flex h-full w-1/2" alt="" />
           </div>
         </section>
         <div className="relative h-auto w-full">
-          {/* The image */}
           <img
             src={isDarkMode ? "/MacBook Pro 14_ - 7 (11).webp" : "/MacBook Pro 14_ - 7 (10).webp"}
             alt="Hero Image"
             className="h-auto w-full"
           />
 
-          {/* The absolutely positioned link over the image */}
           <Link
             href="https://calendly.com/convexitytech/chats"
             target="_blank"
-            className="absolute bottom-[12%] left-[10%] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border   border-[#cdcdcd] bg-transparent  px-10 py-[10px] font-medium text-[#ffffff] transition-all duration-200 ease-in-out hover:bg-[#05F29A]/90 max-xl:bottom-10  max-xl:left-[11%]  max-sm:hidden
-        "
+            className="absolute bottom-[12%] left-[10%] -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border border-[#cdcdcd] bg-transparent px-10 py-[10px] font-medium text-[#ffffff] transition-all duration-200 ease-in-out hover:bg-[#05F29A]/90 max-xl:bottom-10 max-xl:left-[11%] max-sm:hidden"
           >
             Get Started
           </Link>
         </div>
 
         <AboutComponent />
-        <section className="section-1  flex  w-full">
-          <div className="mt-6   w-full gap-4 max-md:flex-col max-md:px-0 md:mb-16">
-            <div className="flex w-full flex-col items-center justify-center   max-sm:mt-10   ">
+        <section className="section-1 flex w-full">
+          <div className="mt-6 w-full gap-4 max-md:flex-col max-md:px-0 md:mb-16">
+            <div className="flex w-full flex-col items-center justify-center max-sm:mt-10">
               <motion.h2
-                className=" h-full  max-w-[913px] text-center text-5xl font-medium max-sm:text-3xl "
+                className="h-full max-w-[913px] text-center text-5xl font-medium max-sm:text-3xl"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
@@ -172,7 +154,6 @@ export default function Dashboard() {
                     </div>
                   </div>
 
-                  {/* Add margin-top to create space */}
                   <div className="mt-4">
                     <h2 className="text-[85px] font-bold max-sm:text-3xl">43,048+</h2>
                     <p className="paragraph-1 text-base leading-[35px]">
@@ -180,8 +161,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="card-lg card-bg relative flex  flex-col justify-between p-7 max-xl:h-[328px] max-xs:h-auto md:h-[328px]">
-                  {/* Top Section */}
+                <div className="card-lg card-bg relative flex flex-col justify-between p-7 max-xl:h-[328px] max-xs:h-auto md:h-[328px]">
                   <div className="flex w-full justify-between gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
                       <img src="/chats transparent 1.png" alt="" className="w-7" />
@@ -189,18 +169,16 @@ export default function Dashboard() {
                     </div>
                   </div>
 
-                  {/* Images at Different Positions */}
                   <div className="absolute right-32 top-20 max-sm:right-6">
                     <img src="/Frame 1618873317.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
                   <div className="absolute left-32 top-1/2 -translate-x-1/2 -translate-y-1/2 transform max-sm:bottom-4 max-sm:left-14">
                     <img src="/Frame 1618873318.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
-                  <div className="absolute bottom-10   right-1/3 xl:bottom-20">
+                  <div className="absolute bottom-10 right-1/3 xl:bottom-20">
                     <img src="/Frame 1618873316.png" alt="" className="h-[34px] max-sm:h-5" />
                   </div>
 
-                  {/* Bottom Section */}
                   <div className="mt-4">
                     <p className="paragraph-1 text-base leading-[35px]">
                       Millions of lives improved through efficient aid distribution.
@@ -208,16 +186,15 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="card-lg mt-7 w-full items-center justify-between max-xl:p-7 xl:flex  xl:h-[397px]  xl:gap-10   xl:p-7">
+              <div className="card-lg mt-7 w-full items-center justify-between max-xl:p-7 xl:flex xl:h-[397px] xl:gap-10 xl:p-7">
                 <div>
-                  <div className="flex w-full  gap-3">
+                  <div className="flex w-full gap-3">
                     <div className="dark-green-bg flex items-center gap-2 rounded-full px-4 py-2">
                       <img src="/chats transparent 1.png" alt="" className="w-7" />
                       <p className="text-sm">Funds Disbursed</p>
                     </div>
                   </div>
 
-                  {/* Add margin-top to create space */}
                   <div className="mt-4 max-sm:my-2">
                     <p className="paragraph-1 text-2xl leading-[35px] max-sm:text-xl">
                       Ensuring every dollar makes a measurable impact
@@ -226,7 +203,7 @@ export default function Dashboard() {
                 </div>
                 <div className="image-container w-full max-sm:hidden"></div>
                 {isDarkMode ? (
-                  <img src="/Frame 1618873977 (4).svg" alt="" className="sm:hidden " />
+                  <img src="/Frame 1618873977 (4).svg" alt="" className="sm:hidden" />
                 ) : (
                   <img src="/Frame 1618873977 (1) copy.svg" alt="" className="sm:hidden" />
                 )}
@@ -236,7 +213,7 @@ export default function Dashboard() {
         </section>
         <section className="paddings my-10 flex w-full">
           <div className="flex w-full flex-col items-center justify-center overflow-hidden rounded-lg max-sm:mt-10">
-            <div className=" w-full" style={{ aspectRatio: "16/6" }}>
+            <div className="w-full" style={{ aspectRatio: "16/6" }}>
               <iframe
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/c38lplJETZw?si=VhMOo1sImsX6JRzc"

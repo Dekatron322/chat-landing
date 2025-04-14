@@ -42,8 +42,8 @@ const GetInTouch = () => {
             <h2 className="text-2xl font-bold">Call us</h2>
             <p className="paragraph">Mon-Fri from 9am - 4pm</p>
           </div>
-          <Link href="tel:+234 742-3928-3829" className="underline">
-            +234 742-3928-3829
+          <Link href="tel:+234 909 550 2060 " className="underline">
+            +234 909 550 2060
           </Link>
         </div>
       </div>

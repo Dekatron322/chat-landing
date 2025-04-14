@@ -115,12 +115,12 @@ const Footer = () => {
               {/* Column 5 */}
               <div className="flex flex-col gap-4 max-sm:mb-7 xl:w-[207px]">
                 <p className="font-bold">Contact Us</p>
-                <p className="text-sm">123 Humanitarian Drive, Global City, World</p>
+                <p className="text-sm">3 Rabat Street, off Herbert Macaulay Way, Zone 6 Wuse</p>
                 <Link
-                  href="tel:+123 456 7890"
+                  href="tel:+234 909 550 2060 "
                   className="text-sm transition-all duration-300 ease-in-out hover:text-[#05F29A]"
                 >
-                  +123 456 7890
+                  +234 909 550 2060
                 </Link>
                 <div className="flex w-full gap-[15px]">
                   <Link href="https://instagram.com/withconvexity" target="_blank">

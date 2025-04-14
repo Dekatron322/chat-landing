@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
+import Link from "next/link"
 import React, { useState } from "react"
 import { CgChevronDown } from "react-icons/cg"
 
@@ -53,11 +54,14 @@ const DonorFaqs = () => {
             <p className="paragraph max-w-[394px]">
               Learn how to donate securely, track contributions, and give anonymously or publicly.
             </p>
-            <button className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm">
+            <Link
+              href="/contact-us"
+              className="slide-button relative flex overflow-hidden rounded-full border px-5 py-2 text-sm"
+            >
               <div className="btn-img-element absolute bottom-0 left-0"></div>
               <div className="btn-img-element-one absolute bottom-2 right-2"></div>
               Get in touch
-            </button>
+            </Link>
           </div>
 
           <div className="mt-8 w-full max-w-[744px]">

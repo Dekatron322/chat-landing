@@ -260,7 +260,7 @@ const BlogDetails = () => {
             Didn&lsquo;t find what you were looking for? Our team is here to help. Reach out to us with your questions
             or concerns, and we&lsquo;ll get back to you promptly
           </p>
-          <Link href="contact" className="faq-border rounded-md border px-5 py-2 text-sm">
+          <Link href="contact-us" className="faq-border rounded-md border px-5 py-2 text-sm">
             Get in touch
           </Link>
         </div>

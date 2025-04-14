@@ -98,21 +98,21 @@ const AboutComponent = () => {
       title: "Our Mission Statement",
       description:
         "To revolutionize humanitarian aid by providing a transparent, efficient platform that empowers donors, NGOs, and beneficiaries for impactful change",
-      link: "#",
+      link: "/solutions",
     },
     {
       imageSrc: "/002 (1).webp",
       title: "Our Core Value",
       description:
         "Transparency, innovation, trust, empowerment, and impact guide everything we do, ensuring effective and accountable aid distribution",
-      link: "#",
+      link: "/solutions",
     },
     {
       imageSrc: "/003 (1).webp",
       title: "Our Vision For The Future",
       description:
         "We aim to expand globally, leveraging technology to enhance transparency, scalability, and efficiency in aid distribution",
-      link: "#",
+      link: "/solutions",
     },
   ]
 
