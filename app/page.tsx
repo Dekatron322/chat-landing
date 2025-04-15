@@ -88,8 +88,8 @@ export default function Dashboard() {
                 enabling NGOs and donors to collaborate seamlessly.
               </p>
               <p className="paragraph-1 text-base max-xl:text-sm max-sm:leading-7 lg:leading-7 2xl:leading-[35px]">
-                At CHATS, we're not just distributing aid; we're building confidence, fostering trust, and driving
-                meaningful change in communities worldwide.
+                At CHATS, we&lsquo;re not just distributing aid; we&lsquo;re building confidence, fostering trust, and
+                driving meaningful change in communities worldwide.
               </p>
               <div className="flex">
                 <Link
